@@ -5,122 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Мой личный сайт по самосовершенствованию и развитию своего тела">
   <meta name="keywords" content="Streetlifting, sport, power, force, Стритлифтинг, спорт, мощь, сила">
-  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;500;700&display=swap">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Andrestatix!</title>
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-nav">
-      <a class="main-nav__logo" href="#" aria-label="Мой логотип"></a>
-      <ul class="main-nav__menu-list">
-        <li class="main-nav__menu-item"><a href="#faq" class="main-nav__link">F.A.Q</a></li>
-        <li class="main-nav__menu-item"><a href="#about-me" class="main-nav__link">Обо мне</a></li>
-      </ul>
-      <button class="main-nav__menu-button" type="button" aria-label="Открыть меню"></button>
-    </nav>
+    <div class="container">
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="#" aria-label="Мой логотип"></a>
+        <ul class="main-nav__menu-list">
+          <li class="main-nav__menu-item"><a href="#faq" class="main-nav__link">F.A.Q</a></li>
+          <li class="main-nav__menu-item"><a href="#about-me" class="main-nav__link">Обо мне</a></li>
+        </ul>
+        <button class="main-nav__menu-button" type="button" aria-label="Открыть меню">
+          <span class="main-nav__button-elem"></span>
+          <span class="main-nav__button-elem"></span>
+          <span class="main-nav__button-elem"></span>
+        </button>
+      </nav>
+    </div>
   </header>
   <main>
     <div class="intro">
-      <h1 class="intro__title">Боль, которую вы чувствуете сегодня, станет силой, которую вы почувствуете завтра.</h1>
-      <p class="intro__subtitle">Стань мастером Стритлифтинга и Воркаут Элементов</p>
-      <div class="intro__image-block">
-        <picture>
-          <source media="(min-width: 1024px)" srcset="">
-          <source media="(min-width: 768px)" srcset="">
-          <img class="intro__image" src="img/Me.jpg" width="320" height="200" alt="Моя фотка">
-        </picture>
-      </div>
+      <h1 class="intro__title">Стань мастером Стритлифтинга и Воркаут Элементов</h1>
+      <p class="intro__subtitle">"Боль, которую вы чувствуете сегодня, станет силой, которую вы почувствуете завтра."</p>
     </div>
-    <section class="programs">
-      <h2 class="programs__title">Программы</h2>
-      <div class="programs__street">
-        <h3 class="programs__street-title">Стритлифтинг:</h3>
-        <ul class="programs__street-list">
-          <li class="programs__street-item">
-            <a href="" class="programs__street-link"></a>
-            <h4 class="programs__street-name">Уровень - нулевой</h4>
-            <p class="programs__street-description">Для тех, кто ничего не знает о тренировках и с чего начать свой путь.</p>
-            <span class="programs__street-price"></span>
-          </li>
-          <li class="programs__street-item">
-            <a href="" class="programs__street-link"></a>
-            <h4 class="programs__street-name">Уровень - новичок</h4>
-            <p class="programs__street-description">Для тех, кто только начал тренировки с доп.весами и желает узнать на что он способен.</p>
-            <span class="programs__street-price"></span>
-          </li>
-          <li class="programs__street-item">
-            <a href="" class="programs__street-link"></a>
-            <h4 class="programs__street-name">Уровень - средний</h4>
-            <p class="programs__street-description">Для тех, кто хочет дальше прогрессировать. Простых методов уже недостаточно.</p>
-            <span class="programs__street-price"></span>
-          </li>
-          <li class="programs__street-item">
-            <a href="" class="programs__street-link"></a>
-            <h4 class="programs__street-name">Уровень - продвинутый</h4>
-            <p class="programs__street-description">Вы хотите выйти за рамки человеческой силы!</p>
-            <span class="programs__street-price"></span>
-          </li>
-        </ul>
-      </div>
-      <div class="programs__force">
-        <h3 class="programs__force-title">Выход силой:</h3>
-        <ul class="programs__force-list">
-          <li class="programs__force-item">
-            <h4 class="programs__force-name">Новичок</h4>
-            <p class="programs__force-description">Программа для освоение движения и увеличения количества повторений.</p>
-            <span class="programs__force-price"></span>
-          </li>
-          <li class="programs__force-item">
-            <h4 class="programs__force-name">Продвинутый</h4>
-            <p class="programs__force-description">Программа для увеличения силовых в выходах силой.</p>
-            <span class="programs__force-price"></span>
-          </li>
-        </ul>
-      </div>
-      <div class="programs__statics">
-        <h3 class="programs__statics-title">Статические элементы:</h3>
-        <ul class="programs__statics-list">
-          <li class="programs__statics-item">
-            <a href="" class="programs__statics-link"></a>
-            <span class="programs__statics-info">Передний вис</span>
-          </li>
-          <li class="programs__statics-item">
-            <a href="" class="programs__statics-link"></a>
-            <span class="programs__statics-info">Стойка на руках и отжимания в стойке</span>
-          </li>
-          <li class="programs__statics-item">
-            <a href="" class="programs__statics-link"></a>
-            <span class="programs__statics-info">Флажок</span>
-          </li>
-          <li class="programs__statics-item">
-            <a href="" class="programs__statics-link"></a>
-            <span class="programs__statics-info">Задний вис</span>
-          </li>
-          <li class="programs__statics-item">
-            <a href="" class="programs__statics-link"></a>
-            <span class="programs__statics-info">Горизонт</span>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div class="container">
+      <section class="programs">
+        <h2 class="programs__title">Программы</h2>
+        <div class="programs__street">
+          <h3 class="programs__street-title">Стритлифтинг:</h3>
+          <ul class="programs__street-list">
+            <li class="programs__street-item">
+              <a href="#" class="programs__street-link">
+                <img class="programs__street-img" src="img/programs/lvl1.jpg" width="288" height="320" alt="Программа нулевого уровня">
+                <h4 class="programs__name">Уровень - нулевой</h4>
+                <p class="programs__description">Для тех, кто ничего не знает о тренировках и с чего начать свой путь.</p>
+                <span class="programs__price">1000$</span>
+              </a>
+            </li>
+            <li class="programs__street-item">
+              <a href="#" class="programs__street-link">
+                <img class="programs__street-img" src="img/programs/lvl2.jpg" width="288" height="320" alt="Программа уровня новичок">
+                <h4 class="programs__name">Уровень - новичок</h4>
+                <p class="programs__description">Для тех, кто только начал тренировки с доп.весами и желает узнать на что он способен.</p>
+                <span class="programs__price">2000$</span>
+              </a>
+            </li>
+            <!-- <li class="programs__street-item">
+              <a href="#" class="programs__street-link">
+                <img class="programs__street-img" src="" width="288" height="280" alt="Программа среднего уровня">
+                <h4 class="programs__street-name">Уровень - средний</h4>
+                <p class="programs__street-description">Для тех, кто хочет дальше прогрессировать. Простых методов уже недостаточно.</p>
+                <span class="programs__street-price">2900$</span>
+              </a>
+            </li>
+            <li class="programs__street-item">
+              <a href="#" class="programs__street-link">
+                <img class="programs__street-img" src="" width="288" height="280" alt="Программа продвинутого уровня">
+                <h4 class="programs__street-name">Уровень - продвинутый</h4>
+                <p class="programs__street-description">Вы хотите выйти за рамки человеческой силы!</p>
+                <span class="programs__street-price">3600$</span>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="programs__force">
+          <h3 class="programs__force-title">Выход силой:</h3>
+          <ul class="programs__force-list">
+            <li class="programs__force-item">
+              <h4 class="programs__name">Новичок</h4>
+              <p class="programs__description">Программа для освоение движения и увеличения количества повторений.</p>
+              <span class="programs__price">1000$</span>
+            </li>
+            <li class="programs__force-item">
+              <h4 class="programs__name">Продвинутый</h4>
+              <p class="programs__description">Программа для увеличения силовых в выходе силой.</p>
+              <span class="programs__price">1000$</span>
+            </li>
+          </ul>
+        </div>
+        <div class="programs__statics">
+          <h3 class="programs__statics-title">Статические элементы:</h3>
+          <div class="programs__statics-block">
+            <a href="#" class="programs__statics-link">Передний вис</a>
+            <a href="#" class="programs__statics-link">Стойка на руках и отжимания в стойке</a>
+            <a href="#" class="programs__statics-link">Флажок</a>
+            <a href="#" class="programs__statics-link">Задний вис</a>
+            <a href="#" class="programs__statics-link">Горизонт</a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo" href="#" aria-label="Снова мой шикарный логотип"></a>
-    <div class="main-footer__info">
-      <span class="main-footer__info-copyright">Все права защищены 2023 ©</span>
-    </div>
-    <div class="main-footer__socials">
-      <ul class="main-footer__socials-list">
-        <li class="main-footer__socials-item"><a href="instagram.com/andrestatix" class="main-footer__socials-link" aria-label="Я в Instagram"></a></li>
-        <li class="main-footer__socials-item"><a href="t.me/andrestatix" class="main-footer__socials-link" aria-label="Я в Telegram"></a></li>
-        <li class="main-footer__socials-item"><a href="vk.com/andrestatix" class="main-footer__socials-link" aria-label="Я в ВК"></a></li>
-        <li class="main-footer__socials-item"><a href="youtube.com/@andrestatix" class="main-footer__socials-link" aria-label="Я на YouTube"></a></li>
-        <li class="main-footer__socials-item"><a href="tiktok.com/@andrestatix" class="main-footer__socials-link" aria-label="Я в TikTok"></a></li>
-        <li class="main-footer__socials-item"><a href="mailto:andresthenics@gmail.com" class="main-footer__socials-link" aria-label="Моя почта"></a></li>
-      </ul>
+    <div class="container">
+      <div class="main-footer__info">
+        <a class="main-footer__logo" href="#" aria-label="Снова мой шикарный логотип"></a>
+        <ul class="main-footer__socials-list">
+          <li class="main-footer__socials-item"><a href="instagram.com/andrestatix" class="main-footer__socials-link main-footer__socials-link--instagram" aria-label="Я в Instagram"></a></li>
+          <li class="main-footer__socials-item"><a href="t.me/andrestatix" class="main-footer__socials-link main-footer__socials-link--telegram" aria-label="Я в Telegram"></a></li>
+          <li class="main-footer__socials-item"><a href="vk.com/andrestatix" class="main-footer__socials-link main-footer__socials-link--vk" aria-label="Я в ВК"></a></li>
+          <li class="main-footer__socials-item"><a href="youtube.com/@andrestatix" class="main-footer__socials-link main-footer__socials-link--youtube" aria-label="Я на YouTube"></a></li>
+          <li class="main-footer__socials-item"><a href="tiktok.com/@andrestatix" class="main-footer__socials-link main-footer__socials-link--tiktok" aria-label="Я в TikTok"></a></li>
+          <li class="main-footer__socials-item"><a href="mailto:andresthenics@gmail.com" class="main-footer__socials-link main-footer__socials-link--mail" aria-label="Моя почта"></a></li>
+        </ul>
+        <span class="main-footer__copyright">Все права защищены 2023 ©</span>
+      </div>
     </div>
   </footer>
-  <script src="js/script.min.js"></script>
+  <script src="js/scripts.min.js"></script>
 </body>
 </html>

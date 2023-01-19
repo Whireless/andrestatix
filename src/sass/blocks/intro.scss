@@ -1,0 +1,19 @@
+.intro {
+  color: $white;
+  background-image: url("../img/me.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 60px;
+  padding: 60px 15px 30px 15px;
+}
+
+.intro__title {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.intro__subtitle {
+  font-style: italic;
+  margin: 15px 0 0 0;
+}

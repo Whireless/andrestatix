@@ -36,7 +36,6 @@ jobs:
           FOLDER: ./build
           BRANCH: gh-pages
           SINGLE_COMMIT: false
-          clean: true
 
       permissions:
         contents: write

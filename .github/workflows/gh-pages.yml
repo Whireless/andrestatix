@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FOLDER: ./build

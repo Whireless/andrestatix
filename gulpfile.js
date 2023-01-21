@@ -18,7 +18,7 @@ const sync = require('browser-sync').create();
 const html = () => {
   return gulp.src('src/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('bld'));
+    .pipe(gulp.dest('build'));
 }
 exports.html = html;
 
@@ -35,7 +35,7 @@ const styles = () => {
     ]))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest('bld/css'))
+    .pipe(gulp.dest('build/css'))
     .pipe(sync.stream());
 }
 exports.styles = styles;
@@ -46,7 +46,7 @@ const scripts = () => {
   return gulp.src('src/js/scripts.js')
     .pipe(terser())
     .pipe(rename('scripts.min.js'))
-    .pipe(gulp.dest('bld/js'))
+    .pipe(gulp.dest('build/js'))
 }
 exports.scripts = scripts;
 
@@ -55,13 +55,13 @@ exports.scripts = scripts;
 const optimizeImages = () => {
   return gulp.src('src/img/**/*.{png,svg,jpeg,jpg}')
     .pipe(squoosh())
-    .pipe(gulp.dest('bld/img'))
+    .pipe(gulp.dest('build/img'))
 }
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
   return gulp.src('src/img/**/*.{png,svg,jpeg,jpg}')
-    .pipe(gulp.dest('bld/img'))
+    .pipe(gulp.dest('build/img'))
 }
 exports.copyImages = copyImages;
 
@@ -74,7 +74,7 @@ const copy = (done) => {
   ], {
     base: 'src'
   })
-    .pipe(gulp.dest('bld'))
+    .pipe(gulp.dest('build'))
   done();
 }
 exports.copy = copy;
@@ -82,7 +82,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del('bld');
+  return del('build');
 }
 exports.clean = clean;
 
@@ -91,7 +91,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'bld'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,

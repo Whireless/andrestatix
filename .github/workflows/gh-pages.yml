@@ -1,41 +1,76 @@
-name: Deploy to GitHub-Pages
-
 on:
   push:
     branches:
       - main
 
+name: Project deploy
 jobs:
   deploy:
+    name: Check and Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check Out
-        uses: actions/checkout@v2.3.1
-        with:
-          persist-credentials: false
-
-      - name: Setup Node
+      - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '16'
 
-      - name: Installing Dependencies
-        run: npm ci
+      - uses: actions/checkout@master
+        name: Checkout
 
-      - name: Linting
-        run: npm test
-
-      - name: Building
-        run: npm run build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+      - name: Install dependencies
+        run: |
+          npm ci
+      - name: Run lint and build
+        run: |
+          npm run build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FOLDER: ./build
-          BRANCH: gh-pages
-          SINGLE_COMMIT: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
 
-    permissions:
-      pages: write
+
+
+
+
+# name: Deploy to GitHub-Pages
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Check Out
+#         uses: actions/checkout@v2.3.1
+#         with:
+#           persist-credentials: false
+
+#       - name: Setup Node
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: '14.x'
+
+#       - name: Installing Dependencies
+#         run: npm ci
+
+#       - name: Linting
+#         run: npm test
+
+#       - name: Building
+#         run: npm run build
+
+#       - name: Deploy
+#         uses: JamesIves/github-pages-deploy-action@4.1.1
+#         with:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           FOLDER: ./build
+#           BRANCH: gh-pages
+#           SINGLE_COMMIT: false
+
+#     permissions:
+#       pages: write

@@ -1,0 +1,161 @@
+.programs {
+  margin-top: 40px;
+}
+
+.programs__title {
+  text-transform: uppercase;
+  width: 142px;
+  margin: 0 auto;
+}
+
+.programs__street {
+  margin-top: 50px;
+}
+
+.programs__program-name {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin: 0 0 45px 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  &::before {
+    left: 30px;
+  }
+
+  &::after {
+    right: 30px;
+  }
+
+  &--street {
+    &::before,
+    &::after {
+      background-color: $red;
+    }
+  }
+
+  &--force {
+    &::before,
+    &::after {
+      background-color: $blue;
+    }
+  }
+
+  &--statics {
+    &::before,
+    &::after {
+      background-color: $yellow;
+    }
+
+    &::before {
+      left: 30px;
+    }
+
+    &::after {
+      right: 30px;
+    }
+  }
+}
+
+.programs__street-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__street-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.programs__street-link {
+  text-decoration: none;
+  color: $black;
+  text-align: center;
+  transition: $basic;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    transition: $basic;
+  }
+}
+
+.programs__street-img {
+  border-radius: 35px;
+}
+
+.programs__name {
+  width: 140px;
+  border: 1px solid $grey;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 3px 5px;
+}
+
+.programs__description {
+  font-weight: 300;
+}
+
+.programs__price {
+  color: $red2;
+  font-weight: 500;
+}
+
+.programs__force {
+  margin-top: 60px;
+}
+
+.programs__force-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__force-item {
+  text-align: center;
+}
+
+.programs__statics {
+  margin: 60px 0 30px 0;
+}
+
+.programs__statics-block {
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.programs__statics-link {
+  text-decoration: none;
+  color: $black;
+  border: 1px solid $grey;
+  border-radius: 12px;
+  padding: 4px 8px;
+  transition: $basic;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $grey2;
+    opacity: $basicOp;
+    transition: $basic;
+  }
+}

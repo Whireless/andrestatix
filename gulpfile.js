@@ -16,7 +16,7 @@ const sync = require('browser-sync').create();
 // HTML
 
 const html = () => {
-  return gulp.src('src/*.html')
+  return gulp.src('source/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
@@ -25,7 +25,7 @@ exports.html = html;
 // Styles
 
 const styles = () => {
-  return gulp.src('src/sass/style.scss')
+  return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -43,7 +43,7 @@ exports.styles = styles;
 // Scripts
 
 const scripts = () => {
-  return gulp.src('src/js/scripts.js')
+  return gulp.src('source/js/scripts.js')
     .pipe(terser())
     .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('build/js'))
@@ -53,14 +53,14 @@ exports.scripts = scripts;
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('src/img/**/*.{png,svg,jpeg,jpg}')
+  return gulp.src('source/img/**/*.{png,svg,jpeg,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src('src/img/**/*.{png,svg,jpeg,jpg}')
+  return gulp.src('source/img/**/*.{png,svg,jpeg,jpg}')
     .pipe(gulp.dest('build/img'))
 }
 exports.copyImages = copyImages;
@@ -69,10 +69,10 @@ exports.copyImages = copyImages;
 
 const copy = (done) => {
   gulp.src([
-    'src/fonts/*.woff2',
-    'src/*.ico',
+    'source/fonts/*.woff2',
+    'source/*.ico',
   ], {
-    base: 'src'
+    base: 'source'
   })
     .pipe(gulp.dest('build'))
   done();
@@ -111,9 +111,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('src/sass/**/*.scss', gulp.series('styles'));
-  gulp.watch('src/js/*.js', gulp.series(scripts, reload));
-  gulp.watch('src/*.html', gulp.series(html, reload));
+  gulp.watch('source/sass/**/*.scss', gulp.series('styles'));
+  gulp.watch('source/js/*.js', gulp.series(scripts, reload));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build

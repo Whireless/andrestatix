@@ -1,0 +1,84 @@
+.main-footer {
+  background-color: $white;
+  padding: 15px 0;
+  border-top: 2px solid $grey;
+}
+
+.main-footer__logo {
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  width: 58px;
+  height: 35px;
+  transition: $basic;
+
+  &:hover,
+  &focus {
+    opacity: $basicOp;
+    transition: $basic;
+  }
+}
+
+.main-footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer__socials-list {
+  display: flex;
+  column-gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-footer__socials-item {
+  display: flex;
+}
+
+.main-footer__socials-link {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 31px;
+  height: 31px;
+  transition: $basic;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOp;
+    transition: $basic;
+  }
+
+  &--instagram {
+    background-image: url("../img/icons/instagram.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/icons/telegram.svg");
+  }
+
+  &--vk {
+    background-image: url("../img/icons/vk.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icons/youtube.svg");
+  }
+
+  &--tiktok {
+    background-image: url("../img/icons/tiktok.svg");
+  }
+
+  &--mail {
+    background-image: url("../img/icons/mail.svg");
+  }
+}
+
+.main-footer__copyright {
+  font-size: 13px;
+  text-align: center;
+  margin: 15px auto 0 auto;
+}

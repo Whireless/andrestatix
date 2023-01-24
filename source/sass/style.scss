@@ -1,0 +1,15 @@
+//Общие
+@import "variables.scss";
+@import "global.scss";
+@import "container.scss";
+@import "animations.scss";
+
+//Главная
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/programs.scss";
+@import "blocks/main-footer.scss";
+
+//Обо мне
+@import "blocks/about-me.scss";

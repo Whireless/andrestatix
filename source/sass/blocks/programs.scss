@@ -12,18 +12,35 @@
   margin-top: 50px;
 }
 
+.programs__link {
+  text-decoration: none;
+  color: $white;
+  position: relative;
+  transition: $basic;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.04);
+    transition: $basic;
+
+    .programs__street-img {
+      box-shadow: $shadow;
+    }
+  }
+}
+
 .programs__program-name {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  margin: 0 0 45px 0;
+  margin: 0 0 40px 0;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
     top: 50%;
-    width: 35px;
+    width: 30px;
     height: 2px;
     border-radius: 1px;
   }
@@ -77,41 +94,32 @@
 
 .programs__street-item {
   display: flex;
-  flex-direction: column;
 }
 
-.programs__street-link {
-  text-decoration: none;
-  color: $black;
-  text-align: center;
-  transition: $basic;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.04);
-    transition: $basic;
-  }
-}
-
-.programs__street-img {
-  border-radius: 35px;
-}
-
-.programs__name {
-  width: 140px;
-  border: 1px solid $grey;
-  border-radius: 15px;
-  margin: 0 auto;
-  padding: 3px 5px;
+.programs__img {
+  border-radius: 3px;
 }
 
 .programs__description {
+  font-size: 14px;
   font-weight: 300;
+  position: absolute;
+  left: 10px;
+  bottom: 50px;
+  width: 270px;
+  margin: 0;
 }
 
 .programs__price {
-  color: $red2;
+  font-size: 17px;
+  color: $black;
   font-weight: 500;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  background-color: $white;
+  padding: 2px;
+  border-radius: 1px;
 }
 
 .programs__force {
@@ -129,6 +137,11 @@
 
 .programs__force-item {
   text-align: center;
+  display: flex;
+}
+
+.programs__force-link {
+  position: relative;
 }
 
 .programs__statics {
@@ -139,9 +152,9 @@
   text-decoration: none;
   color: $black;
   text-align: center;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   transition: $basic;
 
   &:hover,

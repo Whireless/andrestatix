@@ -10,10 +10,12 @@
 .intro__title {
   font-size: 20px;
   line-height: 24px;
+  font-style: italic;
   margin: 0;
 }
 
 .intro__subtitle {
-  font-style: italic;
+  font-size: 17px;
+  color: $grey2;
   margin: 15px 0 0 0;
 }

@@ -1,7 +1,7 @@
 .main-footer {
   background-color: $white;
   padding: 15px 0;
-  border-top: 2px solid $grey;
+  border-top: 1px solid $grey;
 }
 
 .main-footer__logo {
@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: block;
-  width: 58px;
+  width: 120px;
   height: 35px;
   transition: $basic;
 
@@ -22,9 +22,10 @@
 
 .main-footer__info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  row-gap: 10px;
 }
 
 .main-footer__socials-list {
@@ -80,5 +81,5 @@
 .main-footer__copyright {
   font-size: 13px;
   text-align: center;
-  margin: 15px auto 0 auto;
+  margin: 0 auto 0 auto;
 }

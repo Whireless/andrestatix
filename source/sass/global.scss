@@ -6,6 +6,10 @@ body {
   font-family: 'Sofia Sans', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 21px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 320px;
+  min-height: 100vh;
   background-color: $grey2;
   margin: 0;
   padding: 0;

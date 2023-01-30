@@ -38,7 +38,7 @@
   margin: 0;
   padding: 15px 10px;
   list-style: none;
-  transform: translateX(500px) translateY(60px);
+  transform: translateX(100%) translateY(60px);
   transition: $basic;
 
   &+.main-nav__menu-button {

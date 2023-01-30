@@ -1,5 +1,6 @@
 .intro {
   color: $white;
+  position: relative;
   background-image: url("../img/me.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -8,14 +9,20 @@
 }
 
 .intro__title {
-  font-size: 20px;
-  line-height: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 15px;
+  line-height: 20px;
   font-style: italic;
+  width: 234px;
   margin: 0;
 }
 
 .intro__subtitle {
-  font-size: 17px;
+  font-size: 20px;
+  line-height: 25px;
   color: $grey2;
-  margin: 15px 0 0 0;
+  font-weight: 700;
+  margin: 70px 0 0 0;
 }

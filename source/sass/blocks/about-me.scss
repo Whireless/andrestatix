@@ -4,6 +4,7 @@
 }
 
 .about-me__title {
+  font-size: 25px;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
@@ -25,25 +26,4 @@
   font-weight: 300;
   margin: 5px 0 20px 0;
   padding: 0 0 0 15px;
-}
-
-.about-me__train {
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $white;
-  display: flex;
-  background-color: $red2;
-  width: max-content;
-  margin: 30px auto 40px auto;
-  padding: 11px;
-  border-radius: 5px;
-  transition: $basic;
-
-  &:hover,
-  &:focus {
-    transition: $basic;
-    opacity: $basicOp;
-    box-shadow: $shadow;
-  }
 }

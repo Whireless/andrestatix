@@ -3,6 +3,7 @@
 @import "global.scss";
 @import "container.scss";
 @import "animations.scss";
+@import "blocks/train-button.scss";
 
 //Главная
 @import "blocks/main-header.scss";
@@ -13,3 +14,6 @@
 
 //Обо мне
 @import "blocks/about-me.scss";
+
+//FAQ
+@import "blocks/questions.scss";

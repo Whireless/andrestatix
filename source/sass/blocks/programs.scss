@@ -23,7 +23,7 @@
     transform: scale(1.04);
     transition: $basic;
 
-    .programs__street-img {
+    .programs__img {
       box-shadow: $shadow;
     }
   }
@@ -101,26 +101,30 @@
   border-radius: 3px;
 }
 
-.programs__description {
-  font-size: 14px;
-  font-weight: 300;
-  position: absolute;
-  left: 10px;
-  bottom: 50px;
-  width: 270px;
-  margin: 0;
-}
-
 .programs__price {
-  font-size: 17px;
-  color: $black;
+  font-size: 23px;
+  color: $white;
   font-weight: 500;
+  text-shadow: $black 1px 4px 10px;
   position: absolute;
-  right: 10px;
-  bottom: 15px;
-  background-color: $white;
-  padding: 2px;
-  border-radius: 1px;
+  right: 20px;
+  bottom: 20px;
+  background-color: $redOp;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  &::before {
+    content: "Купить";
+    color: $white;
+    position: absolute;
+    top: 0px;
+    right: 90px;
+    background-color: $blackOp;
+    width: inherit;
+    height: inherit;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
 }
 
 .programs__force {

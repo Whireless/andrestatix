@@ -4,10 +4,13 @@ $pre-desktopW: 1024px;
 
 // colors
 $white: #ffffff;
+$whiteOp: rgba(255, 255, 255, 0.45);
 $black: #000000;
+$blackOp: rgba(0, 0, 0, 0.45);
 $grey: #6b6b6b;
 $grey2: #e5e5e5;
 $red: #a60f0f;
+$redOp: rgba(166, 15, 15, 0.45);
 $red2: #eb0000;
 $blue: #0400d9;
 $yellow: #fffb00;
@@ -15,4 +18,4 @@ $yellow: #fffb00;
 // animations
 $basic: 0.4s;
 $basicOp: 0.7;
-$shadow: 3px 3px 5px $grey;
+$shadow: 3px 3px 5px $black;

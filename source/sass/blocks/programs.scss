@@ -6,8 +6,10 @@
   font-family: 'Another-danger', 'Arial', serif;
   letter-spacing: 5px;
   font-size: 28px;
+  line-height: 34px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .programs__program-info {
@@ -38,6 +40,7 @@
 .programs__program-name {
   font-family: 'Another-danger', 'Arial', serif;
   font-size: 20px;
+  line-height: 28px;
   letter-spacing: 4px;
   text-transform: uppercase;
   text-align: center;
@@ -141,12 +144,18 @@
 }
 
 @media (min-width: $tabletW) {
+  .programs {
+    margin-top: 60px;
+  }
+
   .programs__title {
     font-size: 28px;
+    line-height: 36px;
   }
 
   .programs__program-name {
     font-size: 22px;
+    line-height: 30px;
 
     &::before,
     &::after {
@@ -174,5 +183,38 @@
     &--statics {
       margin: 0 0 80px 0;
     }
+  }
+}
+
+@media (min-width: $desktopW) {
+  .programs {
+    margin-top: 80px;
+  }
+
+  .programs__title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .programs__program-info {
+    margin-top: 70px;
+
+    &--statics {
+      margin-bottom: 100px;
+    }
+  }
+
+  .programs__program-name {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .programs__program-list {
+    row-gap: 50px;
+  }
+
+  .programs__img {
+    width: 360px;
+    height: 420px;
   }
 }

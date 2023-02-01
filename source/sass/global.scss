@@ -28,3 +28,9 @@ body {
     line-height: 23px;
   }
 }
+
+@media (min-width: $desktopW) {
+  body {
+    font-size: 20px;
+  }
+}

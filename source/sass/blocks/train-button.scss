@@ -18,3 +18,19 @@
     box-shadow: $shadow;
   }
 }
+
+@media (min-width: $tabletW) {
+  .train-button {
+    font-size: 18px;
+    margin: 40px auto 50px auto;
+    padding: 16px;
+  }
+}
+
+@media (min-width: $desktopW) {
+  .train-button{
+    font-size: 22px;
+    margin: 60px auto 80px auto;
+    padding: 22px;
+  }
+}

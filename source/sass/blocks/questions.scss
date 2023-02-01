@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 35px;
+  margin: 0;
   padding: 0 0 0 20px;
 }
 
@@ -27,6 +28,7 @@
 @media (min-width: $tabletW) {
   .questions__title {
     font-size: 28px;
+    line-height: 36px;
     margin: 75px 0 30px 0;
     padding: 40px 0 0 0;
   }
@@ -37,5 +39,18 @@
 
   .questions__question {
     margin: 0 0 15px 0;
+  }
+}
+
+@media (min-width: $desktopW) {
+  .questions__title {
+    font-size: 34px;
+    line-height: 42px;
+    margin: 100px 0 50px 0;
+    padding: 60px 0 0 0;
+  }
+
+  .questions__question {
+    margin: 0 0 20px 0;
   }
 }

@@ -201,3 +201,23 @@
     display: none;
   }
 }
+
+@media (min-width: $desktopW) {
+  .main-nav {
+    padding: 20px 100px;
+  }
+
+  .main-nav__logo {
+    width: 185px;
+    height: 60px;
+  }
+
+  .main-nav__menu-list {
+    width: 250px;
+  }
+
+  .main-nav__link {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

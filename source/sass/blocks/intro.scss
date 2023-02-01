@@ -13,17 +13,20 @@
   top: 8px;
   left: 8px;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 19px;
   font-style: italic;
   width: 234px;
   margin: 0;
 }
 
 .intro__subtitle {
-  font-size: 20px;
-  line-height: 25px;
+  font-family: 'Another-danger', 'Arial', serif;
+  letter-spacing: 5px;
+  font-size: 19px;
+  line-height: 30px;
   color: $grey2;
   font-weight: 700;
+  text-align: center;
   margin: 70px 0 0 0;
 }
 
@@ -36,6 +39,26 @@
   .intro__subtitle {
     font-size: 24px;
     line-height: 26px;
-    text-align: center;
+  }
+}
+
+@media (min-width: $desktopW) {
+  .intro {
+    margin-top: 100px;
+    padding: 200px 100px;
+  }
+
+  .intro__title {
+    font-size: 18px;
+    line-height: 21px;
+    top: 25px;
+    left: 25px;
+    width: 375px;
+  }
+
+  .intro__subtitle {
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: 9px;
   }
 }

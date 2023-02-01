@@ -3,6 +3,9 @@
 }
 
 .programs__title {
+  font-family: 'Another-danger', 'Arial', serif;
+  letter-spacing: 5px;
+  font-size: 28px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -29,6 +32,9 @@
 }
 
 .programs__program-name {
+  font-family: 'Another-danger', 'Arial', serif;
+  font-size: 20px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   text-align: center;
   position: relative;

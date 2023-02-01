@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "Another-danger";
+  src: url("../fonts/Another-danger.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Sofia Sans', 'Arial', sans-serif;
+  font-family: "Sofia Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
   display: grid;

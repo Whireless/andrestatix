@@ -83,3 +83,34 @@
   text-align: center;
   margin: 0 auto 0 auto;
 }
+
+@media (min-width: $tabletW) {
+  .main-footer {
+    padding: 30px 0;
+  }
+
+  .main-footer__logo {
+    width: 140px;
+    height: 40px;
+  }
+
+  .main-footer__info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-footer__socials-list {
+    column-gap: 10px;
+  }
+
+  .main-footer__socials-link {
+    width: 33px;
+    height: 33px;
+  }
+
+  .main-footer__copyright {
+    font-size: 11px;
+    line-height: 13px;
+    margin: 0;
+  }
+}

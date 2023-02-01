@@ -14,9 +14,26 @@
 }
 
 .questions__question {
+  text-decoration: underline;
   margin: 0 0 10px 0;
 }
 
 .questions__answer {
   font-weight: 300;
+}
+
+@media (min-width: $tabletW) {
+  .questions__title {
+    font-size: 28px;
+    margin: 75px 0 30px 0;
+    padding: 40px 0 0 0;
+  }
+
+  .questions__list {
+    row-gap: 40px;
+  }
+
+  .questions__question {
+    margin: 0 0 15px 0;
+  }
 }

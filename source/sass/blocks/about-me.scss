@@ -27,3 +27,22 @@
   margin: 5px 0 20px 0;
   padding: 0 0 0 15px;
 }
+
+@media (min-width: $tabletW) {
+  .about-me {
+    margin-top: 75px;
+    padding-top: 40px;
+  }
+
+  .about-me__title {
+    font-size: 28px;
+  }
+
+  .about-me__subtitle {
+    margin: 30px 0 20px 0;
+  }
+
+  .about-me__list {
+    font-size: 15px;
+  }
+}

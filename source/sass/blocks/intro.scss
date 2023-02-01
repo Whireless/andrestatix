@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 60px;
-  padding: 60px 15px 30px 15px;
+  padding: 60px 20px 30px 20px;
 }
 
 .intro__title {
@@ -25,4 +25,17 @@
   color: $grey2;
   font-weight: 700;
   margin: 70px 0 0 0;
+}
+
+@media (min-width: $tabletW) {
+  .intro {
+    margin-top: 75px;
+    padding: 75px 60px 35px 60px;
+  }
+
+  .intro__subtitle {
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+  }
 }

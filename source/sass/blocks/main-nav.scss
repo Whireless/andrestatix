@@ -15,8 +15,8 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: block;
-  width: 120px;
-  height: 35px;
+  width: 130px;
+  height: 40px;
   transition: $basic;
 
   &:hover,
@@ -89,7 +89,6 @@
   color: $black;
   position: relative;
   width: 100%;
-  transition: $basic;
 
   &::before,
   &::after {
@@ -102,8 +101,6 @@
 
   &:hover,
   &:focus {
-    transition: $basic;
-
     &::before {
       left: 70px;
       width: 35px;
@@ -141,5 +138,64 @@
 
   &+ .main-nav__button-elem {
     margin-top: 7px;
+  }
+}
+
+@media (min-width: $tabletW) {
+  .main-nav {
+    padding: 15px 60px;
+  }
+
+  .main-nav__logo {
+    width: 150px;
+    height: 45px;
+  }
+
+  .main-nav__menu-list {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 0;
+    transform: translateX(0);
+  }
+
+  .main-nav__menu-item {
+    &:last-of-type {
+      .main-nav__link {
+        &:hover,
+        &:focus {
+          &::before {
+            left: -45%;
+          }
+
+          &::after {
+            right: -45%;
+          }
+        }
+      }
+    }
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+
+    &:hover,
+    &:focus {
+      &::before {
+        left: -85%;
+        width: 20px;
+      }
+
+      &::after {
+        right: -85%;
+        width: 20px;
+      }
+    }
+  }
+
+  .main-nav__menu-button {
+    display: none;
   }
 }

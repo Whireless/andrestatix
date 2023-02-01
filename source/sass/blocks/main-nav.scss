@@ -169,11 +169,11 @@
         &:hover,
         &:focus {
           &::before {
-            left: -45%;
+            left: -35%;
           }
 
           &::after {
-            right: -45%;
+            right: -35%;
           }
         }
       }
@@ -186,12 +186,12 @@
     &:hover,
     &:focus {
       &::before {
-        left: -85%;
+        left: -65%;
         width: 20px;
       }
 
       &::after {
-        right: -85%;
+        right: -55%;
         width: 20px;
       }
     }

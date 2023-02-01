@@ -10,8 +10,12 @@
   text-transform: uppercase;
 }
 
-.programs__street {
+.programs__program-info {
   margin-top: 50px;
+
+  &--statics {
+    margin-bottom: 30px;
+  }
 }
 
 .programs__link {
@@ -88,7 +92,7 @@
   }
 }
 
-.programs__street-list {
+.programs__program-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,9 +100,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--statics {
+    margin: 0 0 60px 0;
+  }
 }
 
-.programs__street-item {
+.programs__program-item {
   display: flex;
 }
 
@@ -132,62 +140,6 @@
   }
 }
 
-.programs__force {
-  margin-top: 60px;
-}
-
-.programs__force-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.programs__force-item {
-  display: flex;
-}
-
-.programs__force-link {
-  position: relative;
-}
-
-.programs__statics {
-  margin: 60px 0 30px 0;
-}
-
-.programs__statics-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  margin: 0 0 60px 0;
-  padding: 0;
-  list-style: none;
-}
-
-.programs__statics-item {
-  display: flex;
-}
-
-.programs__statics-link {
-  text-decoration: none;
-  color: $black;
-  text-align: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  transition: $basic;
-
-  &:hover,
-  &:focus {
-    transition: $basic;
-    transform: scale(1.04);
-  }
-}
-
 @media (min-width: $tabletW) {
   .programs__title {
     font-size: 28px;
@@ -202,11 +154,11 @@
     }
 
     &::before {
-      left: 25%;
+      left: 20%;
     }
 
     &::after {
-      right: 25%;
+      right: 20%;
     }
   }
 
@@ -215,19 +167,12 @@
     height: 300px;
   }
 
-  .programs__street-list {
+  .programs__program-list {
     flex-flow: row wrap;
     justify-content: space-evenly;
-  }
 
-  .programs__force-list {
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-  }
-
-  .programs__statics-list {
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin: 0 0 80px 0;
+    &--statics {
+      margin: 0 0 80px 0;
+    }
   }
 }

@@ -1,10 +1,15 @@
 .programs {
-  margin-top: 40px;
+  background-image: url("../img/bg-index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  padding: 40px 0;
 }
 
 .programs__title {
   font-family: 'Another-danger', 'Arial', serif;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   font-size: 28px;
   line-height: 34px;
   text-align: center;
@@ -14,10 +19,6 @@
 
 .programs__program-info {
   margin-top: 50px;
-
-  &--statics {
-    margin-bottom: 30px;
-  }
 }
 
 .programs__link {
@@ -65,7 +66,7 @@
   font-family: 'Another-danger', 'Arial', serif;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -127,10 +128,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
-  &--statics {
-    margin: 0 0 60px 0;
-  }
 }
 
 .programs__program-item {
@@ -169,7 +166,7 @@
 
 @media (min-width: $tabletW) {
   .programs {
-    margin-top: 60px;
+    padding: 60px 0;
   }
 
   .programs__title {
@@ -216,16 +213,12 @@
   .programs__program-list {
     flex-flow: row wrap;
     justify-content: space-evenly;
-
-    &--statics {
-      margin: 0 0 80px 0;
-    }
   }
 }
 
 @media (min-width: $desktopW) {
   .programs {
-    margin-top: 80px;
+    padding: 100px 0 100px 0;
   }
 
   .programs__title {
@@ -235,10 +228,6 @@
 
   .programs__program-info {
     margin-top: 70px;
-
-    &--statics {
-      margin-bottom: 100px;
-    }
   }
 
   .programs__link {

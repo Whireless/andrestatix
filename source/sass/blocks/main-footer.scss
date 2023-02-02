@@ -1,5 +1,6 @@
 .main-footer {
-  background-color: $white;
+  color: $white;
+  background-color: $black;
   padding: 15px 0;
   border-top: 1px solid $grey;
 }
@@ -41,11 +42,13 @@
 }
 
 .main-footer__socials-link {
+  background-color: $white;
   background-repeat: no-repeat;
   background-size: contain;
   width: 31px;
   height: 31px;
   transition: $basic;
+  border-radius: 20px;
 
   &:hover,
   &:focus {

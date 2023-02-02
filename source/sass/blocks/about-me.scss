@@ -1,3 +1,13 @@
+.about-me {
+  background-image: url("../img/bg-about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  margin-top: 60px;
+  padding: 30px 0;
+}
+
 .about-me__title {
   font-family: 'Another-danger', 'Arial', serif;
   letter-spacing: 5px;
@@ -5,8 +15,7 @@
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
-  margin: 60px 0 0 0;
-  padding: 30px 0 0 0;
+  margin: 0;
 }
 
 .about-me__subtitle {
@@ -32,11 +41,15 @@
 }
 
 @media (min-width: $tabletW) {
+  .about-me {
+    margin-top: 75px;
+    padding: 50px 0;
+  }
+
   .about-me__title {
     font-size: 28px;
     line-height: 36px;
-    margin: 75px 0 0 0;
-    padding: 40px 0 0 0;
+    margin: 0;
   }
 
   .about-me__subtitle {
@@ -49,11 +62,15 @@
 }
 
 @media (min-width: $desktopW) {
+  .about-me {
+    margin-top: 100px;
+    padding: 70px 0;
+  }
+
   .about-me__title {
     font-size: 34px;
     line-height: 42px;
-    margin: 100px 0 0 0;
-    padding-top: 60px;
+    margin: 0;
   }
 
   .about-me__subtitle {

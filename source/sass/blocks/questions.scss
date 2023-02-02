@@ -1,5 +1,5 @@
 .questions {
-  background-image: url("../img/bg-faq.jpg");
+  background-image: url("../img/bg-faq.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,6 +26,7 @@
 }
 
 .questions__question {
+  font-weight: 700;
   text-decoration: underline;
   margin: 0 0 10px 0;
 }

@@ -3,12 +3,12 @@
   margin: 0 auto;
 
   @media (min-width: $tabletW) {  //768px
-    width: 648px;
-    padding: 0 60px;
+    width: 668px;
+    padding: 0 50px;
   }
 
-  @media (min-width: $desktopW) {  //1200px
-    width: 1020px;
-    padding: 0 90px;
+  @media (min-width: $desktopW) {  //1280px
+    width: 1120px;
+    padding: 0 80px;
   }
 }

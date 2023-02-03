@@ -9,7 +9,7 @@
 
 .programs__title {
   font-family: 'Another-danger', 'Arial', serif;
-  letter-spacing: 6px;
+  letter-spacing: 7px;
   font-size: 28px;
   line-height: 34px;
   text-align: center;
@@ -66,7 +66,7 @@
   font-family: 'Another-danger', 'Arial', serif;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -77,13 +77,13 @@
     content: "";
     position: absolute;
     top: 50%;
-    width: 30px;
+    width: 26px;
     height: 2px;
     border-radius: 1px;
   }
 
   &::before {
-    left: 30px;
+    left: 25px;
   }
 
   &::after {
@@ -111,7 +111,7 @@
     }
 
     &::before {
-      left: 5px;
+      left: 0px;
     }
 
     &::after {
@@ -193,7 +193,7 @@
 
     &::before,
     &::after {
-      width: 40px;
+      width: 45px;
     }
 
     &::before {
@@ -222,8 +222,8 @@
   }
 
   .programs__title {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .programs__program-info {
@@ -233,8 +233,8 @@
   .programs__link {
     &--unactive {
       &::before {
-        width: 380px;
-        height: 480px;
+        width: 450px;
+        height: 550px;
       }
 
       &::after {
@@ -245,8 +245,13 @@
   }
 
   .programs__program-name {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 30px;
+    line-height: 40px;
+
+    &::before,
+    &::after {
+      width: 100px;
+    }
   }
 
   .programs__program-list {
@@ -254,7 +259,7 @@
   }
 
   .programs__img {
-    width: 380px;
-    height: 480px;
+    width: 450px;
+    height: 550px;
   }
 }

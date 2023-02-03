@@ -15,7 +15,7 @@
   font-size: 15px;
   line-height: 19px;
   font-style: italic;
-  width: 234px;
+  width: 220px;
   margin: 0;
 }
 
@@ -33,7 +33,12 @@
 @media (min-width: $tabletW) {
   .intro {
     margin-top: 75px;
-    padding: 90px 60px 60px 60px;
+    padding: 100px 60px 70px 60px;
+  }
+
+  .intro__title {
+    top: 12px;
+    left: 12px;
   }
 
   .intro__subtitle {
@@ -45,7 +50,7 @@
 @media (min-width: $desktopW) {
   .intro {
     margin-top: 100px;
-    padding: 200px 100px;
+    padding: 200px 100px 120px 100px;
   }
 
   .intro__title {
@@ -58,8 +63,8 @@
 
   .intro__subtitle {
     font-size: 52px;
-    line-height: 60px;
-    letter-spacing: 9px;
-    margin: 110px 0 0 0;
+    line-height: 66px;
+    letter-spacing: 10px;
+    margin: 180px 0 0 0;
   }
 }

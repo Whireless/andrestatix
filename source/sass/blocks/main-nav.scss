@@ -26,6 +26,64 @@
   }
 }
 
+.main-nav__lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100px;
+
+  &::before {
+    color: $white;
+    content: "/";
+    position: absolute;
+    left: 45px;
+    top: 10px;
+  }
+}
+
+.main-nav__button-lang {
+  font-family: 'Another-danger', 'Arial', serif;
+  letter-spacing: 4px;
+  font-size: 16px;
+  color: $white;
+  position: relative;
+  width: 45px;
+  height: 40px;
+  background-color: inherit;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      bottom: 5px;
+      background-color: $white;
+      width: 35px;
+      height: 2px;
+      border-radius: 1px;
+    }
+  }
+
+
+  &--active {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      bottom: 5px;
+      background-color: $white;
+      width: 35px;
+      height: 2px;
+      border-radius: 1px;
+    }
+  }
+}
+
 .main-nav__menu-list {
   position: absolute;
   top: 0;
@@ -153,6 +211,37 @@
     height: 45px;
   }
 
+  .main-nav__lang {
+    width: 120px;
+
+    &::before {
+      top: 15px;
+      left: 55px;
+    }
+  }
+
+  .main-nav__button-lang {
+    font-size: 18px;
+    width: 50px;
+
+    &:hover,
+    &:focus {
+      &::before {
+        left: -2px;
+        bottom: 2px;
+        width: 45px;
+      }
+    }
+
+    &--active {
+      &::before {
+        left: -2px;
+        bottom: 2px;
+        width: 45px;
+      }
+    }
+  }
+
   .main-nav__menu-list {
     position: static;
     flex-direction: row;
@@ -210,6 +299,33 @@
   .main-nav__logo {
     width: 185px;
     height: 60px;
+  }
+
+  .main-nav__lang {
+    width: 130px;
+
+    &::before {
+      left: 60px;
+      top: 20px;
+    }
+  }
+
+  .main-nav__button-lang {
+    font-size: 22px;
+    width: 55px;
+
+    &:hover,
+    &:focus {
+      &::before {
+        bottom: 1px;
+      }
+    }
+
+    &--active {
+      &::before {
+        bottom: 1px;
+      }
+    }
   }
 
   .main-nav__menu-list {

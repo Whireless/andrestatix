@@ -10,13 +10,17 @@
   <link rel="icon" href="favicon.ico">
   <title>Andrestatix</title>
 </head>
-<body>
+<body class="main-index">
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="#" aria-label="Мой логотип"></a>
+      <div class="main-nav__lang">
+        <button class="main-nav__button-lang main-nav__button-lang--ru main-nav__button-lang--active" aria-label="Русский язык">RUS</button>
+        <button class="main-nav__button-lang main-nav__button-lang--en" aria-label="English language">ENG</button>
+      </div>
       <ul class="main-nav__menu-list">
-        <li class="main-nav__menu-item"><a href="faq.html" class="main-nav__link">F.A.Q</a></li>
-        <li class="main-nav__menu-item"><a href="about.html" class="main-nav__link">Обо мне</a></li>
+        <li class="main-nav__menu-item"><a href="faq.html" class="main-nav__link main-nav__link--faq">F.A.Q</a></li>
+        <li class="main-nav__menu-item"><a href="about.html" class="main-nav__link main-nav__link--about">Обо мне</a></li>
       </ul>
       <button class="main-nav__menu-button" type="button" aria-label="Открыть меню">
         <span class="main-nav__button-elem"></span>
@@ -40,25 +44,25 @@
           <ul class="programs__program-list programs__program-list--street">
             <li class="programs__program-item programs__program-item--street">
               <a href="street-basic.html" class="programs__link programs__link--street">
-                <img class="programs__img programs__img--street" src="img/programs/street/lvl1.jpg" width="330" height="420" alt="Программа нулевого уровня">
+                <img class="programs__img programs__img--street" src="img/programs/ru/street/lvl1.jpg" width="330" height="420" alt="Программа нулевого уровня">
                 <span class="programs__price">1500 ₽</span>
               </a>
             </li>
             <li class="programs__program-item programs__program-item--street">
               <a href="street-easy.html" class="programs__link programs__link--street">
-                <img class="programs__img programs__img--street" src="img/programs/street/lvl2.jpg" width="330" height="420" alt="Программа начального уровня">
+                <img class="programs__img programs__img--street" src="img/programs/ru/street/lvl2.jpg" width="330" height="420" alt="Программа начального уровня">
                 <span class="programs__price">2500 ₽</span>
               </a>
             </li>
             <li class="programs__program-item programs__program-item--street">
               <a href="street-middle.html" class="programs__link programs__link--street">
-                <img class="programs__img programs__img--street" src="img/programs/street/lvl3.jpg" width="330" height="420" alt="Программа среднего уровня">
+                <img class="programs__img programs__img--street" src="img/programs/ru/street/lvl3.jpg" width="330" height="420" alt="Программа среднего уровня">
                 <span class="programs__price">3000 ₽</span>
               </a>
             </li>
             <li class="programs__program-item programs__program-item--street">
               <a href="street-pro.html" class="programs__link programs__link--street">
-                <img class="programs__img programs__img--street" src="img/programs/street/lvl4.jpg" width="330" height="420" alt="Программа продвинутого уровня">
+                <img class="programs__img programs__img--street" src="img/programs/ru/street/lvl4.jpg" width="330" height="420" alt="Программа продвинутого уровня">
                 <span class="programs__price">3500 ₽</span>
               </a>
             </li>
@@ -69,14 +73,14 @@
           <ul class="programs__program-list programs__program-list--force">
             <li class="programs__program-item programs__program-item--force">
               <a href="force-basic.html" class="programs__link programs__link--force programs__link--unactive">
-                <img class="programs__img programs__img--force" src="img/programs/force/lvl1.jpg" width="330" height="400" alt="Силовые для начинающих">
-                <span class="programs__price">1500 ₽</span>
+                <img class="programs__img programs__img--force" src="img/programs/ru/force/lvl1.jpg" width="330" height="400" alt="Силовые для начинающих">
+                <span class="programs__price">2000 ₽</span>
               </a>
             </li>
             <li class="programs__program-item programs__program-item--force">
               <a href="force-pro.html" class="programs__link programs__link--force programs__link--unactive">
-                <img class="programs__img programs__img--force" src="img/programs/force/lvl2.jpg" width="330" height="400" alt="Силовые для продвинутый">
-                <span class="programs__price">2000 ₽</span>
+                <img class="programs__img programs__img--force" src="img/programs/ru/force/lvl2.jpg" width="330" height="400" alt="Силовые для продвинутый">
+                <span class="programs__price">2500 ₽</span>
               </a>
             </li>
           </ul>
@@ -86,14 +90,14 @@
           <ul class="programs__program-list programs__program-list--statics">
             <li class="programs__program-item programs__program-item--statics">
               <a href="static-basic.html" class="programs__link programs__link--statics programs__link--unactive">
-                <img class="programs__img programs__img--statics" src="img/programs/statics/lvl1.jpg" width="330" height="400" alt="Базовая статика">
-                <span class="programs__price">1500 ₽</span>
+                <img class="programs__img programs__img--statics" src="img/programs/ru/statics/lvl1.jpg" width="330" height="400" alt="Базовая статика">
+                <span class="programs__price">2000 ₽</span>
               </a>
             </li>
             <li class="programs__program-item programs__program-item--statics">
               <a href="static-pro.html" class="programs__link programs__link--statics programs__link--unactive">
-                <img class="programs__img programs__img--statics" src="img/programs/statics/lvl2.jpg" width="330" height="400" alt="Продвинутая статика">
-                <span class="programs__price">2000 ₽</span>
+                <img class="programs__img programs__img--statics" src="img/programs/ru/statics/lvl2.jpg" width="330" height="400" alt="Продвинутая статика">
+                <span class="programs__price">2500 ₽</span>
               </a>
             </li>
           </ul>
@@ -117,6 +121,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/scripts.min.js"></script>
+  <script src="js/scripts.min.js" type="module"></script>
 </body>
 </html>

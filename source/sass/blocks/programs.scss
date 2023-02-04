@@ -59,6 +59,12 @@
       left: 30%;
       z-index: 8;
     }
+
+    &:lang(en) {
+      &::after {
+        content: "In development";
+      }
+    }
   }
 }
 
@@ -162,6 +168,12 @@
     padding: 5px 10px;
     border-radius: 5px;
   }
+
+  &:lang(en) {
+    &::before {
+      content: "Buy";
+    }
+  }
 }
 
 @media (min-width: $tabletW) {
@@ -239,7 +251,7 @@
 
       &::after {
         font-size: 30px;
-        left: 25%;
+        left: 30%;
       }
     }
   }

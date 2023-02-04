@@ -33,6 +33,15 @@
   margin: 0;
 }
 
+.about-me__results-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__results-subtitle {
+  text-align: center;
+}
+
 .about-me__list {
   font-size: 13px;
   font-weight: 300;

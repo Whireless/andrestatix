@@ -10,13 +10,17 @@
   <link rel="icon" href="favicon.ico">
   <title>Обо мне</title>
 </head>
-<body>
+<body class="main-about">
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="index.html" aria-label="Мой логотип"></a>
+      <div class="main-nav__lang">
+        <button class="main-nav__button-lang main-nav__button-lang--ru main-nav__button-lang--active" aria-label="Русский язык">RUS</button>
+        <button class="main-nav__button-lang main-nav__button-lang--en" aria-label="English language">ENG</button>
+      </div>
       <ul class="main-nav__menu-list">
-        <li class="main-nav__menu-item"><a href="#" class="main-nav__link">F.A.Q</a></li>
-        <li class="main-nav__menu-item"><a href="about.html" class="main-nav__link">Обо мне</a></li>
+        <li class="main-nav__menu-item"><a href="faq.html" class="main-nav__link main-nav__link--faq">F.A.Q</a></li>
+        <li class="main-nav__menu-item"><a href="#" class="main-nav__link main-nav__link--about">Обо мне</a></li>
       </ul>
       <button class="main-nav__menu-button" type="button" aria-label="Открыть меню">
         <span class="main-nav__button-elem"></span>
@@ -51,19 +55,19 @@
         </div>
         <div class="about-me__results">
           <h2 class="about-me__subtitle">Результаты</h2>
-          <div class="about-me__results-before">
+          <div class="about-me__results-info about-me__results-info--before">
             <span class="about-me__results-subtitle">Мой результат 10 лет назад:</span>
             <ul class="about-me__list about-me__list--before">
-              <li>8-10 подтягиваний со своим весом</li>
-              <li>15-20 отжиманий от пола</li>
+              <li class="about-me__item about-me__item--before">8-10 подтягиваний со своим весом</li>
+              <li class="about-me__item about-me__item--before">15-20 отжиманий от пола</li>
             </ul>
           </div>
-          <div class="about-me__results-after">
+          <div class="about-me__results-info about-me__results-info--after">
             <span class="about-me__results-subtitle">Мой результат сейчас на 1 повтор:</span>
             <ul class="about-me__list about-me__list--after">
-              <li>Подтягивание на турнике с доп.весом +100кг</li>
-              <li>Отжимание на брусьях с доп.весом +140кг</li>
-              <li>Выход силой на турнике и кольцах +40кг</li>
+              <li class="about-me__item about-me__item--after">Подтягивание на турнике с доп.весом +100кг</li>
+              <li class="about-me__item about-me__item--after">Отжимание на брусьях с доп.весом +140кг</li>
+              <li class="about-me__item about-me__item--after">Выход силой на турнике и кольцах +40кг</li>
             </ul>
           </div>
             <span class="about-me__description">Это результаты за годы самообучения и анализа своих ошибок, вы же можете избежать их, изучая мою программу и достичь высот за более короткое время!</span>
@@ -88,6 +92,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/scripts.min.js"></script>
+  <script src="js/scripts.min.js" type="module"></script>
 </body>
 </html>

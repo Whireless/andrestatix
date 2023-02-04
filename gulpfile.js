@@ -50,6 +50,13 @@ const scripts = () => {
 }
 exports.scripts = scripts;
 
+const scripts1 = () => {
+  return gulp.src('source/js/**/*.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
+}
+exports.scripts1 = scripts1;
+
 // Images
 
 const optimizeImages = () => {
@@ -112,7 +119,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series('styles'));
-  gulp.watch('source/js/*.js', gulp.series(scripts, reload));
+  gulp.watch('source/js/**/*.js', gulp.series(scripts, reload));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -125,7 +132,8 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts
+    scripts,
+    scripts1,
   )
 );
 exports.build = build;
@@ -135,11 +143,12 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
-  optimizeImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,
-    scripts
+    scripts,
+    scripts1,
   ),
   gulp.series (
     server,

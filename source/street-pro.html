@@ -10,13 +10,17 @@
   <link rel="icon" href="favicon.ico">
   <title>Продвинутый уровень</title>
 </head>
-<body>
+<body class="main-product main-product--street-pro">
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="index.html" aria-label="Мой логотип"></a>
+      <div class="main-nav__lang">
+        <button class="main-nav__button-lang main-nav__button-lang--ru main-nav__button-lang--active" aria-label="Русский язык">RUS</button>
+        <button class="main-nav__button-lang main-nav__button-lang--en" aria-label="English language">ENG</button>
+      </div>
       <ul class="main-nav__menu-list">
-        <li class="main-nav__menu-item"><a href="#" class="main-nav__link">F.A.Q</a></li>
-        <li class="main-nav__menu-item"><a href="about.html" class="main-nav__link">Обо мне</a></li>
+        <li class="main-nav__menu-item"><a href="faq.html" class="main-nav__link main-nav__link--faq">F.A.Q</a></li>
+        <li class="main-nav__menu-item"><a href="about.html" class="main-nav__link main-nav__link--about">Обо мне</a></li>
       </ul>
       <button class="main-nav__menu-button" type="button" aria-label="Открыть меню">
         <span class="main-nav__button-elem"></span>
@@ -30,7 +34,7 @@
       <div class="container">
         <h1 class="visually-hidden">Продвинутый уровень</h1>
         <div class="product__block">
-          <img class="product__img" src="img/programs/covers/street-4.jpg" width="340px" height="580px" alt="Программа продвинутого уровня">
+          <img class="product__img" src="img/programs/ru/covers/street4.jpg" width="340px" height="580px" alt="Программа продвинутого уровня">
           <span class="product__description">Программа Продвинутого уровня нужна
             исключительно атлетам с высокими
             показателями в силовых на одно повторение.
@@ -63,6 +67,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/scripts.min.js"></script>
+  <script src="js/scripts.min.js" type="module"></script>
 </body>
 </html>

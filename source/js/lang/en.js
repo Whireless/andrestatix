@@ -10,7 +10,7 @@ const enIndex = {
   intro: 'Become a master of Streetlifting and Workout!',
   programs: 'Programs',
   street: 'Streetlifting:',
-  force: 'Exit by force:',
+  force: 'Muscle Ups:',
   statics: 'Elements of statics:',
 };
 
@@ -26,14 +26,14 @@ const enIndexImg = [
 ];
 
 const enPrice = [
-  '100 $',
-  '200 $',
-  '300 $',
-  '350 $',
-  '200 $',
-  '250 $',
-  '200 $',
-  '250 $',
+  '30 $',
+  '40 $',
+  '50 $',
+  '60 $',
+  '40 $',
+  '50 $',
+  '35 $',
+  '45 $',
 ];
 
 const enFaq = {
@@ -101,7 +101,7 @@ const enStreetInfo = {
     'img/programs/en/covers/street4.jpg',
   ],
   desc: [
-    'The program of the zero level is designed for those who want to start training, but do not know where to start. At this stage, you do not know how to do pull-ups on the chinning bar and push-ups on the bars even with your own weight even once.',
+    'The program of the zero level is designed for those who want to train, but do not know where to start. At this stage, you do not know how to pull up on the chinning bar and push-ups on the uneven bars even with your own weight even once.',
     'This entry level program is designed for entry-level lifters who are just beginning their training with additional weights. After going through a certain stage of preparation from the very beginning to training with your own weight, you can immediately put on additional weight.',
     'An intermediate level program means that you have fully exhausted the potential of entry-level programs. It is no longer enough for you, so other progression methods will be involved.',
     'The Advanced Level program is only for athletes who have a high strength performance on one repetition. Now your goal is to use all of your past training volume that you have built up over several years in high intensity.',
@@ -113,16 +113,34 @@ const enOther = {
   copy: 'All rights reserved 2023 ©',
 }
 
+const languages = [
+  'en-US',
+  'en-GB',
+  'hi',
+  'tr',
+  'fr',
+  'es',
+  'sv',
+  'it',
+  'de',
+  'pl',
+];
+
 window.onload = () => {
-  if (window.navigator.language === 'en-US' || window.navigator.language === 'en') {
-    page.setAttribute('lang', 'en');
-    ruBtn.classList.remove('main-nav__button-lang--active');
-    enBtn.classList.add('main-nav__button-lang--active');
-    goLang(enNav, enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enBtns, enStreetInfo)
-  }
+  languages.forEach(lang => {
+    if (window.navigator.language === lang || localStorage.getItem('langEn', 'en')) {
+      page.setAttribute('lang', 'en');
+      ruBtn.classList.remove('main-nav__button-lang--active');
+      enBtn.classList.add('main-nav__button-lang--active');
+      goLang(enNav, enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enBtns, enStreetInfo);
+    }
+  });
 };
 
 enBtn.addEventListener('click', () => {
+  localStorage.clear();
+  localStorage.setItem('langEn', 'en');
+
   page.setAttribute('lang', 'en');
   ruBtn.classList.remove('main-nav__button-lang--active');
   enBtn.classList.add('main-nav__button-lang--active');

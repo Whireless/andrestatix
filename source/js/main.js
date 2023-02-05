@@ -96,27 +96,27 @@ const goLang = (langNav, langIndex, langOther, langIndexImg, langPrice, langFaq,
     productDescription.textContent = langStreetInfo.desc[0];
     productPrice.textContent = langPrice[0];
     productBuy.textContent = langOther.buy;
-    productGo[0].textContent = langBtns.next;
+    productGo[0].textContent = langBtns.easy;
   } else if (body.classList.contains('main-product--street-easy')) {
     productImg.src = langStreetInfo.img[1];
     productDescription.textContent = langStreetInfo.desc[1];
     productPrice.textContent = langPrice[1];
     productBuy.textContent = langOther.buy;
-    productGo[1].textContent = langBtns.next;
-    productGo[0].textContent = langBtns.prev;
+    productGo[0].textContent = langBtns.basic;
+    productGo[1].textContent = langBtns.middle;
   } else if (body.classList.contains('main-product--street-middle')) {
     productImg.src = langStreetInfo.img[2];
     productDescription.textContent = langStreetInfo.desc[2];
     productPrice.textContent = langPrice[2];
     productBuy.textContent = langOther.buy;
-    productGo[1].textContent = langBtns.next;
-    productGo[0].textContent = langBtns.prev;
+    productGo[0].textContent = langBtns.easy;
+    productGo[1].textContent = langBtns.pro;
   } else {
     productImg.src = langStreetInfo.img[3];
     productDescription.textContent = langStreetInfo.desc[3];
     productPrice.textContent = langPrice[3];
     productBuy.textContent = langOther.buy;
-    productGo[0].textContent = langBtns.prev;
+    productGo[0].textContent = langBtns.middle;
   }
 };
 

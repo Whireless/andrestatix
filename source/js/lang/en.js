@@ -88,8 +88,10 @@ const enAbout = {
 };
 
 const enBtns = {
-  next: 'Go',
-  prev: 'Back',
+  basic: 'Zero',
+  easy: 'Beginner',
+  middle: 'Medium',
+  pro: 'Advanced',
   train: 'To training!',
 };
 

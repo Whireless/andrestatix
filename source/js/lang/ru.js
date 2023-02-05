@@ -88,8 +88,10 @@ const ruAbout = {
 };
 
 const ruBtns = {
-  next: 'Вперёд',
-  prev: 'Назад',
+  basic: 'Нулевой',
+  easy: 'Начальный',
+  middle: 'Средний',
+  pro: 'Продвинутый',
   train: 'К тренировкам!',
 };
 

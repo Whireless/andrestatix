@@ -11,7 +11,6 @@ const ruIndex = {
   programs: 'Программы',
   street: 'Стритлифтинг:',
   force: 'Выход силой:',
-  statics: 'Элементы статики:',
 };
 
 const ruIndexImg = [
@@ -21,8 +20,6 @@ const ruIndexImg = [
   'img/programs/ru/street/lvl4.jpg',
   'img/programs/ru/force/lvl1.jpg',
   'img/programs/ru/force/lvl2.jpg',
-  'img/programs/ru/statics/lvl1.jpg',
-  'img/programs/ru/statics/lvl2.jpg',
 ];
 
 const ruPrice = [
@@ -30,8 +27,6 @@ const ruPrice = [
   '2500 ₽',
   '3000 ₽',
   '3500 ₽',
-  '2000 ₽',
-  '2500 ₽',
   '2000 ₽',
   '2500 ₽',
 ];

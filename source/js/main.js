@@ -28,7 +28,7 @@ const price = body.querySelectorAll('.programs__price');
 const questions = body.querySelector('.questions__title');
 const question = body.querySelectorAll('.questions__question');
 const answer = body.querySelectorAll('.questions__answer');
-const trainBtn = body.querySelector('.train-button');
+const trainBtn = body.querySelector('.red-button');
 const aboutTitle = body.querySelector('.about-me__title');
 const aboutSubtitles = body.querySelectorAll('.about-me__subtitle');
 const aboutDescriptions = body.querySelectorAll('.about-me__description');
@@ -37,7 +37,7 @@ const resultItem = body.querySelectorAll('.about-me__item');
 const productImg = body.querySelector('.product__img');
 const productDescription = body.querySelector('.product__description');
 const productPrice = body.querySelector('.product__price');
-const productBuy = body.querySelector('.product__button-buy');
+const productBuy = body.querySelector('.red-button--buy');
 const productGo = body.querySelectorAll('.product__button-go');
 
 const goLang = (langNav, langIndex, langOther, langIndexImg, langPrice, langFaq, langAbout, langBtns, langStreetInfo) => {
@@ -50,7 +50,6 @@ const goLang = (langNav, langIndex, langOther, langIndexImg, langPrice, langFaq,
     programTitle.textContent = langIndex.programs;
     programs[0].textContent = langIndex.street;
     programs[1].textContent = langIndex.force;
-    programs[2].textContent = langIndex.statics;
 
     imgOnIndex.forEach((img, i) => {
       img.src = langIndexImg[i];

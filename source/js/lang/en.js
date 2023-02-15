@@ -11,7 +11,6 @@ const enIndex = {
   programs: 'Programs',
   street: 'Streetlifting:',
   force: 'Muscle Ups:',
-  statics: 'Elements of statics:',
 };
 
 const enIndexImg = [
@@ -21,8 +20,6 @@ const enIndexImg = [
   'img/programs/en/street/lvl4.jpg',
   'img/programs/en/force/lvl1.jpg',
   'img/programs/en/force/lvl2.jpg',
-  'img/programs/en/statics/lvl1.jpg',
-  'img/programs/en/statics/lvl2.jpg',
 ];
 
 const enPrice = [
@@ -32,8 +29,6 @@ const enPrice = [
   '60 $',
   '40 $',
   '50 $',
-  '35 $',
-  '45 $',
 ];
 
 const enFaq = {

@@ -1,16 +1,15 @@
-.train-button {
+.red-button {
   font-family: 'Another-danger', 'Arial', serif;
   letter-spacing: 4px;
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
-  text-transform: uppercase;
   color: $white;
   display: flex;
   background-color: $red2;
   width: max-content;
   margin: 30px auto 0 auto;
-  padding: 11px;
-  border-radius: 5px;
+  padding: 12px 15px;
+  border-radius: 7px;
   transition: $basic;
 
   &:hover,
@@ -19,20 +18,38 @@
     opacity: $basicOp;
     box-shadow: $shadow;
   }
+
+  &--buy {
+    padding: 9px 18px;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: $tabletW) {
-  .train-button {
-    font-size: 18px;
+  .red-button {
+    font-size: 20px;
     margin: 40px auto 0 auto;
     padding: 16px;
+
+    &--buy {
+      padding: 10px 23px;
+    }
   }
 }
 
 @media (min-width: $desktopW) {
-  .train-button{
+  .red-button {
     font-size: 22px;
     margin: 60px auto 0 auto;
     padding: 22px;
+
+    &--buy {
+      font-size: 30px;
+      margin: 0;
+      justify-self: center;
+      align-self: start;
+      padding: 8px 30px;
+    }
   }
 }

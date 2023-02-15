@@ -109,21 +109,6 @@
       background-color: $blue;
     }
   }
-
-  &--statics {
-    &::before,
-    &::after {
-      background-color: $yellow;
-    }
-
-    &::before {
-      left: 0px;
-    }
-
-    &::after {
-      right: 5px;
-    }
-  }
 }
 
 .programs__program-list {

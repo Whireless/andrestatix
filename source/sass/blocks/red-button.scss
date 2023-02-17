@@ -35,6 +35,12 @@
     }
   }
 
+  &:lang(en) {
+    &::before {
+      width: 156px;
+    }
+  }
+
   &--buy {
     padding: 9px 18px;
     border: none;
@@ -51,6 +57,12 @@
         transform: translateX(-6px) translateY(-2px);
       }
     }
+
+    &:lang(en) {
+      &::before {
+        width: 70px;
+      }
+    }
   }
 }
 
@@ -62,7 +74,13 @@
 
     &::before {
       width: 211px;
-      height: 48px;
+      height: 47px;
+    }
+
+    &:lang(en) {
+      &::before {
+        width: 165px;
+      }
     }
 
     &--buy {
@@ -71,6 +89,12 @@
       &::before {
         width: 120px;
         height: 50px;
+      }
+
+      &:lang(en) {
+        &::before {
+          width: 77px;
+        }
       }
     }
   }
@@ -95,6 +119,12 @@
       }
     }
 
+    &:lang(en) {
+      &::before {
+        width: 186px;
+      }
+    }
+
     &--buy {
       font-size: 30px;
       margin: 0;
@@ -112,6 +142,12 @@
       &:focus {
         &::before {
           transform: translateX(-15px) translateY(3px);
+        }
+      }
+
+      &:lang(en) {
+        &::before {
+          width: 111px;
         }
       }
     }

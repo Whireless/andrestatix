@@ -1,0 +1,79 @@
+.pay {
+  display: none;
+
+  &--active {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0.95;
+    z-index: 10;
+
+    form {
+      position: absolute;
+      background-color: $white;
+      top: 25%;
+      left: 8%;
+      padding: 15px 20px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.pay__cancel {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  background-image: url("../img/icons/cross.svg");
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 3;
+  transition: $basic;
+
+  &:hover,
+  &:focus {
+    transition: $basic;
+    opacity: $basicOp;
+  }
+}
+
+@media (min-width: $tabletW) {
+  .pay {
+    &--active {
+      form {
+        top: 27%;
+        left: 20%;
+        padding: 25px 70px;
+      }
+    }
+  }
+
+  .pay__cancel {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: $desktopW) {
+  .pay {
+    &--active {
+      form {
+        left: 33%;
+        padding: 40px 90px;
+      }
+    }
+  }
+
+  .pay__cancel {
+    right: 15%;
+    width: 50px;
+    height: 50px;
+  }
+}

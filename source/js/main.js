@@ -5,6 +5,9 @@ const ruBtn = body.querySelector('.main-nav__button-lang--ru');
 const enBtn = body.querySelector('.main-nav__button-lang--en');
 const menuItem = menu.querySelectorAll('.main-nav__link');
 const menuBtn = body.querySelector('.main-nav__menu-button');
+const productBuy = body.querySelector('.red-button--buy');
+const pay = body.querySelector('.pay');
+const payCancel = pay.querySelector('.pay__cancel');
 
 menuBtn.onclick = function () {
   menu.classList.toggle('main-nav__menu-list--open')
@@ -15,6 +18,17 @@ menuItem.forEach(a => {
     menu.classList.remove('main-nav__menu-list--open')
   };
 });
+
+//Оплата программ
+productBuy.onclick = function () {
+  page.style.overflow = 'hidden';
+  pay.classList.add('pay--active');
+};
+
+payCancel.onclick = function () {
+  page.removeAttribute('style');
+  pay.classList.remove('pay--active');
+}
 
 //Переключение языка
 const navAbout = body.querySelector('.main-nav__link--about');
@@ -37,7 +51,6 @@ const resultItem = body.querySelectorAll('.about-me__item');
 const productImg = body.querySelector('.product__img');
 const productDescription = body.querySelector('.product__description');
 const productPrice = body.querySelector('.product__price');
-const productBuy = body.querySelector('.red-button--buy');
 const productGo = body.querySelectorAll('.product__button-go');
 
 const goLang = (langNav, langIndex, langOther, langIndexImg, langPrice, langFaq, langAbout, langBtns, langStreetInfo, langForceInfo) => {

@@ -40,7 +40,7 @@ const productPrice = body.querySelector('.product__price');
 const productBuy = body.querySelector('.red-button--buy');
 const productGo = body.querySelectorAll('.product__button-go');
 
-const goLang = (langNav, langIndex, langOther, langIndexImg, langPrice, langFaq, langAbout, langBtns, langStreetInfo) => {
+const goLang = (langNav, langIndex, langOther, langIndexImg, langPrice, langFaq, langAbout, langBtns, langStreetInfo, langForceInfo) => {
   navAbout.textContent = langNav.about;
   copyright.textContent = langOther.copy;
 
@@ -110,12 +110,24 @@ const goLang = (langNav, langIndex, langOther, langIndexImg, langPrice, langFaq,
     productBuy.textContent = langOther.buy;
     productGo[0].textContent = langBtns.easy;
     productGo[1].textContent = langBtns.pro;
-  } else {
+  } else if (body.classList.contains('main-product--street-pro')) {
     productImg.src = langStreetInfo.img[3];
     productDescription.textContent = langStreetInfo.desc[3];
     productPrice.textContent = langPrice[3];
     productBuy.textContent = langOther.buy;
     productGo[0].textContent = langBtns.middle;
+  } else if (body.classList.contains('main-product--force-basic')) {
+    productImg.src = langForceInfo.img[0];
+    productDescription.textContent = langForceInfo.desc[0];
+    productPrice.textContent = langPrice[4];
+    productBuy.textContent = langOther.buy;
+    productGo[0].textContent = langBtns.pro;
+  } else if (body.classList.contains('main-product--force-pro')) {
+    productImg.src = langForceInfo.img[1];
+    productDescription.textContent = langForceInfo.desc[1];
+    productPrice.textContent = langPrice[5];
+    productBuy.textContent = langOther.buy;
+    productGo[0].textContent = langBtns.easy;
   }
 };
 

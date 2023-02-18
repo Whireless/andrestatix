@@ -105,6 +105,17 @@ const enStreetInfo = {
   ]
 };
 
+const enForceInfo = {
+  img: [
+    'img/programs/en/covers/force1.jpg',
+    'img/programs/en/covers/force2.jpg',
+  ],
+  desc: [
+    'This entry-level program is designed for lifters who already have a minimum base in pull-ups and push-ups on the uneven bars with extra weight. In this guide, you will learn the technique of the exercise and increase the number of repetitions per approach.',
+    'This advanced level program is necessary for athletes who want to train power outputs with extra weight and learn other variations of power outputs to truly become a Master of Power Outputs!',
+  ],
+};
+
 const enOther = {
   buy: 'Buy',
   copy: 'All rights reserved 2023 ©',
@@ -129,7 +140,7 @@ window.onload = () => {
       page.setAttribute('lang', 'en');
       ruBtn.classList.remove('main-nav__button-lang--active');
       enBtn.classList.add('main-nav__button-lang--active');
-      goLang(enNav, enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enBtns, enStreetInfo);
+      goLang(enNav, enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enBtns, enStreetInfo, enForceInfo);
     }
   });
 };
@@ -141,5 +152,5 @@ enBtn.addEventListener('click', () => {
   page.setAttribute('lang', 'en');
   ruBtn.classList.remove('main-nav__button-lang--active');
   enBtn.classList.add('main-nav__button-lang--active');
-  goLang(enNav, enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enBtns, enStreetInfo);
+  goLang(enNav, enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enBtns, enStreetInfo, enForceInfo);
 });

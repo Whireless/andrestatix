@@ -74,16 +74,39 @@
   &--tiktok {
     background-image: url("../img/icons/tiktok.svg");
   }
+}
 
-  &--mail {
-    background-image: url("../img/icons/mail.svg");
-  }
+.main-footer__other {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer__copyright {
   font-size: 13px;
   text-align: center;
   margin: 0 auto 0 auto;
+}
+
+.main-footer__personal-info {
+  font-size: 11px;
+  line-height: 16px;
+  color: $grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.main-footer__mail {
+  text-decoration: none;
+  color: $grey;
+  transition: $basic;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOp;
+    transition: $basic;
+  }
 }
 
 @media (min-width: $tabletW) {
@@ -115,11 +138,28 @@
     line-height: 13px;
     margin: 0;
   }
+
+  .main-footer__other {
+    width: 195px;
+  }
+
+  .main-footer__personal-info {
+    font-size: 9px;
+    line-height: 12px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .main-footer__mail {
+    font-size: 12px;
+    text-align: center;
+    flex-basis: 100%;
+  }
 }
 
 @media (min-width: $desktopW) {
   .main-footer__logo {
-    width: 180px;
+    width: 190px;
     height: 60px;
   }
 
@@ -128,12 +168,25 @@
   }
 
   .main-footer__socials-link {
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .main-footer__other {
+    width: 260px;
   }
 
   .main-footer__copyright {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .main-footer__personal-info {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .main-footer__mail {
+    font-size: 13px;
   }
 }

@@ -105,6 +105,17 @@ const ruStreetInfo = {
   ],
 };
 
+const ruForceInfo = {
+  img: [
+    'img/programs/ru/covers/force1.jpg',
+    'img/programs/ru/covers/force2.jpg',
+  ],
+  desc: [
+    'Программа начального уровня предназначена для атлетов, уже имеющих минимальную базу в подтягиваниях и отжиманиях на брусьях с дополнительным весом. В данном гайде вы обучитесь технике упражнения, и увеличите количество повторений за подход.',
+    'Программа продвинутого уровня необходима атлетам, намеренных тренировать выходы силой с дополнительным весом и освоить другие вариации выходов чтобы по настоящему стать Мастером Выходов Силой!',
+  ],
+};
+
 const ruOther = {
   buy: 'Купить',
   copy: 'Все права защищены 2023 ©',
@@ -114,7 +125,7 @@ window.onload = () => {
   if(window.navigator.language === 'ru-RU' || localStorage.getItem('langRu', 'ru')) {
     page.setAttribute('lang', 'ru');
     ruBtn.classList.add('main-nav__button-lang--active');
-    goLang(ruNav, ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruBtns, ruStreetInfo)
+    goLang(ruNav, ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruBtns, ruStreetInfo, ruForceInfo)
   }
 };
 
@@ -125,5 +136,5 @@ ruBtn.addEventListener('click', () => {
   page.setAttribute('lang', 'ru');
   enBtn.classList.remove('main-nav__button-lang--active');
   ruBtn.classList.add('main-nav__button-lang--active');
-  goLang(ruNav, ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruBtns, ruStreetInfo);
+  goLang(ruNav, ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruBtns, ruStreetInfo, ruForceInfo);
 });

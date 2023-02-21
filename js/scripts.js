@@ -1,1 +1,0 @@
-import"./main.js";import"./lang/ru.js";import"./lang/en.js";

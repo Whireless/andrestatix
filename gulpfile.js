@@ -43,19 +43,11 @@ exports.styles = styles;
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/scripts.js')
-    .pipe(terser())
-    .pipe(rename('scripts.min.js'))
-    .pipe(gulp.dest('build/js'))
-}
-exports.scripts = scripts;
-
-const scripts1 = () => {
   return gulp.src('source/js/**/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
 }
-exports.scripts1 = scripts1;
+exports.scripts = scripts;
 
 // Images
 
@@ -133,7 +125,6 @@ const build = gulp.series(
     styles,
     html,
     scripts,
-    scripts1,
   )
 );
 exports.build = build;
@@ -148,7 +139,6 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
-    scripts1,
   ),
   gulp.series (
     server,

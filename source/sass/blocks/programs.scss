@@ -18,7 +18,7 @@
 }
 
 .programs__program-info {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 .programs__link {
@@ -68,6 +68,49 @@
   }
 }
 
+// .programs__program-name {
+//   font-family: 'Another-danger', 'Arial', serif;
+//   font-size: 20px;
+//   line-height: 28px;
+//   letter-spacing: 6px;
+//   text-transform: uppercase;
+//   text-align: center;
+//   position: relative;
+//   margin: 0 0 40px 0;
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 50%;
+//     width: 26px;
+//     height: 2px;
+//     border-radius: 1px;
+//   }
+
+//   &::before {
+//     left: 25px;
+//   }
+
+//   &::after {
+//     right: 30px;
+//   }
+
+//   &--street {
+//     &::before,
+//     &::after {
+//       background-color: $red;
+//     }
+//   }
+
+//   &--force {
+//     &::before,
+//     &::after {
+//       background-color: $blue;
+//     }
+//   }
+// }
+
 .programs__program-name {
   font-family: 'Another-danger', 'Arial', serif;
   font-size: 20px;
@@ -77,35 +120,48 @@
   text-align: center;
   position: relative;
   margin: 0 0 40px 0;
+  z-index: 2;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
-    width: 26px;
-    height: 2px;
-    border-radius: 1px;
   }
 
   &::before {
-    left: 25px;
+    font-size: 10px;
+    top: -65px;
+    opacity: 0.8;
+    left: 5%;
+    right: 5%;
   }
 
   &::after {
-    right: 30px;
+    height: 100%;
+    border-radius: 2px;
+    z-index: -1;
   }
 
   &--street {
-    &::before,
+    &::before {
+      content: "если нужны силовые результаты и мышечная масса...";
+    }
+
     &::after {
+      left: 55px;
+      width: 90px;
       background-color: $red;
     }
   }
 
   &--force {
-    &::before,
+    &::before {
+      content: "но если хочешь взрывную силу и скорость...";
+    }
+
     &::after {
+      right: 65px;
+      width: 95px;
       background-color: $blue;
     }
   }
@@ -126,7 +182,7 @@
 }
 
 .programs__img {
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 .programs__price {
@@ -188,18 +244,37 @@
     font-size: 22px;
     line-height: 30px;
 
-    &::before,
-    &::after {
-      width: 45px;
-    }
-
     &::before {
-      left: 20%;
+      font-size: 11px;
+      top: -50px;
     }
 
-    &::after {
-      right: 20%;
+    &--street {
+      &::after {
+        left: 215px;
+        width: 100px;
+      }
     }
+
+    &--force {
+      &::after {
+        right: 225px;
+        width: 100px;
+      }
+    }
+
+    // &::before,
+    // &::after {
+    //   width: 45px;
+    // }
+
+    // &::before {
+    //   left: 20%;
+    // }
+
+    // &::after {
+    //   right: 20%;
+    // }
   }
 
   .programs__img {
@@ -224,7 +299,7 @@
   }
 
   .programs__program-info {
-    margin-top: 70px;
+    margin-top: 100px;
   }
 
   .programs__link {
@@ -245,10 +320,29 @@
     font-size: 30px;
     line-height: 40px;
 
-    &::before,
-    &::after {
-      width: 100px;
+    &::before {
+      font-size: 13px;
+      top: -60px;
     }
+
+    &--street {
+      &::after {
+        left: 410px;
+        width: 120px;
+      }
+    }
+
+    &--force {
+      &::after {
+        right: 420px;
+        width: 130px;
+      }
+    }
+
+    // &::before,
+    // &::after {
+    //   width: 100px;
+    // }
   }
 
   .programs__program-list {

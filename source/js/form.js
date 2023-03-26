@@ -3,9 +3,7 @@ import {page, body, productBuy} from './main.js';
 // Стоковые кнопки на форме
 const pay = body.querySelector('.pay');
 const payCancel = pay.querySelector('.pay__cancel');
-let payMail = pay.querySelector('.ym-input');
-const payBtn = pay.querySelector('.ym-btn-pay');
-const payPrice = pay.querySelector('.ym-product-price');
+const payForm = pay.querySelector('.pay__form');
 
 //Появление формы
 productBuy.onclick = function () {
@@ -19,10 +17,23 @@ payCancel.onclick = function () {
 };
 
 //Получение почты и отправка программы
-payBtn.onclick = function () {
-  if (page.getAttribute('lang', 'en')) {
-    sendEnProgram();
-  } else if (page.getAttribute('lang', 'ru')) {
-    sendRuProgram();
+payForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  sendData();
+});
+
+const sendData = async () => {
+  try {
+    const response = await fetch(
+      'https://andrestatix.com:8443/server',
+      {
+        method: 'PUT',
+        body: new URLSearchParams(new FormData(payForm)),
+      }
+    );
+    const data = await response.text();
+    window.location = data;
+  } catch (error) {
+    console.log(error);
   }
 };

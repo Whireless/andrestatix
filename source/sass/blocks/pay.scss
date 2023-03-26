@@ -10,12 +10,18 @@
     opacity: 0.95;
     z-index: 10;
 
-    form {
+    .pay__form {
+      color: $white;
       position: absolute;
-      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $black;
       top: 25%;
       left: 8%;
+      right: 8%;
       padding: 15px 20px;
+      border: 1px solid $grey;
       border-radius: 10px;
     }
   }
@@ -44,12 +50,66 @@
   }
 }
 
+.pay__email {
+  color: $white;
+  width: 200px;
+  height: 30px;
+  margin: 15px 0 20px 0;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid $white;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.pay__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pay__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay__item-info {
+  color: $grey;
+}
+
+.pay__submit {
+  font-family: 'Another-danger', 'Arial', serif;
+  font-size: 19px;
+  letter-spacing: 7px;
+  color: $white;
+  background-color: $red2;
+  width: 188px;
+  margin: 15px 0 0 0;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: $basic;
+
+  &:hover {
+    transition: $basic;
+    opacity: $basicOp;
+  }
+}
+
 @media (min-width: $tabletW) {
   .pay {
     &--active {
-      form {
+      .pay__form {
         top: 27%;
-        left: 20%;
+        left: 15%;
+        right: 15%;
         padding: 25px 70px;
       }
     }
@@ -59,13 +119,26 @@
     width: 40px;
     height: 40px;
   }
+
+  .pay__email {
+    width: 250px;
+  }
+
+  .pay__list {
+    width: 350px;
+  }
+
+  .pay__submit {
+    margin: 20px 0 0 0;
+  }
 }
 
 @media (min-width: $desktopW) {
   .pay {
     &--active {
-      form {
-        left: 33%;
+      .pay__form {
+        left: 25%;
+        right: 25%;
         padding: 40px 90px;
       }
     }
@@ -75,5 +148,14 @@
     right: 15%;
     width: 50px;
     height: 50px;
+  }
+
+  .pay__list {
+    row-gap: 10px;
+    width: 400px;
+  }
+
+  .pay__submit {
+    height: 55px;
   }
 }

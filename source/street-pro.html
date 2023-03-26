@@ -73,6 +73,21 @@
       </div>
     </div>
   </footer>
+  <div class="pay">
+    <button class="pay__cancel"></button>
+    <form class="pay__form">
+      <label for="email">Почта, куда вам прийдет программа:</label>
+      <input class="pay__email" type="email" name="email" id="email" placeholder="youmail@example.com" required>
+      <ul class="pay__list">
+        <li class="pay__item">Направление: <span class="pay__item-info">Стритлифтинг</span></li>
+        <li class="pay__item">Уровень: <span class="pay__item-info">Продвинутый</span></li>
+        <li class="pay__item">Цена: <span class="pay__item-info">3500 ₽</span></li>
+      </ul>
+      <input class="pay__program" type="hidden" name="program" value="street4">
+      <input class="pay__price" type="hidden" name="price" value="3500">
+      <button class="pay__submit" type="submit">К оплате</button>
+    </form>
+  </div>
   <script src="js/scripts.min.js" type="module"></script>
 </body>
 </html>

@@ -116,6 +116,7 @@
   }
 
   &--open {
+    height: 86vh;
     transform: translateX(0) translateY(60px);
 
     &+.main-nav__menu-button {
@@ -137,17 +138,21 @@
 }
 
 .main-nav__menu-item {
-  text-align: center;
   display: flex;
 }
 
 .main-nav__link {
-  color: $white;
   font-family: 'Another-danger', 'Arial', serif;
+  font-size: 22px;
   letter-spacing: 4px;
   text-decoration: none;
   text-transform: uppercase;
+  color: $white;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43vh;
   width: 100%;
 
   &::before,
@@ -270,7 +275,8 @@
   }
 
   .main-nav__link {
-    font-size: 18px;
+    font-size: 19px;
+    height: auto;
 
     &:hover,
     &:focus {

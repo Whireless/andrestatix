@@ -68,49 +68,6 @@
   }
 }
 
-// .programs__program-name {
-//   font-family: 'Another-danger', 'Arial', serif;
-//   font-size: 20px;
-//   line-height: 28px;
-//   letter-spacing: 6px;
-//   text-transform: uppercase;
-//   text-align: center;
-//   position: relative;
-//   margin: 0 0 40px 0;
-
-//   &::before,
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 50%;
-//     width: 26px;
-//     height: 2px;
-//     border-radius: 1px;
-//   }
-
-//   &::before {
-//     left: 25px;
-//   }
-
-//   &::after {
-//     right: 30px;
-//   }
-
-//   &--street {
-//     &::before,
-//     &::after {
-//       background-color: $red;
-//     }
-//   }
-
-//   &--force {
-//     &::before,
-//     &::after {
-//       background-color: $blue;
-//     }
-//   }
-// }
-
 .programs__program-name {
   font-family: 'Another-danger', 'Arial', serif;
   font-size: 20px;
@@ -132,8 +89,8 @@
     font-size: 10px;
     top: -65px;
     opacity: 0.8;
-    left: 5%;
-    right: 5%;
+    left: 0%;
+    right: 0%;
   }
 
   &::after {
@@ -152,6 +109,12 @@
       width: 90px;
       background-color: $red;
     }
+
+    &:lang(en) {
+      &::before {
+        content: "if you need strength results and muscle mass...";
+      }
+    }
   }
 
   &--force {
@@ -163,6 +126,12 @@
       right: 65px;
       width: 95px;
       background-color: $blue;
+    }
+
+    &:lang(en) {
+      &::before {
+        content: "but if you want explosive power and speed...";
+      }
     }
   }
 }
@@ -262,19 +231,6 @@
         width: 100px;
       }
     }
-
-    // &::before,
-    // &::after {
-    //   width: 45px;
-    // }
-
-    // &::before {
-    //   left: 20%;
-    // }
-
-    // &::after {
-    //   right: 20%;
-    // }
   }
 
   .programs__img {
@@ -338,11 +294,6 @@
         width: 130px;
       }
     }
-
-    // &::before,
-    // &::after {
-    //   width: 100px;
-    // }
   }
 
   .programs__program-list {

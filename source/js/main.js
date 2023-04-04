@@ -6,14 +6,26 @@ const enBtn = body.querySelector('.main-nav__button-lang--en');
 const menuItem = menu.querySelectorAll('.main-nav__link');
 const menuBtn = body.querySelector('.main-nav__menu-button');
 
+// Preloader
+window.addEventListener('load', () => {
+  const preloader = page.querySelector('.preloader');
+  preloader.classList.add('preloader--hidden');
+});
+
 //Мобильное меню
 menuBtn.onclick = function () {
-  menu.classList.toggle('main-nav__menu-list--open')
+  menu.classList.toggle('main-nav__menu-list--open');
+  if (page.getAttribute('style')) {
+    page.removeAttribute('style');
+  } else {
+    page.style.overflow = 'hidden';
+  }
 };
 
 menuItem.forEach(a => {
   a.onclick = function () {
-    menu.classList.remove('main-nav__menu-list--open')
+    menu.classList.remove('main-nav__menu-list--open');
+    page.removeAttribute('style');
   };
 });
 

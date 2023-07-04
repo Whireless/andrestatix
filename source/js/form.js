@@ -27,7 +27,7 @@ const sendData = async () => {
     const response = await fetch(
       'https://andrestatix.com:8443/server',
       {
-        method: 'PUT',
+        method: 'POST',
         body: new URLSearchParams(new FormData(payForm)),
       }
     );

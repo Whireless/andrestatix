@@ -38,16 +38,32 @@
         <h1 class="visually-hidden">Средний уровень</h1>
         <div class="product__block">
           <img class="product__img" src="img/programs/ru/covers/street3.jpg" width="340px" height="580px" alt="Программа среднего уровня">
-          <span class="product__description">Средний уровень подразумевает то что вы
-            полностью исчерпали потенциал программ
-            начального уровня. Вам уже недостаточно
-            той нагрузки, поэтому в работу будут
-            включаться иные методы прогрессии.</span>
-          <span class="product__price">3000 ₽</span>
-          <button class="red-button red-button--buy">Купить</button>
+          <div class="product__description">
+            <span class="product__intro">Средний уровень подразумевает то что вы полностью исчерпали потенциал программ начального уровня. Вам уже недостаточно той нагрузки, поэтому в работу будут включаться иные методы прогрессии.</span>
+            <h3 class="product__title product__title--base">Изначальные данные:</h3>
+            <ul class="product__list product__list--base">
+              <li class="product__item">Турник +70кг х1 повторг</li>
+              <li class="product__item">Брусья +100кг х1 повтор</li>
+            </ul>
+            <h3 class="product__title product__title--target">Цель данной программы:</h3>
+            <ul class="product__list product__list--target">
+              <li class="product__item">Турник +100кг х1 повтор</li>
+              <li class="product__item">Брусья +150кг х1 повтор</li>
+            </ul>
+          </div>
+          <span class="product__price">2500 ₽</span>
+          <button class="red-button red-button--buy">Получить программу</button>
           <div class="product__block-go">
-            <a href="street-easy.html" class="product__button-go product__button-go--prev">Начальный</a>
-            <a href="street-pro.html" class="product__button-go product__button-go--next">Продвинутый</a>
+            <a href="street-easy.html" class="product__button-go product__button-go--prev">
+              <svg viewBox="0 0 32 32" width="60" height="40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1,23a1,1,0,0,0,0-1.41L5.5,17H29.05a1,1,0,0,0,0-2H5.53l4.57-4.57A1,1,0,0,0,8.68,9L2.32,15.37a.9.9,0,0,0,0,1.27L8.68,23A1,1,0,0,0,10.1,23Z"/>
+              </svg>
+            </a>
+            <a href="street-pro.html" class="product__button-go product__button-go--next">
+              <svg viewBox="0 0 32 32" width="60" height="40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -81,12 +97,12 @@
       <label for="email">Почта, куда вам прийдет программа:</label>
       <input class="pay__email" type="email" name="email" id="email" placeholder="youmail@example.com" required>
       <ul class="pay__list">
-        <li class="pay__item">Направление: <span class="pay__item-info">Стритлифтинг</span></li>
-        <li class="pay__item">Уровень: <span class="pay__item-info">Средний</span></li>
-        <li class="pay__item">Цена: <span class="pay__item-info">3000 ₽</span></li>
+        <li class="pay__item pay__item--programm">Направление: <span class="pay__item-info">Стритлифтинг</span></li>
+        <li class="pay__item pay__item--level">Уровень: <span class="pay__item-info">Средний</span></li>
+        <li class="pay__item pay__item--price">Цена: <span class="pay__item-info">2500 ₽</span></li>
       </ul>
       <input class="pay__program" type="hidden" name="program" value="street3">
-      <input class="pay__price" type="hidden" name="price" value="3000">
+      <input class="pay__price" type="hidden" name="price" value="2500">
       <button class="pay__submit" type="submit">К оплате</button>
     </form>
   </div>

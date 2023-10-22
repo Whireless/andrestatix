@@ -8,17 +8,6 @@
   padding: 60px 20px 30px 20px;
 }
 
-.intro__title {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  font-size: 15px;
-  line-height: 19px;
-  font-style: italic;
-  width: 220px;
-  margin: 0;
-}
-
 .intro__subtitle {
   font-family: 'Another-danger', 'Arial', serif;
   letter-spacing: 5px;
@@ -36,11 +25,6 @@
     padding: 100px 60px 70px 60px;
   }
 
-  .intro__title {
-    top: 12px;
-    left: 12px;
-  }
-
   .intro__subtitle {
     font-size: 24px;
     line-height: 26px;
@@ -51,14 +35,6 @@
   .intro {
     margin-top: 100px;
     padding: 200px 100px 120px 100px;
-  }
-
-  .intro__title {
-    font-size: 18px;
-    line-height: 21px;
-    top: 25px;
-    left: 25px;
-    width: 375px;
   }
 
   .intro__subtitle {

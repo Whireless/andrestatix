@@ -1,16 +1,11 @@
 import {enBtn, ruBtn, goLang, page} from '../main.js';
 
-const enNav = {
-  faq: 'F.A.Q',
-  about: 'About me',
-};
-
 const enIndex = {
-  quote: '"The pain you feel today will become the power you feel tomorrow." © Greg Plitt',
+  about: 'About me',
   intro: 'Become a master of Streetlifting and Workout!',
   programs: 'Programs',
-  street: 'Streetlifting:',
-  force: 'Muscle Ups:',
+  street: 'Streetlifting',
+  force: 'Muscle Ups',
 };
 
 const enIndexImg = [
@@ -23,12 +18,12 @@ const enIndexImg = [
 ];
 
 const enPrice = [
+  '15 $',
+  '20 $',
+  '25 $',
   '30 $',
-  '40 $',
-  '50 $',
-  '60 $',
-  '40 $',
-  '50 $',
+  '20 $',
+  '25 $',
 ];
 
 const enFaq = {
@@ -82,44 +77,81 @@ const enAbout = {
   },
 };
 
-const enBtns = {
-  basic: 'Zero',
-  easy: 'Beginner',
-  middle: 'Medium',
-  pro: 'Advanced',
-  train: 'To training!',
-};
-
-const enStreetInfo = {
+const enProgramInfo = {
   img: [
     'img/programs/en/covers/street1.jpg',
     'img/programs/en/covers/street2.jpg',
     'img/programs/en/covers/street3.jpg',
     'img/programs/en/covers/street4.jpg',
-  ],
-  desc: [
-    'The program of the zero level is designed for those who want to train, but do not know where to start. At this stage, you do not know how to pull up on the chinning bar and push-ups on the uneven bars even with your own weight even once.',
-    'This entry level program is designed for entry-level lifters who are just beginning their training with additional weights. After going through a certain stage of preparation from the very beginning to training with your own weight, you can immediately put on additional weight.',
-    'An intermediate level program means that you have fully exhausted the potential of entry-level programs. It is no longer enough for you, so other progression methods will be involved.',
-    'The Advanced Level program is only for athletes who have a high strength performance on one repetition. Now your goal is to use all of your past training volume that you have built up over several years in high intensity.',
-  ]
-};
-
-const enForceInfo = {
-  img: [
     'img/programs/en/covers/force1.jpg',
     'img/programs/en/covers/force2.jpg',
   ],
-  desc: [
+  intro: [
+    'The program of the zero level is designed for those who want to train, but do not know where to start.',
+    'This program is designed for entry-level athletes who are just starting to train with additional weights.',
+    'The intermediate level means that you have completely exhausted the potential of entry-level programs. That load is no longer enough for you, so other methods of progression will be included in the work.',
+    'The Advanced Level program is only for athletes who have a high strength performance on one repetition. Now your goal is to use all of your past training volume that you have built up over several years in high intensity.',
     'This entry-level program is designed for lifters who already have a minimum base in pull-ups and push-ups on the uneven bars with extra weight. In this guide, you will learn the technique of the exercise and increase the number of repetitions per approach.',
     'This advanced level program is necessary for athletes who want to train power outputs with extra weight and learn other variations of power outputs to truly become a Master of Power Outputs!',
   ],
+  subtitles: [
+    'Required data for this programm:',
+    'Goal for this programm:',
+  ],
+  items: [
+    [
+      'Pull-ups on the bar: 0 reps',
+      'Push-ups from the floor or Dips: 0 rep',
+      'Floor push-ups 25 reps with +15kg',
+      'Pull-ups 15 reps and one rep with +30kg',
+      'Dip one rep with +50kg',
+    ],
+    [
+      'Floor push-ups 25 reps with +15kg',
+      'Pull-ups 15 reps and one rep with +30kg',
+      'Dip one rep with +50kg',
+      'Pull-up +70kg x1 rep',
+      'Dip +100kg x1 rep',
+    ],
+    [
+      'Pull-up +70kg x1 rep',
+      'Dip +100kg x1 rep',
+      'Pull-up +100kg x1 rep',
+      'Dip +150kg x1 rep',
+    ],
+    [
+      'Pull-up +100kg x1 rep',
+      'Dip +150kg x1 rep',
+      'Pull-up +120kg x1 rep ',
+      'Dip +200kg x1 rep',
+    ],
+    [],
+    [],
+  ],
 };
+
+const enPrograms = [
+  'Zero',
+  'Beginner',
+  'Medium',
+  'Advanced',
+  'Beginner',
+  'Advanced',
+];
 
 const enOther = {
   buy: 'Buy',
   copy: 'All rights reserved 2023 ©',
+  train: 'To training!',
 }
+
+const payForm = {
+  mail: 'Mail to send programm:',
+  direction: 'Direction:',
+  level: 'Level:',
+  price: 'Price:',
+  goBuy: 'Go buy',
+};
 
 const languages = [
   'en-US',
@@ -140,7 +172,7 @@ window.onload = () => {
       page.setAttribute('lang', 'en');
       ruBtn.classList.remove('main-nav__button-lang--active');
       enBtn.classList.add('main-nav__button-lang--active');
-      goLang(enNav, enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enBtns, enStreetInfo, enForceInfo);
+      goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, payForm, enPrograms);
     }
   });
 };
@@ -152,5 +184,5 @@ enBtn.addEventListener('click', () => {
   page.setAttribute('lang', 'en');
   ruBtn.classList.remove('main-nav__button-lang--active');
   enBtn.classList.add('main-nav__button-lang--active');
-  goLang(enNav, enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enBtns, enStreetInfo, enForceInfo);
+  goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, payForm, enPrograms);
 });

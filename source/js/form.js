@@ -1,25 +1,33 @@
-import {page, body, productBuy} from './main.js';
+import {page, body, productBuy, allPages} from './main.js';
 
-// Стоковые кнопки на форме
-const pay = body.querySelector('.pay');
-const payCancel = pay.querySelector('.pay__cancel');
-const payForm = pay.querySelector('.pay__form');
+// Проверка текущей страницы на соответствие странице товара, для создания карточки платежа
+window.addEventListener('load', () => {
+  allPages.forEach(pages => {
+    if (body.classList.contains(pages)) {
 
-//Появление формы
-productBuy.onclick = function () {
-  page.style.overflow = 'hidden';
-  pay.classList.add('pay--active');
-};
+      // Стоковые кнопки на форме
+      const pay = body.querySelector('.pay');
+      const payCancel = pay.querySelector('.pay__cancel');
+      const payForm = pay.querySelector('.pay__form');
 
-payCancel.onclick = function () {
-  page.removeAttribute('style');
-  pay.classList.remove('pay--active');
-};
+      //Появление формы
+      productBuy.onclick = function () {
+        page.style.overflow = 'hidden';
+        pay.classList.add('pay--active');
+      };
 
-//Получение почты и отправка программы
-payForm.addEventListener('submit', (evt) => {
-  evt.preventDefault();
-  sendData();
+      payCancel.onclick = function () {
+        page.removeAttribute('style');
+        pay.classList.remove('pay--active');
+      };
+
+      //Получение почты и отправка программы
+      payForm.addEventListener('submit', (evt) => {
+        evt.preventDefault();
+        sendData();
+      });
+    }
+  });
 });
 
 const sendData = async () => {

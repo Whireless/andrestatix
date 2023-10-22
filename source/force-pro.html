@@ -38,11 +38,15 @@
         <h1 class="visually-hidden">Продвинутый уровень</h1>
         <div class="product__block">
           <img class="product__img" src="img/programs/ru/covers/force2.jpg" width="340px" height="580px" alt="Программа продвинутого уровня">
-          <span class="product__description">Программа продвинутого уровня необходима атлетам, намеренных тренировать выходы силой с дополнительным весом и освоить другие вариации выходов чтобы по настоящему стать Мастером Выходов Силой!</span>
-          <span class="product__price">2700 ₽</span>
-          <button class="red-button red-button--buy">Купить</button>
+          <span class="product__intro">Программа продвинутого уровня необходима атлетам, намеренных тренировать выходы силой с дополнительным весом и освоить другие вариации выходов чтобы по настоящему стать Мастером Выходов Силой!</span>
+          <span class="product__price">2500 ₽</span>
+          <button class="red-button red-button--buy">Получить программу</button>
           <div class="product__block-go">
-            <a href="force-basic.html" class="product__button-go product__button-go--prev">Начальный</a>
+            <a href="force-basic.html" class="product__button-go product__button-go--prev">
+              <svg viewBox="0 0 32 32" width="60" height="40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1,23a1,1,0,0,0,0-1.41L5.5,17H29.05a1,1,0,0,0,0-2H5.53l4.57-4.57A1,1,0,0,0,8.68,9L2.32,15.37a.9.9,0,0,0,0,1.27L8.68,23A1,1,0,0,0,10.1,23Z"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -76,12 +80,12 @@
       <label for="email">Почта, куда вам прийдет программа:</label>
       <input class="pay__email" type="email" name="email" id="email" placeholder="youmail@example.com" required>
       <ul class="pay__list">
-        <li class="pay__item">Направление: <span class="pay__item-info">Выход силой</span></li>
-        <li class="pay__item">Уровень: <span class="pay__item-info">Продвинутый</span></li>
-        <li class="pay__item">Цена: <span class="pay__item-info">2700 ₽</span></li>
+        <li class="pay__item pay__item--programm">Направление: <span class="pay__item-info">Выход силой</span></li>
+        <li class="pay__item pay__item--level">Уровень: <span class="pay__item-info">Продвинутый</span></li>
+        <li class="pay__item pay__item--price">Цена: <span class="pay__item-info">2500 ₽</span></li>
       </ul>
       <input class="pay__program" type="hidden" name="program" value="force2">
-      <input class="pay__price" type="hidden" name="price" value="2700">
+      <input class="pay__price" type="hidden" name="price" value="2500">
       <button class="pay__submit" type="submit">К оплате</button>
     </form>
   </div>

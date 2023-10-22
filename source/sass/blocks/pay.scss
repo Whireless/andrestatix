@@ -101,6 +101,13 @@
     transition: $basic;
     opacity: $basicOp;
   }
+
+  // Отключение оплаты для иностранцев, пока не настроена оплата для них
+  &:lang(en) {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 @media (min-width: $tabletW) {

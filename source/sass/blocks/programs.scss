@@ -167,7 +167,7 @@
   border-radius: 5px;
 
   &::before {
-    content: "Купить";
+    content: "Подробнее";
     color: $white;
     position: absolute;
     top: 0px;
@@ -181,7 +181,7 @@
 
   &:lang(en) {
     &::before {
-      content: "Buy";
+      content: "More";
     }
   }
 }

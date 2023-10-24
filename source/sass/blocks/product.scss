@@ -112,10 +112,10 @@
     display: grid;
     grid-template-columns: 450px 535px;
     grid-template-rows:
-                      340px
+                      345px
                       62px
                       69px
-                      213px;
+                      210px;
     column-gap: 35px;
     row-gap: 25px;
   }
@@ -126,8 +126,8 @@
   }
 
   .product__description {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 25px;
     align-self: start;
     grid-row: 1;
     margin: 0;

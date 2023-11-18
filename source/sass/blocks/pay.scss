@@ -23,6 +23,15 @@
       padding: 15px 20px;
       border: 1px solid $grey;
       border-radius: 10px;
+
+      // Стили для иностранного поля оплаты, пока не настроена интеграция
+      label {
+        text-align: center;
+
+        &:lang(en) {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 }
@@ -103,11 +112,11 @@
   }
 
   // Отключение оплаты для иностранцев, пока не настроена оплата для них
-  &:lang(en) {
-    cursor: not-allowed;
-    opacity: 0.5;
-    pointer-events: none;
-  }
+  // &:lang(en) {
+  //   cursor: not-allowed;
+  //   opacity: 0.5;
+  //   pointer-events: none;
+  // }
 }
 
 @media (min-width: $tabletW) {

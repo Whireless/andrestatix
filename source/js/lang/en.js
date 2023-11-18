@@ -1,4 +1,6 @@
-import {enBtn, ruBtn, goLang, page} from '../main.js';
+import {page} from '../main.js';
+import {goLang} from '../switchLang.js';
+import {ruBtn, enBtn} from './ru.js';
 
 const enIndex = {
   about: 'About me',
@@ -18,12 +20,12 @@ const enIndexImg = [
 ];
 
 const enPrice = [
-  '15 $',
-  '20 $',
-  '25 $',
-  '30 $',
-  '20 $',
-  '25 $',
+  '15',
+  '20',
+  '25',
+  '30',
+  '20',
+  '25',
 ];
 
 const enFaq = {

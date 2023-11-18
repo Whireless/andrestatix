@@ -1,4 +1,8 @@
-import {ruBtn, enBtn, goLang, page} from '../main.js';
+import {page, body} from '../main.js';
+import {goLang} from '../switchLang.js';
+
+const ruBtn = body.querySelector('.main-nav__button-lang--ru');
+const enBtn = body.querySelector('.main-nav__button-lang--en');
 
 const ruIndex = {
   about: 'Обо мне',
@@ -18,12 +22,12 @@ const ruIndexImg = [
 ];
 
 const ruPrice = [
-  '1500 ₽',
-  '2000 ₽',
-  '2500 ₽',
-  '3000 ₽',
-  '2000 ₽',
-  '2500 ₽',
+  '1500',
+  '2000',
+  '2500',
+  '3000',
+  '2000',
+  '2500',
 ];
 
 const ruFaq = {
@@ -170,3 +174,5 @@ ruBtn.addEventListener('click', () => {
   ruBtn.classList.add('main-nav__button-lang--active');
   goLang(ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, payForm, ruPrograms);
 });
+
+export {ruBtn, enBtn};

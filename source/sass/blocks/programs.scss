@@ -68,7 +68,7 @@
 }
 
 .programs__program-name {
-  font-family: 'Another-danger', 'Arial', serif;
+  font-family: 'Another-danger', 'Arial', sans-serif;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 6px;
@@ -85,6 +85,8 @@
   }
 
   &::before {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    letter-spacing: 4px;
     font-size: 10px;
     top: -65px;
     opacity: 0.8;

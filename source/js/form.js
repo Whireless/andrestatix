@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
       const pay = body.querySelector('.pay');
       const payForm = pay.querySelector('.pay__form');
       const payCancel = pay.querySelector('.pay__cancel');
+      const submit = pay.querySelector('.pay__submit');
 
       //Появление/исчезновение формы
       productBuy.onclick = function () {
@@ -26,6 +27,7 @@ window.addEventListener('load', () => {
         sendData();
       });
 
+      // Для русскоязычных пользователей
       const sendData = async () => {
         if(page.getAttribute('lang') === 'ru') {
           try {
@@ -41,7 +43,12 @@ window.addEventListener('load', () => {
           } catch (error) {
             console.log(error);
           }
-        } else {
+        }
+      };
+
+      // Для англоязычных пользователей
+      submit.onclick = () => {
+        if(page.getAttribute('lang') === 'en') {
           window.location = 'https://paypal.me/andreipakin';
         }
       };

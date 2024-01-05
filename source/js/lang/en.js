@@ -20,12 +20,12 @@ const enIndexImg = [
 ];
 
 const enPrice = [
-  '15',
   '20',
   '25',
   '30',
-  '20',
+  '35',
   '25',
+  '30',
 ];
 
 const enFaq = {

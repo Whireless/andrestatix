@@ -109,6 +109,15 @@
   }
 }
 
+.main-footer__dev {
+  font-size: 14px;
+  line-height: 17px;
+  color: $grey;
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+
 @media (min-width: $tabletW) {
   .main-footer {
     padding: 20px 0;

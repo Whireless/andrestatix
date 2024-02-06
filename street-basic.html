@@ -6,11 +6,11 @@
   <meta name="description" content="Мой личный сайт по самосовершенствованию и развитию своего тела">
   <meta name="keywords" content="Streetlifting, sport, power, force, Стритлифтинг, спорт, мощь, сила">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;500;700&display=swap">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
-  <title>Средний уровень</title>
+  <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css">
+  <title>Нулевой уровень</title>
 </head>
-<body class="main-product main-product--street-middle">
+<body class="main-product main-product--street-basic">
   <div class="preloader">
     <div class="preloader__logo"></div>
   </div>
@@ -35,31 +35,27 @@
   <main>
     <div class="product">
       <div class="container">
-        <h1 class="visually-hidden">Средний уровень</h1>
+        <h1 class="visually-hidden">Нулевой уровень</h1>
         <div class="product__block">
-          <img class="product__img" src="img/programs/ru/covers/street3.jpg" width="335px" height="580px" alt="Программа среднего уровня">
+          <img class="product__img" src="img/programs/ru/covers/street1.jpg" width="335px" height="580px" alt="Программа нулевого уровня">
           <div class="product__description">
-            <span class="product__intro">Средний уровень подразумевает то что вы полностью исчерпали потенциал программ начального уровня. Вам уже недостаточно той нагрузки, поэтому в работу будут включаться иные методы прогрессии.</span>
+            <span class="product__intro">Программа нулевого уровня предназначена для тех, кто хочет тренироваться, но не знает с чего начать.</span>
             <h3 class="product__title product__title--base">Изначальные данные:</h3>
             <ul class="product__list product__list--base">
-              <li class="product__item">Турник +70кг х1 повторг</li>
-              <li class="product__item">Брусья +100кг х1 повтор</li>
+              <li class="product__item">Подтягивания на турнике: 0 повторений</li>
+              <li class="product__item">Отжимания от пола или на брусьях: 0 повторений</li>
             </ul>
             <h3 class="product__title product__title--target">Цель данной программы:</h3>
             <ul class="product__list product__list--target">
-              <li class="product__item">Турник +100кг х1 повтор</li>
-              <li class="product__item">Брусья +150кг х1 повтор</li>
+              <li class="product__item">Отжимания от пола: 25 повторений с +15кг</li>
+              <li class="product__item">Турник: 15 подтягиваний и один повтор +30кг</li>
+              <li class="product__item">Брусья: один повтор с +50кг</li>
             </ul>
           </div>
-          <span class="product__price">2500 ₽</span>
+          <span class="product__price">1500 ₽</span>
           <button class="red-button red-button--buy">Получить программу</button>
           <div class="product__block-go">
-            <a href="street-easy.html" class="product__button-go product__button-go--prev">
-              <svg viewBox="0 0 32 32" width="60" height="40" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.1,23a1,1,0,0,0,0-1.41L5.5,17H29.05a1,1,0,0,0,0-2H5.53l4.57-4.57A1,1,0,0,0,8.68,9L2.32,15.37a.9.9,0,0,0,0,1.27L8.68,23A1,1,0,0,0,10.1,23Z"/>
-              </svg>
-            </a>
-            <a href="street-pro.html" class="product__button-go product__button-go--next">
+            <a href="street-easy.html" class="product__button-go product__button-go--next">
               <svg viewBox="0 0 32 32" width="60" height="40" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"/>
               </svg>
@@ -89,6 +85,7 @@
           </p>
         </div>
       </div>
+      <span class="main-footer__dev">dev: <a href="https://github.com/Whireless" title="Разработчик">whireless</a></span>
     </div>
   </footer>
   <div class="pay">
@@ -98,14 +95,14 @@
       <input class="pay__email" type="email" name="email" id="email" placeholder="youmail@example.com" required>
       <ul class="pay__list">
         <li class="pay__item pay__item--programm">Направление: <span class="pay__item-info">Стритлифтинг</span></li>
-        <li class="pay__item pay__item--level">Уровень: <span class="pay__item-info">Средний</span></li>
-        <li class="pay__item pay__item--price">Цена: <span class="pay__item-info">2500 ₽</span></li>
+        <li class="pay__item pay__item--level">Уровень: <span class="pay__item-info">Нулевой</span></li>
+        <li class="pay__item pay__item--price">Цена: <span class="pay__item-info">1500 ₽</span></li>
       </ul>
-      <input class="pay__program" type="hidden" name="program" value="street3">
-      <input class="pay__price" type="hidden" name="price" value="2500">
+      <input class="pay__program" type="hidden" name="program" value="street1">
+      <input class="pay__price" type="hidden" name="price" value="1500">
       <button class="pay__submit" type="submit">К оплате</button>
     </form>
   </div>
-  <script src="js/scripts.min.js" type="module"></script>
+  <script src="/src/js/index.js" type="module"></script>
 </body>
 </html>

@@ -4,8 +4,8 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig({
-  // base: '/andrestatix', // На Github
-  base: '/', // На хостинг
+  base: '/andrestatix', // На Github
+  // base: '/', // На хостинг
   server: {
     open: true,
   },

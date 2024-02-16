@@ -170,6 +170,13 @@ const languages = [
 
 window.onload = () => {
   languages.forEach(lang => {
+    if(!localStorage.getItem('langEn', 'en') && !localStorage.getItem('langRu', 'ru')) {
+      page.setAttribute('lang', 'en');
+      ruBtn.classList.remove('main-nav__button-lang--active');
+      enBtn.classList.add('main-nav__button-lang--active');
+      goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, payForm, enPrograms);
+    }
+
     if (window.navigator.language === lang || localStorage.getItem('langEn', 'en')) {
       page.setAttribute('lang', 'en');
       ruBtn.classList.remove('main-nav__button-lang--active');

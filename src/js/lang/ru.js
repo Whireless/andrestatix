@@ -158,7 +158,7 @@ const payForm = {
 };
 
 window.onload = () => {
-  if(window.navigator.language === 'ru-RU' || localStorage.getItem('langRu', 'ru')) {
+  if(localStorage.getItem('langRu', 'ru')) {
     page.setAttribute('lang', 'ru');
     ruBtn.classList.add('main-nav__button-lang--active');
     goLang(ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, payForm, ruPrograms);

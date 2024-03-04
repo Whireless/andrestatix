@@ -1,6 +1,6 @@
-import {page} from '../main.js';
-import {goLang} from '../switchLang.js';
-import {ruBtn, enBtn} from './ru.js';
+import { page } from '../main.js';
+import { goLang } from '../switchLang.js';
+import { ruBtn, enBtn } from './ru.js';
 
 const enIndex = {
   about: 'About me',
@@ -127,8 +127,8 @@ const enProgramInfo = {
       'Pull-up +120kg x1 rep ',
       'Dip +200kg x1 rep',
     ],
-    [],
-    [],
+    // [],
+    // [],
   ],
 };
 
@@ -141,13 +141,22 @@ const enPrograms = [
   'Advanced',
 ];
 
+const enPages = [
+  'Zero level',
+  'Beginner level',
+  'Medium level',
+  'Advanced level',
+  'Beginner level',
+  'Advanced level',
+];
+
 const enOther = {
   buy: 'Buy',
   copy: 'All rights reserved 2023 ©',
   train: 'To training!',
 }
 
-const payForm = {
+const enPayForm = {
   mail: 'Mail to send programm:',
   direction: 'Direction:',
   level: 'Level:',
@@ -155,36 +164,7 @@ const payForm = {
   goBuy: 'Go buy',
 };
 
-const languages = [
-  'en-US',
-  'en-GB',
-  'hi',
-  'tr',
-  'fr',
-  'es',
-  'sv',
-  'it',
-  'de',
-  'pl',
-];
-
-window.onload = () => {
-  languages.forEach(lang => {
-    if(!localStorage.getItem('langEn', 'en') && !localStorage.getItem('langRu', 'ru')) {
-      page.setAttribute('lang', 'en');
-      ruBtn.classList.remove('main-nav__button-lang--active');
-      enBtn.classList.add('main-nav__button-lang--active');
-      goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, payForm, enPrograms);
-    }
-
-    if (window.navigator.language === lang || localStorage.getItem('langEn', 'en')) {
-      page.setAttribute('lang', 'en');
-      ruBtn.classList.remove('main-nav__button-lang--active');
-      enBtn.classList.add('main-nav__button-lang--active');
-      goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, payForm, enPrograms);
-    }
-  });
-};
+// Переключение языка на Английский по кнопке
 
 enBtn.addEventListener('click', () => {
   localStorage.clear();
@@ -193,5 +173,7 @@ enBtn.addEventListener('click', () => {
   page.setAttribute('lang', 'en');
   ruBtn.classList.remove('main-nav__button-lang--active');
   enBtn.classList.add('main-nav__button-lang--active');
-  goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, payForm, enPrograms);
+  goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms, enPages);
 });
+
+export { enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms, enPages };

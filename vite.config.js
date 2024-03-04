@@ -4,7 +4,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig({
-  base: '/andrestatix', // На Github
+  // base: '/andrestatix', // На Github
   // base: '/', // На хостинг
   server: {
     open: true,
@@ -15,10 +15,13 @@ export default defineConfig({
   plugins: [
     ViteImageOptimizer({
       jpg: {
-        quality: 80,
+        quality: 60,
       },
       jpeg: {
-        quality: 80,
+        quality: 75,
+      },
+      png: {
+        quality: 70,
       },
     }),
     createHtmlPlugin({
@@ -59,66 +62,66 @@ export default defineConfig({
         },
         {
           entry: '/src/js/index.js',
-          filename: 'street-basic.html',
-          template: `street-basic.html`,
+          filename: 'street-zero.html',
+          template: `street-zero.html`,
           injectOptions: {
             data: {
-              title: 'street-basic',
+              title: 'street-zero',
               injectScript: `<script src="/src/js/index.js" type="module"></script>`,
             },
           },
         },
         {
           entry: '/src/js/index.js',
-          filename: 'street-easy.html',
-          template: `street-easy.html`,
+          filename: 'street-beginner.html',
+          template: `street-beginner.html`,
           injectOptions: {
             data: {
-              title: 'street-easy',
+              title: 'street-beginner',
               injectScript: `<script src="/src/js/index.js" type="module"></script>`,
             },
           },
         },
         {
           entry: '/src/js/index.js',
-          filename: 'street-middle.html',
-          template: `street-middle.html`,
+          filename: 'street-medium.html',
+          template: `street-medium.html`,
           injectOptions: {
             data: {
-              title: 'street-middle',
+              title: 'street-medium',
               injectScript: `<script src="/src/js/index.js" type="module"></script>`,
             },
           },
         },
         {
           entry: '/src/js/index.js',
-          filename: 'street-pro.html',
-          template: `street-pro.html`,
+          filename: 'street-advanced.html',
+          template: `street-advanced.html`,
           injectOptions: {
             data: {
-              title: 'street-pro',
+              title: 'street-advanced',
               injectScript: `<script src="/src/js/index.js" type="module"></script>`,
             },
           },
         },
         {
           entry: '/src/js/index.js',
-          filename: 'force-basic.html',
-          template: `force-basic.html`,
+          filename: 'force-beginner.html',
+          template: `force-beginner.html`,
           injectOptions: {
             data: {
-              title: 'force-basic',
+              title: 'force-beginner',
               injectScript: `<script src="/src/js/index.js" type="module"></script>`,
             },
           },
         },
         {
           entry: '/src/js/index.js',
-          filename: 'force-pro.html',
-          template: `force-pro.html`,
+          filename: 'force-advanced.html',
+          template: `force-advanced.html`,
           injectOptions: {
             data: {
-              title: 'force-pro',
+              title: 'force-advanced',
               injectScript: `<script src="/src/js/index.js" type="module"></script>`,
             },
           },

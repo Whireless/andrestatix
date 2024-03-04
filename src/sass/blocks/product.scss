@@ -15,6 +15,7 @@
 }
 
 .product__description {
+  text-align: justify;
   margin: 30px 0;
 }
 
@@ -112,10 +113,10 @@
     display: grid;
     grid-template-columns: 450px 535px;
     grid-template-rows:
-                      345px
+                      375px
                       62px
                       69px
-                      210px;
+                      178px;
     column-gap: 35px;
     row-gap: 25px;
   }

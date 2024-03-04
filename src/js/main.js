@@ -1,30 +1,23 @@
-// Переменные для всех страниц
 const page = document.querySelector('html');
 const body = page.querySelector('body');
-const menu = body.querySelector('.main-nav__menu-list');
-const menuItem = menu.querySelectorAll('.main-nav__link');
-const menuBtn = body.querySelector('.main-nav__menu-button');
-
-// Preloader
-window.addEventListener('load', () => {
-  body.querySelector('.preloader').classList.add('preloader--hidden');
-});
 
 // Мобильное меню
-menuBtn.onclick = function () {
-  menu.classList.toggle('main-nav__menu-list--open');
-  if (page.getAttribute('style')) {
-    page.removeAttribute('style');
-  } else {
-    page.style.overflow = 'hidden';
-  }
-};
 
-menuItem.forEach(a => {
-  a.onclick = function () {
-    menu.classList.remove('main-nav__menu-list--open');
-    page.removeAttribute('style');
+if (window.matchMedia('(max-width: 767px)').matches) {
+  const menu = body.querySelector('.main-nav__menu-list');
+  const menuLinks = menu.querySelectorAll('.main-nav__link');
+
+  body.querySelector('.main-nav__menu-button').addEventListener('click', () => {
+    menu.classList.toggle('main-nav__menu-list--open');
+    page.getAttribute('style') ? page.removeAttribute('style') : page.style.overflow = 'hidden';
+  });
+
+  for (const link of menuLinks) {
+    link.addEventListener('click', () => {
+      menu.classList.remove('main-nav__menu-list--open');
+      page.removeAttribute('style');
+    });
   };
-});
+}
 
-export {page, body};
+export { page, body };

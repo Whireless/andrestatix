@@ -1,5 +1,5 @@
-import {page, body} from '../main.js';
-import {goLang} from '../switchLang.js';
+import { page, body } from '../main.js';
+import { goLang } from '../switchLang.js';
 
 const ruBtn = body.querySelector('.main-nav__button-lang--ru');
 const enBtn = body.querySelector('.main-nav__button-lang--en');
@@ -94,7 +94,7 @@ const ruProgramInfo = {
     'Программа нулевого уровня предназначена для тех, кто хочет тренироваться, но не знает с чего начать.',
     'Данная программа предназначена для атлетов начального уровня которые только начинают тренировки с дополнительными весами.',
     'Средний уровень подразумевает то что вы полностью исчерпали потенциал программ начального уровня. Вам уже недостаточно той нагрузки, поэтому в работу будут включаться иные методы прогрессии.',
-    'Продвинутая программа нужна исключительно атлетам с высокими показателями в силовых на одно повторение. Теперь ваша задача состоит в том, чтобы реализовать весь прошлый тренировочный объём, который вы нарабатывали не один год в высокую интенсивность.',
+    'Продвинутая программа нужна лишь атлетам с высокими показателями в силовых на одно повторение. Теперь задача состоит в том, чтобы реализовать весь прошлый тренировочный объём, который вы нарабатывали не один год в высокую интенсивность.',
     'Программа начального уровня предназначена для атлетов, уже имеющих минимальную базу в подтягиваниях и отжиманиях на брусьях с дополнительным весом. В данном гайде вы обучитесь технике упражнения, и увеличите количество повторений за подход.',
     'Программа продвинутого уровня необходима атлетам, намеренных тренировать выходы силой с дополнительным весом и освоить другие вариации выходов чтобы по настоящему стать Мастером Выходов Силой!',
   ],
@@ -129,8 +129,8 @@ const ruProgramInfo = {
       'Турник +120кг х1 повтор',
       'Брусья +200кг х1 повтор',
     ],
-    [],
-    [],
+    // [],
+    // [],
   ],
 };
 
@@ -143,13 +143,22 @@ const ruPrograms = [
   'Продвинутый',
 ];
 
+const ruPages = [
+  'Нулевой уровень',
+  'Начальный уровень',
+  'Средний уровень',
+  'Продвинутый уровень',
+  'Начальный уровень',
+  'Продвинутый уровень',
+];
+
 const ruOther = {
   buy: 'Получить программу',
   copy: 'Все права защищены 2023 ©',
   train: 'К тренировкам!',
 };
 
-const payForm = {
+const ruPayForm = {
   mail: 'Почта, куда вам придет программа:',
   direction: 'Направление:',
   level: 'Уровень:',
@@ -157,13 +166,7 @@ const payForm = {
   goBuy: 'К оплате',
 };
 
-window.onload = () => {
-  if(localStorage.getItem('langRu', 'ru')) {
-    page.setAttribute('lang', 'ru');
-    ruBtn.classList.add('main-nav__button-lang--active');
-    goLang(ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, payForm, ruPrograms);
-  }
-};
+// Переключение языка на Русский по кнопке
 
 ruBtn.addEventListener('click', () => {
   localStorage.clear();
@@ -172,7 +175,7 @@ ruBtn.addEventListener('click', () => {
   page.setAttribute('lang', 'ru');
   enBtn.classList.remove('main-nav__button-lang--active');
   ruBtn.classList.add('main-nav__button-lang--active');
-  goLang(ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, payForm, ruPrograms);
+  goLang(ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, ruPayForm, ruPrograms, ruPages);
 });
 
-export {ruBtn, enBtn};
+export { ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, ruPayForm, ruPrograms, ruPages, ruBtn, enBtn };

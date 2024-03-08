@@ -2,6 +2,7 @@ import { page, body } from './main.js';
 import { ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, ruPayForm, ruPrograms, ruPages, ruBtn, enBtn } from './lang/ru.js';
 import { enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms, enPages } from './lang/en.js';
 import { programs, productBuy, goLang } from './switchLang.js';
+import axios from 'axios';
 
 window.addEventListener('load', () => {
 
@@ -33,6 +34,8 @@ window.addEventListener('load', () => {
       productBuy.addEventListener('click', () => {
         page.style.overflow = 'hidden';
         pay.classList.add('pay--active');
+
+        page.getAttribute('lang') === 'en' ? payForm.querySelector('.pay__email').required = false : payForm.querySelector('.pay__email').required = true;
       });
 
       pay.querySelector('.pay__cancel').addEventListener('click', () => {
@@ -47,33 +50,43 @@ window.addEventListener('load', () => {
         sendData();
       });
 
-      // Для русскоязычных пользователей
-
       const sendData = async () => {
+
+        // Для русскоязычных пользователей
+
         if (page.getAttribute('lang') === 'ru') {
           try {
-            const response = await fetch(
-              'https://andrestatix.com:8443/server',
-              {
-                method: 'POST',
-                body: new URLSearchParams(new FormData(payForm)),
-              }
-            );
-            const data = await response.text();
-            window.location = data;
-          } catch (error) {
-            console.log(error);
-          }
+            const response = await axios.post('https://andrestatix.com:8443/server', new URLSearchParams(new FormData(payForm)));
+            window.location = response.data;
+            payForm.querySelector('.pay__email').value = '';
+          } catch (error) {console.log(error)}
+        } else {
+
+          // Для англоязычных пользователей
+
+          window.location = 'https://paypal.me/andreipakin';
         }
       };
 
-      // Для англоязычных пользователей
+      // Отправка через Fetch API
 
-      pay.querySelector('.pay__submit').addEventListener('click', () => {
-        if (page.getAttribute('lang') === 'en') {
-          window.location = 'https://paypal.me/andreipakin';
-        }
-      });
+      // const sendData = async () => {
+      //   if (page.getAttribute('lang') === 'ru') {
+      //     try {
+      //       const response = await fetch('https://andrestatix.com:8443/server', {
+      //           method: 'POST',
+      //           body: new URLSearchParams(new FormData(payForm)),
+      //         }
+      //       );
+      //       const data = await response.text();
+      //       // window.location = data;
+      //     } catch (error) {console.log(error)}
+      //   } else {
+      //     // Для англоязычных пользователей
+
+      //     window.location = 'https://paypal.me/andreipakin';
+      //   }
+      // };
     }
   }
 });

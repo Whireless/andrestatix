@@ -20,7 +20,7 @@
 
 .about-me__subtitle {
   font-family: 'Another-danger', 'Arial', serif;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
@@ -29,6 +29,7 @@
 }
 
 .about-me__description {
+  text-align: justify;
   font-weight: 300;
   margin: 0;
 }

@@ -1,6 +1,6 @@
 import { page, body } from './main.js';
-import { ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, ruPayForm, ruPrograms, ruPages, ruBtn, enBtn } from './lang/ru.js';
-import { enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms, enPages } from './lang/en.js';
+import { ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, ruPayForm, ruPrograms, ruBtn, enBtn } from './lang/ru.js';
+import { enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms } from './lang/en.js';
 import { programs, productBuy, goLang } from './switchLang.js';
 import axios from 'axios';
 
@@ -15,11 +15,11 @@ window.addEventListener('load', () => {
   if (localStorage.getItem('langRu', 'ru')) {
     page.setAttribute('lang', 'ru');
     ruBtn.classList.add('main-nav__button-lang--active');
-    goLang(ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, ruPayForm, ruPrograms, ruPages);
+    goLang(ruIndex, ruOther, ruIndexImg, ruPrice, ruFaq, ruAbout, ruProgramInfo, ruPayForm, ruPrograms);
   } else if (!localStorage.getItem('langEn', 'en') && !localStorage.getItem('langRu', 'ru') || localStorage.getItem('langEn', 'en')) {
     page.setAttribute('lang', 'en');
     enBtn.classList.add('main-nav__button-lang--active');
-    goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms, enPages);
+    goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms);
   }
 
   // Проверка текущей страницы на соответствие странице товара, для создания карточки платежа
@@ -35,7 +35,8 @@ window.addEventListener('load', () => {
         page.style.overflow = 'hidden';
         pay.classList.add('pay--active');
 
-        page.getAttribute('lang') === 'en' ? payForm.querySelector('.pay__email').required = false : payForm.querySelector('.pay__email').required = true;
+        const email = payForm.querySelector('.pay__email');
+        page.getAttribute('lang') === 'en' ? email.required = false : email.required = true;
       });
 
       pay.querySelector('.pay__cancel').addEventListener('click', () => {
@@ -88,5 +89,5 @@ window.addEventListener('load', () => {
       //   }
       // };
     }
-  }
+  };
 });

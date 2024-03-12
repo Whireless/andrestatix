@@ -19,17 +19,10 @@ const enIndexImg = [
   'img/programs/en/force/lvl2.jpg',
 ];
 
-const enPrice = [
-  '20',
-  '25',
-  '30',
-  '35',
-  '25',
-  '30',
-];
+const enPrice = [20, 25, 30, 35, 25, 30];
 
 const enFaq = {
-  faq: 'Frequently Asked Questions:',
+  faq: 'Frequently Asked Questions',
   questions: [
     'What age group is each program appropriate for?',
     'What results can be achieved in six months or a year of training?',
@@ -141,15 +134,6 @@ const enPrograms = [
   'Advanced',
 ];
 
-const enPages = [
-  'Zero level',
-  'Beginner level',
-  'Medium level',
-  'Advanced level',
-  'Beginner level',
-  'Advanced level',
-];
-
 const enOther = {
   buy: 'Buy',
   copy: 'All rights reserved 2023 ©',
@@ -173,7 +157,7 @@ enBtn.addEventListener('click', () => {
   page.setAttribute('lang', 'en');
   ruBtn.classList.remove('main-nav__button-lang--active');
   enBtn.classList.add('main-nav__button-lang--active');
-  goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms, enPages);
+  goLang(enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms);
 });
 
-export { enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms, enPages };
+export { enIndex, enOther, enIndexImg, enPrice, enFaq, enAbout, enProgramInfo, enPayForm, enPrograms };

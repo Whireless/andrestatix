@@ -1,9 +1,6 @@
 import { page, body } from './main.js';
 
-const trainBtn = body.querySelector('.red-button');
 const productBuy = body.querySelector('.red-button--buy');
-const navAbout = body.querySelector('.main-nav__link--about');
-const copyright = body.querySelector('.main-footer__copyright');
 
 // Список страниц с тренировками
 
@@ -18,7 +15,10 @@ const programs = [
 
 // Переключение языка
 
-const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbout, langProgramInfo, payForm, langPrograms, langPages) => {
+const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbout, langProgramInfo, payForm, langPrograms) => {
+  const trainBtn = body.querySelector('.red-button');
+  const navAbout = body.querySelector('.main-nav__link--about');
+  const copyright = body.querySelector('.main-footer__copyright');
   const title = page.querySelector('title');
 
   navAbout.textContent = langIndex.about;
@@ -44,11 +44,7 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
     });
 
     price.forEach((price, i) => {
-      if (page.getAttribute('lang') === 'ru') {
-        price.textContent = `${langPrice[i]} ₽`;
-      } else {
-        price.textContent = `${langPrice[i]} $`;
-      }
+      page.getAttribute('lang') === 'ru' ? price.textContent = `${langPrice[i]} ₽` : price.textContent = `${langPrice[i]} $`;
     });
   } else if (body.classList.contains('main-faq')) {
 
@@ -120,7 +116,7 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
       const paySubmit = body.querySelector('.pay__submit');
       const payMail = body.querySelector('.pay__email');
 
-      title.textContent = langPages[i];
+      page.getAttribute('lang') === 'ru' ? title.textContent = `${langPrograms[i]} уровень` : title.textContent = `${langPrograms[i]} level`;
 
       productImg.src = langProgramInfo.img[i];
       programIntro.textContent = langProgramInfo.intro[i];
@@ -149,7 +145,7 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
 
         // Текст для иностранного поля оплаты, пока не настроена интеграция
 
-        payLabel.textContent = 'On the payment page, in the "What is this for?" field, write the full name of the program you paid for and the e-mail to which it should be sent.';
+        payLabel.textContent = 'On the payment page, in the "What is this for?" field, write the full name of the program you paid for and the E-MAIL to which it should be sent.';
 
         payMail.style.display = 'none';
         productPrice.textContent = `${langPrice[i]} $`;

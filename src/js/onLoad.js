@@ -80,7 +80,7 @@ window.addEventListener('load', () => {
       //         }
       //       );
       //       const data = await response.text();
-      //       // window.location = data;
+            // window.location = data;
       //     } catch (error) {console.log(error)}
       //   } else {
       //     // Для англоязычных пользователей
@@ -90,4 +90,20 @@ window.addEventListener('load', () => {
       // };
     }
   };
+});
+
+// Смена цвета навигации на планшете и компе
+
+window.addEventListener('scroll', () => {
+  const menu = body.querySelector('.main-nav');
+
+  if (window.matchMedia('(min-width: 768px) and (max-width: 1279px)').matches && window.pageYOffset > 375) {
+    menu.style.backgroundColor = '#000000';
+  } else if (window.matchMedia('(min-width: 1280px)').matches && window.pageYOffset > 585) {
+    menu.style.backgroundColor = '#000000';
+  } else if (window.matchMedia('(max-width: 767px)').matches) {
+    menu.style.backgroundColor = '#000000';
+  } else {
+    menu.style.backgroundColor = '#5a1f1d';
+  }
 });

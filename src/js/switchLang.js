@@ -30,9 +30,11 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
 
     const intro = body.querySelector('.intro__subtitle');
     const programTitle = body.querySelector('.programs__title');
-    const programs = body.querySelectorAll('.programs__program-name');
+    const programs = body.querySelectorAll('.programs__subtitle');
     const imgOnIndex = body.querySelectorAll('.programs__img');
+    const more = body.querySelectorAll('.programs__link');
     const price = body.querySelectorAll('.programs__price');
+    const programIntro = body.querySelectorAll('.programs__intro');
 
     intro.textContent = langIndex.intro;
     programTitle.textContent = langIndex.programs;
@@ -41,6 +43,8 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
 
     imgOnIndex.forEach((img, i) => {
       img.src = langIndexImg[i];
+      more[i].textContent = langIndex.moreProgram;
+      programIntro[i].textContent = langProgramInfo.intro[i];
     });
 
     price.forEach((price, i) => {
@@ -50,9 +54,9 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
 
     // "FAQ"
 
-    const questions = body.querySelector('.questions__title');
-    const question = body.querySelectorAll('.questions__question');
-    const answer = body.querySelectorAll('.questions__answer');
+    const questions = body.querySelector('.faq__title');
+    const question = body.querySelectorAll('.faq__question');
+    const answer = body.querySelectorAll('.faq__answer');
 
     questions.textContent = langFaq.faq;
 
@@ -145,8 +149,7 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
 
         // Текст для иностранного поля оплаты, пока не настроена интеграция
 
-        payLabel.textContent = 'On the payment page, in the "What is this for?" field, write the full name of the program you paid for and the E-MAIL to which it should be sent.';
-
+        payLabel.innerHTML = `On the payment page, in the "What is this for?" field, write the full name of the program you paid for and the <span class="pay__red">E-MAIL</span> to which it should be sent.`;
         payMail.style.display = 'none';
         productPrice.textContent = `${langPrice[i]} $`;
         payPrice.innerHTML = payForm.price + `<span class="pay__item-info">${langPrice[i]} $</span>`;

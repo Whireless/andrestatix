@@ -1,22 +1,25 @@
-//Общие
+// Общие
+
 @import "variables.scss";
 @import "global.scss";
 @import "blocks/preloader.scss";
 @import "container.scss";
 @import "animations.scss";
-@import "blocks/red-button.scss";
 @import "blocks/product.scss";
 @import "blocks/pay.scss";
 
-//Главная
+// Главная
+
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/programs.scss";
 @import "blocks/main-footer.scss";
 
-//Обо мне
+// Обо мне
+
 @import "blocks/about-me.scss";
 
-//FAQ
-@import "blocks/questions.scss";
+// FAQ
+
+@import "blocks/faq.scss";

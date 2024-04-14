@@ -1,5 +1,4 @@
 .programs {
-  background-image: url("../img/bg-index.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
@@ -7,7 +6,6 @@
 }
 
 .programs__title {
-  font-family: 'Another-danger', 'Arial', serif;
   letter-spacing: 7px;
   font-size: 28px;
   line-height: 34px;
@@ -16,66 +14,21 @@
   margin: 0;
 }
 
-.programs__program-info {
-  margin-top: 90px;
+.programs__info {
+  margin-top: 35px;
 }
 
-.programs__link {
-  text-decoration: none;
-  color: $white;
-  position: relative;
-  transition: $basic;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.04);
-    transition: $basic;
-
-    .programs__img {
-      box-shadow: $shadow;
-    }
-  }
-
-  &--unactive {
-    pointer-events: none;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      background-color: $black;
-      width: 330px;
-      height: 400px;
-      opacity: 0.7;
-      z-index: 7;
-    }
-
-    &::after {
-      content: "В разработке";
-      font-size: 22px;
-      position: absolute;
-      top: 50%;
-      left: 30%;
-      z-index: 8;
-    }
-
-    &:lang(en) {
-      &::after {
-        content: "In development";
-      }
-    }
-  }
-}
-
-.programs__program-name {
-  font-family: 'Another-danger', 'Arial', sans-serif;
+.programs__subtitle {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 6px;
   text-transform: uppercase;
   text-align: center;
+  width: max-content;
   position: relative;
-  margin: 0 0 40px 0;
+  margin: 0 auto 40px auto;
+  padding: 4px 10px;
+  border-radius: 20px;
   z-index: 2;
 
   &::before,
@@ -94,97 +47,86 @@
     right: 0%;
   }
 
-  &::after {
-    height: 100%;
-    border-radius: 2px;
-    z-index: -1;
-  }
-
   &--street {
-    &::before {
-      content: "если нужны силовые результаты и мышечная масса...";
-    }
-
-    &::after {
-      left: 55px;
-      width: 90px;
-      background-color: $red;
-    }
-
-    &:lang(en) {
-      &::before {
-        content: "if you need strength results and muscle mass...";
-      }
-    }
+    background-color: $red;
   }
 
   &--force {
-    &::before {
-      content: "но если хочешь взрывную силу и скорость...";
-    }
-
-    &::after {
-      right: 65px;
-      width: 95px;
-      background-color: $blue;
-    }
-
-    &:lang(en) {
-      &::before {
-        content: "but if you want explosive power and speed...";
-      }
-    }
+    background-color: $blue;
   }
 }
 
-.programs__program-list {
+.programs__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  row-gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.programs__program-item {
+.programs__item {
+  position: relative;
   display: flex;
+  flex-direction: column;
 }
 
 .programs__img {
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.programs__description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 410px;
+  background-color: #00000099;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+
+  &--active {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.programs__intro {
+  font-weight: 300;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+.programs__link {
+  font-size: 25px;
+  text-decoration: none;
+  color: $white;
+  transition: 0.5s;
+  border: 1px solid $red;
+  padding: 10px 15px;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: $red;
+    transform: scale(1.1);
+  }
 }
 
 .programs__price {
-  font-size: 23px;
+  font-size: 24px;
   color: $white;
   font-weight: 500;
   text-shadow: $black 1px 4px 10px;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  background-color: $redOp;
-  padding: 5px 10px;
-  border-radius: 5px;
-
-  &::before {
-    content: "Подробнее";
-    color: $white;
-    position: absolute;
-    top: 0px;
-    right: 90px;
-    background-color: $blackOp;
-    width: inherit;
-    height: inherit;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-
-  &:lang(en) {
-    &::before {
-      content: "More";
-    }
-  }
+  background-color: $red;
+  padding: 10px 12px;
+  border-radius: 10px;
 }
 
 @media (min-width: $tabletW) {
@@ -210,9 +152,10 @@
     }
   }
 
-  .programs__program-name {
+  .programs__subtitle {
     font-size: 22px;
     line-height: 30px;
+    padding: 5px 15px;
 
     &::before {
       font-size: 11px;
@@ -235,13 +178,34 @@
   }
 
   .programs__img {
-    width: 300px;
+    width: 310px;
     height: 380px;
+    z-index: 1;
   }
 
-  .programs__program-list {
-    flex-flow: row wrap;
+  .programs__list {
     justify-content: space-evenly;
+    row-gap: 50px;
+  }
+
+  .programs__item {
+    &:nth-of-type(odd) {
+      align-self: start;
+    }
+
+    &:nth-of-type(even) {
+      align-self: end;
+    }
+  }
+
+  .programs__description {
+    height: 380px;
+    background-color: transparent;
+    z-index: 0;
+  }
+
+  .programs__intro {
+    padding: 0 10px;
   }
 }
 
@@ -255,8 +219,8 @@
     line-height: 50px;
   }
 
-  .programs__program-info {
-    margin-top: 100px;
+  .programs__info {
+    margin-top: 50px;
   }
 
   .programs__link {
@@ -273,9 +237,11 @@
     }
   }
 
-  .programs__program-name {
+  .programs__subtitle {
     font-size: 30px;
     line-height: 40px;
+    padding: 10px 20px;
+    border-radius: 30px;
 
     &::before {
       font-size: 13px;
@@ -297,12 +263,20 @@
     }
   }
 
-  .programs__program-list {
-    row-gap: 65px;
+  .programs__list {
+    row-gap: 90px;
   }
 
   .programs__img {
     width: 450px;
     height: 550px;
+  }
+
+  .programs__description {
+    height: 550px;
+  }
+
+  .programs__intro {
+    padding: 0;
   }
 }

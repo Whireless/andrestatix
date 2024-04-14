@@ -99,7 +99,6 @@
 }
 
 .pay__submit {
-  font-family: 'Another-danger', 'Arial', serif;
   font-size: 19px;
   letter-spacing: 7px;
   color: $white;
@@ -123,6 +122,11 @@
   //   opacity: 0.5;
   //   pointer-events: none;
   // }
+}
+
+.pay__red {
+  font-weight: 900;
+  color: $red;
 }
 
 @media (min-width: $tabletW) {

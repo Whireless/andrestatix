@@ -31,10 +31,8 @@
   background-size: contain;
   position: relative;
   margin: 100px auto;
-}
 
-@media (min-width: $tabletW) {
-  .preloader__logo {
+  @media (min-width: $tabletW) {
     width: 300px;
     height: 120px;
   }

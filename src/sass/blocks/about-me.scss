@@ -1,16 +1,11 @@
 .about-me {
-  background-image: url("../img/bg-about.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   color: $white;
   margin-top: 70px;
   padding: 30px 0;
 }
 
 .about-me__title {
-  font-family: 'Another-danger', 'Arial', serif;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   font-size: 26px;
   line-height: 32px;
   text-transform: uppercase;
@@ -19,7 +14,6 @@
 }
 
 .about-me__subtitle {
-  font-family: 'Another-danger', 'Arial', serif;
   letter-spacing: 5px;
   font-size: 20px;
   line-height: 26px;

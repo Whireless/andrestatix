@@ -4,10 +4,11 @@ import { ruBtn, enBtn } from './ru.js';
 
 const enIndex = {
   about: 'About me',
-  intro: 'Become a master of Streetlifting and Workout!',
+  intro: 'Become a master of Streetlifting and Calisthenics!',
   programs: 'Programs',
   street: 'Streetlifting',
   force: 'Muscle Ups',
+  moreProgram: 'More',
 };
 
 const enIndexImg = [
@@ -64,11 +65,11 @@ const enAbout = {
     a: '8-10 pull-ups with your own weight',
     b: '15-20 push-ups from the floor',
   },
-  resultB: 'My score right now is on 1 repeat:',
+  resultB: 'My score right now is on 1 Rep Max:',
   resultBInfo: {
-    a: 'Pulling up on the bar with extra weight +100kg',
-    b: 'Push-up on uneven bars with additional weight +140 kg',
-    c: 'Power output on the chinning bar and the rings +40kg',
+    a: 'Pull-up +105kg',
+    b: 'Dip +150 kg',
+    c: 'Muscle Up +45kg',
   },
 };
 
@@ -82,10 +83,10 @@ const enProgramInfo = {
     'img/programs/en/covers/force2.jpg',
   ],
   intro: [
-    'The program of the zero level is designed for those who want to train, but do not know where to start.',
-    'This program is designed for entry-level athletes who are just starting to train with additional weights.',
-    'The intermediate level means that you have completely exhausted the potential of entry-level programs. That load is no longer enough for you, so other methods of progression will be included in the work.',
-    'The Advanced Level program is only for athletes who have a high strength performance on one repetition. Now your goal is to use all of your past training volume that you have built up over several years in high intensity.',
+    'Zero level is necessary for those who have never trained pullups and dips even with bodyweight. You may be able to do 2-3 repetitions, but this is still not enough to start training with add weight.',
+    'Beginner level is intended for athletes who have learnt good technique of pullups and dips. Now it is possible to add extra weights.',
+    'Intermediate level is for lifters who have achieved good, but still insufficient success after the initial beginner level.',
+    'Advanced level. Only for unbelievable madmen capable of the most brutal confrontation!',
     'This entry-level program is designed for lifters who already have a minimum base in pull-ups and push-ups on the uneven bars with extra weight. In this guide, you will learn the technique of the exercise and increase the number of repetitions per approach.',
     'This advanced level program is necessary for athletes who want to train power outputs with extra weight and learn other variations of power outputs to truly become a Master of Power Outputs!',
   ],

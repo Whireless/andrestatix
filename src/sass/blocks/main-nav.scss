@@ -256,7 +256,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: inherit;
+    background-color: transparent;
     width: 220px;
     padding: 0;
     transform: translateX(0);
@@ -337,5 +337,12 @@
     &::before {
       bottom: -2px;
     }
+  }
+}
+
+@media (min-width: $laptop) {
+  .main-nav {
+    left: 100px;
+    right: 100px;
   }
 }

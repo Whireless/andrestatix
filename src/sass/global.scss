@@ -44,7 +44,6 @@ body {
 }
 
 .red-button {
-  letter-spacing: 4px;
   font-size: 18px;
   text-decoration: none;
   color: $white;
@@ -54,17 +53,17 @@ body {
   width: max-content;
   margin: 30px auto 0 auto;
   padding: 12px 15px;
-  border-radius: 7px;
+  border-radius: 25px;
   transition: $basic;
   z-index: 2;
 
   &::before {
     content: "";
     position: absolute;
-    width: 205px;
+    width: 148px;
     height: 41px;
     border: 2px solid $red2;
-    border-radius: 7px;
+    border-radius: 25px;
     transform: translateX(-15px) translateY(-12px);
     transition: $basic;
     z-index: -1;
@@ -81,7 +80,7 @@ body {
 
   &:lang(en) {
     &::before {
-      width: 160px;
+      width: 113px;
     }
   }
 
@@ -91,7 +90,7 @@ body {
     cursor: pointer;
 
     &::before {
-      width: 117px;
+      width: 92px;
       height: 37px;
       transform: translateX(-18px) translateY(-9px);
     }
@@ -104,7 +103,7 @@ body {
 
     &:lang(en) {
       &::before {
-        width: 78px;
+        width: 64px;
       }
     }
   }
@@ -115,13 +114,13 @@ body {
     padding: 16px;
 
     &::before {
-      width: 219px;
+      width: 164px;
       height: 47px;
     }
 
     &:lang(en) {
       &::before {
-        width: 171px;
+        width: 123px;
       }
     }
 
@@ -129,13 +128,13 @@ body {
       padding: 10px 23px;
 
       &::before {
-        width: 125px;
+        width: 100px;
         height: 40px;
       }
 
       &:lang(en) {
         &::before {
-          width: 83px;
+          width: 69px;
         }
       }
     }
@@ -144,12 +143,14 @@ body {
   @media (min-width: $desktopW) {
     font-size: 22px;
     margin: 60px auto 0 auto;
-    padding: 22px;
+    padding: 20px 22px;
+    border-radius: 30px;
 
     &::before {
-      width: 244px;
-      height: 59px;
+      width: 188px;
+      height: 57px;
       transform: translateX(-20px) translateY(-17px);
+      border-radius: 30px;
     }
 
     &:hover {
@@ -160,7 +161,7 @@ body {
 
     &:lang(en) {
       &::before {
-        width: 192px;
+        width: 143px;
       }
     }
 
@@ -172,7 +173,7 @@ body {
       padding: 8px 30px;
 
       &::before {
-        width: 175px;
+        width: 150px;
         height: 47px;
         transform: translateX(-30px) translateY(-6px);
       }
@@ -185,7 +186,7 @@ body {
 
       &:lang(en) {
         &::before {
-          width: 117px;
+          width: 105px;
         }
       }
     }

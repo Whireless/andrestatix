@@ -89,7 +89,7 @@
   <div class="pay">
     <button class="pay__cancel"></button>
     <form class="pay__form">
-      <label for="email">Почта, куда вам прийдет программа:</label>
+      <label class="pay__email-label" for="email">Почта, куда вам прийдет программа:</label>
       <input class="pay__email" type="email" name="email" id="email" placeholder="youmail@example.com" required>
       <ul class="pay__list">
         <li class="pay__item pay__item--programm">Направление: <span class="pay__item-info">Стритлифтинг</span></li>
@@ -98,6 +98,10 @@
       </ul>
       <input class="pay__program" type="hidden" name="program" value="street1">
       <input class="pay__price" type="hidden" name="price" value="1500">
+      <label class="pay__check-label">
+        <input class="pay__check-input" type="checkbox" name="check">
+        I understand that if I don't enter my email on the PayPal payment page, I may not get my program.
+      </label>
       <button class="pay__submit" type="submit">К оплате</button>
     </form>
   </div>

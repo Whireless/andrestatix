@@ -65,6 +65,10 @@
   }
 }
 
+// .pay__email-label {
+//   font-weight: 100;
+// }
+
 .pay__email {
   color: $white;
   width: 200px;
@@ -98,16 +102,26 @@
   color: $grey;
 }
 
+.pay__check-label {
+  margin-top: 10px;
+  border: 1px solid $red;
+  padding: 4px 6px;
+  border-radius: 10px;
+
+  &:lang(ru) {
+    display: none;
+  }
+}
+
 .pay__submit {
   font-size: 19px;
-  letter-spacing: 7px;
   color: $white;
   background-color: $red2;
-  width: 188px;
+  width: 160px;
   margin: 15px 0 0 0;
-  padding: 5px 15px;
+  padding: 7px 15px;
   border: none;
-  border-radius: 7px;
+  border-radius: 25px;
   cursor: pointer;
   transition: $basic;
 
@@ -152,6 +166,11 @@
     width: 350px;
   }
 
+  .pay__check-label {
+    margin-top: 20px;
+    padding: 7px 10px;
+  }
+
   .pay__submit {
     margin: 20px 0 0 0;
   }
@@ -175,6 +194,10 @@
   .pay__list {
     row-gap: 10px;
     width: 400px;
+  }
+
+  .pay__check-label {
+    padding: 10px 12px;
   }
 
   .pay__submit {

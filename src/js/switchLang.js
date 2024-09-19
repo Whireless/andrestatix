@@ -119,6 +119,8 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
       const payValue = body.querySelector('.pay__price');
       const paySubmit = body.querySelector('.pay__submit');
       const payMail = body.querySelector('.pay__email');
+      // Чекбокс для тупых омэриканцев, для РУ он отключается
+      const payCheck = body.querySelector('.pay__check-input');
 
       page.getAttribute('lang') === 'ru' ? title.textContent = `${langPrograms[i]} уровень` : title.textContent = `${langPrograms[i]} level`;
 
@@ -145,14 +147,16 @@ const goLang = (langIndex, langOther, langIndexImg, langPrice, langFaq, langAbou
         payMail.style.display = 'block';
         productPrice.textContent = `${langPrice[i]} ₽`;
         payPrice.innerHTML = payForm.price + `<span class="pay__item-info">${langPrice[i]} ₽</span>`;
+        payCheck.required = false;
       } else {
 
         // Текст для иностранного поля оплаты, пока не настроена интеграция
 
-        payLabel.innerHTML = `On the payment page, in the "What is this for?" field, write the full name of the program you paid for and the <span class="pay__red">E-MAIL</span> to which it should be sent.`;
+        payLabel.innerHTML = `On the payment page, in the "What is this for?" field, write the full name of the program you paid for and the <span class="pay__red">EMAIL</span> to which it should be sent.`;
         payMail.style.display = 'none';
         productPrice.textContent = `${langPrice[i]} $`;
         payPrice.innerHTML = payForm.price + `<span class="pay__item-info">${langPrice[i]} $</span>`;
+        payCheck.required = true;
       }
       payValue.setAttribute('value', langPrice[i]);
       paySubmit.textContent = payForm.goBuy;

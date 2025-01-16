@@ -5,7 +5,7 @@
 }
 
 .results__track {
-  width: 330px;
+  width: 360px;
   margin-top: 30px;
 }
 
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 330px;
+  width: 360px;
 }
 
 .results__suptitle {
@@ -42,12 +42,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 8px;
+  row-gap: 10px;
   background-color: $brown;
   border: 1px solid $grey;
   border-radius: $radius;
-  height: 55px;
-  padding: 55px 10px 20px 10px;
+  height: 60px;
+  padding: 55px 25px 20px 25px;
 
   &::before {
     content: "";

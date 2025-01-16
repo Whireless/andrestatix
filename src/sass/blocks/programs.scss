@@ -14,8 +14,8 @@
 }
 
 .programs__track {
-  width: 330px;
-  margin-top: 20px;
+  width: 360px;
+  margin-top: 30px;
 }
 
 .programs__item {
@@ -26,8 +26,8 @@
 
 .programs__subtitle {
   position: absolute;
-  top: 300px;
-  left: 20px;
+  top: 330px;
+  left: 35px;
   width: 248px;
   display: flex;
   justify-content: center;
@@ -84,4 +84,8 @@
 .programs__price {
   font-size: 30px;
   color: $white;
+}
+
+.programs__button-buy {
+  width: 300px;
 }

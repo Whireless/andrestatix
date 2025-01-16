@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 20px;
-  margin-top: 15px;
+  column-gap: 30px;
+  margin-top: 20px;
 }
 
 .main-footer__link {
@@ -16,7 +16,6 @@
   width: 26px;
   height: 26px;
   background-repeat: no-repeat;
-  // background-size: contain;
 
   &--instagram {
     background-image: url("../img/icons/instagram.svg");
@@ -29,7 +28,7 @@
   &--vk {
     background-image: url("../img/icons/vk.svg");
     width: 23px;
-    height: 23px;
+    height: 25px;
   }
 
   &--youtube {
@@ -45,7 +44,7 @@
 
 .main-footer__copyright {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .main-footer__dev {

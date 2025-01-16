@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", "Arial", serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: $white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 360px;
+  min-height: 100vh;
+  background-color: $dark;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gold-gradient {
+  background: $gold;
+  color: transparent;
+  background-clip: text;
+}
+
+.gold-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $dark;
+  display: flex;
+  justify-content: center;
+  background: $gold;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 5px;
+}

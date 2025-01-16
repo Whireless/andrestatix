@@ -1,0 +1,43 @@
+.slider__pagination {
+  display: flex;
+  column-gap: 10px;
+  margin: 10px 0 0 0;
+}
+
+.slider__pagination-page {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+
+  &[tabindex] {
+    background-color: $grey;
+  }
+}
+
+.slider__arrows {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  margin-top: 15px;
+}
+
+.slider__arrow {
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 15px 15px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:not([disabled]) {
+    background-color: $yellow;
+  }
+}

@@ -1,0 +1,67 @@
+.intro {
+  margin-top: 59px;
+}
+
+.intro__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__title {
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 260px;
+}
+
+.intro__description {
+  color: $grey;
+  text-align: center;
+  position: relative;
+  width: 260px;
+  margin-top: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 120px;
+    background-image: url("../img/icons/crown.svg");
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.intro__buttons {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  width: 320px;
+  margin-top: 20px;
+}
+
+.intro__button {
+  text-transform: uppercase;
+  text-decoration: none;
+  // color: $white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0px;
+
+  // &--buy {
+  //   color: $dark;
+  //   background: $gold;
+  //   border-radius: 5px;
+  // }
+
+  &--about {
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 5px;
+  }
+}

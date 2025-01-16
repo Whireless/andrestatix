@@ -1,0 +1,43 @@
+.about {
+  scroll-margin-top: 3em;
+}
+
+.about__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // width: 320px;
+}
+
+.about__title {
+  text-transform: uppercase;
+}
+
+.about__description {
+  text-align: center;
+  width: 320px;
+
+  &--one {
+    margin-top: 20px;
+  }
+
+  &--two {
+    color: $grey;
+    margin-top: 15px;
+  }
+}
+
+.about__button {
+  position: relative;
+  margin-top: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    width: 29px;
+    height: 29px;
+    background-image: url("../img/icons/crown.svg");
+    background-repeat: no-repeat;
+  }
+}

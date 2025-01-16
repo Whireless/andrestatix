@@ -22,7 +22,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 25px;
+    top: 30px;
     right: 15px;
     width: 20px;
     height: 20px;
@@ -40,17 +40,17 @@
 }
 
 .faq__question {
-  padding: 8px 60px 8px 20px;
+  padding: 12px 60px 12px 20px;
   border-radius: $radius;
   cursor: pointer;
 }
 
 .faq__answer {
   background-color: $grey3;
-  padding: 8px 20px;
+  padding: 12px 20px;
   border-radius: $radius;
 }
 
 .faq__go-train {
-  margin-top: 25px;
+  margin-top: 30px;
 }

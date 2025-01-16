@@ -1,13 +1,29 @@
 .about {
   scroll-margin-top: 3em;
+  background-image: url("../img/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .about__block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // width: 320px;
 }
+
+// .about__img {
+//   display: block;
+//   background-image: url("../img/p1.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: 50%;
+//   width: 330px;
+//   height: 320px;
+//   // background-color: $yellow;
+//   // border-radius: 50px;
+//   // backdrop-filter: blur(90px);
+//   margin: 0 0 25px 0;
+// }
 
 .about__title {
   text-transform: uppercase;
@@ -15,7 +31,7 @@
 
 .about__description {
   text-align: center;
-  width: 320px;
+  width: 330px;
 
   &--one {
     margin-top: 20px;
@@ -23,13 +39,13 @@
 
   &--two {
     color: $grey;
-    margin-top: 15px;
+    margin-top: 25px;
   }
 }
 
 .about__button {
   position: relative;
-  margin-top: 60px;
+  margin-top: 65px;
 
   &::before {
     content: "";

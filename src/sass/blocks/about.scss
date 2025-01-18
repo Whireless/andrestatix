@@ -4,23 +4,32 @@
   background-color: rgba($black, 0.6);
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: 0px 0px 55px 90px rgba($black, 0.6);
+  box-shadow: 0px 0px 55px 70px rgba($black, 0.6);
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/tablet/about-bg.png");
+    box-shadow: 0px 0px 70px 85px rgba($black, 0.6);
+  }
 }
 
 .about__block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // width: 330px;
-  // margin: 0 auto;
 }
 
 .about__title {
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 60px;
+  }
 }
 
 .about__description {
   text-align: center;
+  font-weight: 300;
   width: 360px;
 
   &--one {
@@ -31,6 +40,18 @@
     color: $grey;
     margin-top: 25px;
   }
+
+  @media (min-width: $tablet) {
+    width: 620px;
+
+    &--one {
+      margin-top: 35px;
+    }
+
+    &--two {
+      margin-top: 40px;
+    }
+  }
 }
 
 .about__button {
@@ -40,10 +61,24 @@
   &::before {
     content: "";
     position: absolute;
-    top: -38px;
+    top: -40px;
     width: 29px;
     height: 29px;
     background-image: url("../img/icons/crown.svg");
     background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet) {
+    width: 278px;
+    margin-top: 55px;
+    padding: 16px 0;
+
+    &::before {
+      left: -65px;
+      top: 10px;
+      width: 33px;
+      height: 33px;
+    }
   }
 }

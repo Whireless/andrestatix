@@ -5,6 +5,11 @@
 .faq__title {
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 60px;
+  }
 }
 
 .faq__list {
@@ -30,6 +35,7 @@
     height: 20px;
     background-image: url("../img/icons/details.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     transition: 0.4s;
   }
 
@@ -39,12 +45,20 @@
       transform: rotate(180deg);
     }
   }
+
+  @media (min-width: $tablet) {
+    width: 640px;
+  }
 }
 
 .faq__question {
   padding: 16px 60px 16px 20px;
   border-radius: $radius;
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    padding: 20px 60px 20px 20px;
+  }
 }
 
 .faq__answer {
@@ -55,4 +69,9 @@
 
 .faq__go-train {
   margin-top: 30px;
+
+  @media (min-width: $tablet) {
+    width: 290px;
+    padding: 20px 0;
+  }
 }

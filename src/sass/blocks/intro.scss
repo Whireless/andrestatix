@@ -1,5 +1,22 @@
 .intro {
   margin-top: 59px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 0;
+      background-image: url("../img/tablet/rightCrap.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 300px;
+      height: 500px;
+      z-index: -1;
+    }
+  }
 }
 
 .intro__block {
@@ -15,6 +32,13 @@
   text-transform: uppercase;
   text-align: center;
   width: 290px;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 60px;
+    text-align: left;
+    width: 434px;
+  }
 }
 
 .intro__description {
@@ -30,8 +54,23 @@
     top: -30px;
     left: 120px;
     background-image: url("../img/icons/crown.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 25px;
     height: 25px;
+  }
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    width: 320px;
+    margin-left: 65px;
+
+    &::before {
+      width: 33px;
+      height: 33px;
+      top: 5px;
+      left: -60px;
+    }
   }
 }
 
@@ -41,9 +80,20 @@
   flex-direction: column;
   align-items: center;
   row-gap: 15px;
+  background-color: rgba($black, 0.6);
   width: 360px;
   margin-top: 30px;
-  box-shadow: 0 0 55px 90px rgba($black, 0.6);
+  box-shadow: 0 0 55px 70px rgba($black, 0.6);
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: inherit;
+    width: 434px;
+    margin-top: 40px;
+    // box-shadow: 0 0 55px 140px rgba($black, 0.6);
+    box-shadow: none;
+  }
 }
 
 .intro__button {
@@ -55,16 +105,26 @@
   width: 100%;
   padding: 15px 0px;
 
-  // &--buy {
-  //   color: $dark;
-  //   background: $gold;
-  //   border-radius: 5px;
-  // }
+  &--buy {
+    border: 1px solid transparent;
+  }
 
   &--about {
     color: $white;
     border: 1px solid $white;
     border-radius: 5px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 11px 0;
+
+    &--buy {
+      width: 253px;
+    }
+
+    &--about {
+      width: 140px;
+    }
   }
 }
 
@@ -73,4 +133,10 @@
   display: block;
   margin: 25px auto 0 auto;
   z-index: -1;
+
+  @media (min-width: $tablet) {
+    width: 640px;
+    height: 540px;
+    margin: 0 auto;
+  }
 }

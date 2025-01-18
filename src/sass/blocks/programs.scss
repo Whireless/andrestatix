@@ -11,17 +11,32 @@
 .programs__title {
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 60px;
+  }
 }
 
 .programs__track {
   width: 360px;
   margin-top: 30px;
+
+  @media (min-width: $tablet) {
+    width: 380px;
+  }
 }
 
 .programs__item {
   position: relative;
   background-color: $brown;
   border-radius: $radius;
+}
+
+.programs__img {
+  @media (min-width: $tablet) {
+    width: 380px;
+  }
 }
 
 .programs__subtitle {
@@ -36,6 +51,11 @@
   border-radius: $radius;
   backdrop-filter: blur(10px);
   background: rgba($grey, 0.2);
+
+  @media (min-width: $tablet) {
+    top: 355px;
+    left: 45px;
+  }
 }
 
 .programs__info {
@@ -44,11 +64,19 @@
   flex-direction: column;
   height: 380px;
   padding: 30px;
+
+  @media (min-width: $tablet) {
+    padding: 35px;
+  }
 }
 
 .programs__target-program {
   color: $white;
   margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 25px;
+  }
 }
 
 .programs__targets {
@@ -56,6 +84,10 @@
   flex-direction: column;
   row-gap: 10px;
   margin-top: 10px;
+
+  @media (min-width: $tablet) {
+    margin-top: 15px;
+  }
 }
 
 .programs__target {

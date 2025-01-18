@@ -7,10 +7,19 @@
 .results__track {
   width: 360px;
   margin-top: 30px;
+
+  @media (min-width: $tablet) {
+    width: 640px;
+  }
 }
 
 .results__title {
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 60px;
+  }
 }
 
 .results__info {
@@ -18,6 +27,10 @@
   flex-direction: column;
   align-items: center;
   width: 360px;
+
+  @media (min-width: $tablet) {
+    width: 640px;
+  }
 }
 
 .results__suptitle {
@@ -33,8 +46,13 @@
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+  width: 100%;
   margin-top: 30px;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    row-gap: 30px;
+  }
 }
 
 .results__item {
@@ -59,10 +77,25 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+  @media (min-width: $tablet) {
+    row-gap: 12px;
+    padding: 80px 25px 25px 25px;
+
+    &::before {
+      top: 14px;
+      width: 53px;
+      height: 53px;
+    }
+  }
 }
 
 .results__description {
   font-size: 14px;
   font-weight: 100;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 15px;
+  }
 }

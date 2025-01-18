@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
-  // base: '/andrestatix_v2', // На Github
+  base: '/andrestatix_v2', // На Github
   // base: '/', // На хостинг
   server: {
     open: true,

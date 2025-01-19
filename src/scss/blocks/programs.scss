@@ -40,6 +40,11 @@
 
   @media (min-width: $tabletPlus) {
     width: auto;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 50px;
   }
 }
 
@@ -51,6 +56,11 @@
     row-gap: 30px;
     width: 960px;
   }
+
+  @media (min-width: $laptop) {
+    row-gap: 45px;
+    width: 1115px;
+  }
 }
 
 .programs__item {
@@ -61,6 +71,10 @@
   @media (min-width: $tabletPlus) {
     width: 290px;
   }
+
+  @media (min-width: $laptop) {
+    width: 325px;
+  }
 }
 
 .programs__img {
@@ -70,6 +84,10 @@
 
   @media (min-width: $tabletPlus) {
     width: 290px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 325px;
   }
 }
 
@@ -97,6 +115,13 @@
     width: 225px;
     padding: 8px 12px;
   }
+
+  @media (min-width: $laptop) {
+    top: 295px;
+    left: 25px;
+    width: 250px;
+    padding: 9px 12px;
+  }
 }
 
 .programs__info {
@@ -113,6 +138,11 @@
   @media (min-width: $tabletPlus) {
     height: 410px;
     padding: 20px 23px;
+  }
+
+  @media (min-width: $laptop) {
+    height: 430px;
+    padding: 30px 23px;
   }
 }
 

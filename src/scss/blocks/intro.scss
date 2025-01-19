@@ -27,6 +27,11 @@
       display: none;
     }
   }
+
+  @media (min-width: $laptop) {
+    background-size: cover;
+    margin-top: 89px;
+  }
 }
 
 .intro__block {
@@ -126,7 +131,6 @@
 .intro__button {
   text-transform: uppercase;
   text-decoration: none;
-  // color: $white;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -140,6 +144,12 @@
     color: $white;
     border: 1px solid $white;
     border-radius: 5px;
+    transition: $basic;
+
+    &:hover {
+      color: $dark;
+      background-color: $white;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -152,6 +162,10 @@
     &--about {
       width: 140px;
     }
+  }
+
+  @media (min-width: $laptop) {
+    font-size: 16px;
   }
 }
 
@@ -174,5 +188,10 @@
     height: 430px;
     margin-top: 0;
     z-index: 0;
+  }
+
+  @media (min-width: $laptop) {
+    width: 520px;
+    height: 470px;
   }
 }

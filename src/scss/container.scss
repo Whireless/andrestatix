@@ -9,4 +9,8 @@
   @media (min-width: $tabletPlus) {
     padding: 55px 60px;
   }
+
+  @media (min-width: $laptop) {
+    padding: 60px 120px;
+  }
 }

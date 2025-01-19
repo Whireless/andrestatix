@@ -21,6 +21,11 @@
 
   @media (min-width: $tabletPlus) {
     row-gap: 30px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 50px;
   }
 }
 
@@ -56,6 +61,10 @@
 
   @media (min-width: $tabletPlus) {
     width: 960px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 1120px;
   }
 }
 

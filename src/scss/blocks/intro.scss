@@ -17,6 +17,16 @@
       z-index: -1;
     }
   }
+
+  @media (min-width: $tabletPlus) {
+    background-image: url("../img/desktop/craps.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .intro__block {
@@ -24,6 +34,15 @@
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
+
+  @media (min-width: $tabletPlus) {
+    display: grid;
+    grid-template-columns: 430px 450px;
+    grid-template-rows: 160px 45px 50px;
+    row-gap: 60px;
+    justify-content: space-between;
+    padding-top: 0;
+  }
 }
 
 .intro__title {
@@ -72,6 +91,11 @@
       left: -60px;
     }
   }
+
+  @media (min-width: $tabletPlus) {
+    width: 355px;
+    margin-top: 0;
+  }
 }
 
 .intro__buttons {
@@ -83,7 +107,7 @@
   background-color: rgba($black, 0.6);
   width: 360px;
   margin-top: 30px;
-  box-shadow: 0 0 55px 70px rgba($black, 0.6);
+  box-shadow: 0 0 55px 60px rgba($black, 0.6);
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -91,8 +115,11 @@
     background-color: inherit;
     width: 434px;
     margin-top: 40px;
-    // box-shadow: 0 0 55px 140px rgba($black, 0.6);
     box-shadow: none;
+  }
+
+  @media (min-width: $tabletPlus) {
+    margin-top: 0;
   }
 }
 
@@ -131,12 +158,21 @@
 .intro__img {
   position: relative;
   display: block;
-  margin: 25px auto 0 auto;
+  margin: 30px auto 0 auto;
   z-index: -1;
 
   @media (min-width: $tablet) {
     width: 640px;
-    height: 540px;
-    margin: 0 auto;
+    height: 545px;
+    margin: 45px auto 0 auto;
+  }
+
+  @media (min-width: $tabletPlus) {
+    grid-row: 1/-1;
+    grid-column: 2;
+    width: 480px;
+    height: 430px;
+    margin-top: 0;
+    z-index: 0;
   }
 }

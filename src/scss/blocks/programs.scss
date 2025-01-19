@@ -3,9 +3,21 @@
 }
 
 .programs__slider {
+  visibility: visible;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  // Настройка для адаптивного отображения программ на десктопе
+  // т.к без этого базовые стили splideJS ломают отображение
+
+  @media (min-width: $tabletPlus) {
+    &.is-initialized:not(.is-active) {
+      .programs__list {
+        display: flex;
+      }
+    }
+  }
 }
 
 .programs__title {
@@ -25,17 +37,39 @@
   @media (min-width: $tablet) {
     width: 380px;
   }
+
+  @media (min-width: $tabletPlus) {
+    width: auto;
+  }
+}
+
+.programs__list {
+  @media (min-width: $tabletPlus) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+    width: 960px;
+  }
 }
 
 .programs__item {
   position: relative;
   background-color: $brown;
   border-radius: $radius;
+
+  @media (min-width: $tabletPlus) {
+    width: 290px;
+  }
 }
 
 .programs__img {
   @media (min-width: $tablet) {
     width: 380px;
+  }
+
+  @media (min-width: $tabletPlus) {
+    width: 290px;
   }
 }
 
@@ -56,6 +90,13 @@
     top: 355px;
     left: 45px;
   }
+
+  @media (min-width: $tabletPlus) {
+    top: 260px;
+    left: 20px;
+    width: 225px;
+    padding: 8px 12px;
+  }
 }
 
 .programs__info {
@@ -68,15 +109,20 @@
   @media (min-width: $tablet) {
     padding: 35px;
   }
+
+  @media (min-width: $tabletPlus) {
+    height: 410px;
+    padding: 20px 23px;
+  }
+}
+
+.programs__description {
+  text-align: justify;
 }
 
 .programs__target-program {
   color: $white;
   margin-top: 20px;
-
-  @media (min-width: $tablet) {
-    margin-top: 25px;
-  }
 }
 
 .programs__targets {
@@ -92,12 +138,13 @@
 
 .programs__target {
   position: relative;
+  padding-left: 16px;
 
   &::before {
     content: "";
     position: absolute;
     top: 9px;
-    left: -12px;
+    left: 0;
     width: 5px;
     height: 5px;
     background-color: $yellow;
@@ -120,4 +167,8 @@
 
 .programs__button-buy {
   width: 300px;
+
+  @media (min-width: $tabletPlus) {
+    width: 240px;
+  }
 }

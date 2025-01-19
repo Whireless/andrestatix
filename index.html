@@ -44,12 +44,9 @@
             <a class="intro__button intro__button--buy gold-button" href="#programs">Купить программу</a>
             <a class="intro__button intro__button--about" href="#faq">Подробнее</a>
           </article>
+          <img class="intro__img" src="/img/intro-bg.png" width="360" height="330" alt="Мега важная фотография">
         </article>
       </div>
-      <picture>
-        <source type="image/png" srcset="img/tablet/intro-bg.png" media="(min-width: 720px)">
-        <img class="intro__img" src="/img/intro-bg.png" width="400" height="350" alt="Мега важная фотография">
-      </picture>
     </section>
     <section id="about" class="about">
       <div class="container">
@@ -67,10 +64,10 @@
     </section>
     <section class="results">
       <div class="container">
-        <article class="results__slider splide">
+        <article class="splide results__slider">
           <h2 class="results__title">Мои результаты</h2>
-          <div class="results__track splide__track">
-            <ul class="results__slides splide__list">
+          <div class="splide__track results__track">
+            <ul class="splide__list results__slides">
               <li class="results__info results__info--before splide__slide">
                 <h3 class="results__suptitle">10 лет назад</h3>
                 <ul class="results__list">
@@ -128,7 +125,7 @@
                   <p class="programs__description">Предназначен для тех, кто хочет тренироваться, но не знает с чего лучше начать занятия</p>
                   <h4 class="programs__target-program">Цель программы:</h4>
                   <ul class="programs__targets">
-                    <li class="programs__target">Отжимания от пола: 25 повторений с +15кг</li>
+                    <li class="programs__target">Отжимания: 25 повторений с +15кг</li>
                     <li class="programs__target">Турник: 15 подтягиваний и один повтор +30кг</li>
                     <li class="programs__target">Брусья: один повтор с +50кг</li>
                   </ul>
@@ -158,7 +155,7 @@
                 <img src="img/cover.png" width="360" alt="" class="programs__img">
                 <h3 class="programs__subtitle">Средний уровень</h3>
                 <article class="programs__info">
-                  <p class="programs__description">Предназначен для тех, кто достиг неплохих, но всё же недостаточных успехов после реализации начального уровня.</p>
+                  <p class="programs__description">Предназначен для тех, кому недостаточно успехов после реализации начального уровня.</p>
                   <h4 class="programs__target-program">Цель программы:</h4>
                   <ul class="programs__targets">
                     <li class="programs__target">Турник: один повтор с 100кг</li>
@@ -190,7 +187,7 @@
                 <img src="img/cover.png" width="360" alt="" class="programs__img">
                 <h3 class="programs__subtitle">Начальный уровень</h3>
                 <article class="programs__info">
-                  <p class="programs__description">Предназначен для уже имеющих минимальную базу в подтягиваниях и отжиманиях на брусьях с дополнительным весом</p>
+                  <p class="programs__description">Предназначен для уже имеющих минимальную базу в подтягиваниях и на брусьях с доп. весом</p>
                   <h4 class="programs__target-program">Цель программы:</h4>
                   <ul class="programs__targets">
                     <li class="programs__target">Вы обучитесь технике упражнения, и увеличите количество повторений за подход.</li>
@@ -276,26 +273,28 @@
   </main>
   <footer id="contacts" class="main-footer">
     <div class="container">
-      <h3 class="main-footer__title">Мои соц сети</h3>
-      <ul class="main-footer__list">
-        <li class="main-footer__item">
-          <a href="https://instagram.com/andrestatix" class="main-footer__link main-footer__link--instagram" aria-label="Я в Instagram"></a>
-        </li>
-        <li class="main-footer__item">
-          <a href="https://t.me/andrestatix" class="main-footer__link main-footer__link--telegram" aria-label="Я в Telegram"></a>
-        </li>
-        <li class="main-footer__item">
-          <a href="https://vk.com/andrestatix" class="main-footer__link main-footer__link--vk" aria-label="Я в ВК"></a>
-        </li>
-        <li class="main-footer__item">
-          <a href="https://youtube.com/@andrestatix" class="main-footer__link main-footer__link--youtube" aria-label="Я на YouTube"></a>
-        </li>
-        <li class="main-footer__item">
-          <a href="https://tiktok.com/@andrestatix" class="main-footer__link main-footer__link--tiktok" aria-label="Я в TikTok"></a>
-        </li>
-      </ul>
-      <p class="main-footer__copyright">Все права защищены 2025 ©</p>
-      <span class="main-footer__dev">dev: <a href="https://github.com/Whireless" title="Разработчик">whireless</a></span>
+      <article class="main-footer__info">
+        <h2 class="main-footer__title">Мои соц сети</h2>
+        <ul class="main-footer__list">
+          <li class="main-footer__item">
+            <a href="https://instagram.com/andrestatix" class="main-footer__link main-footer__link--instagram" aria-label="Я в Instagram"></a>
+          </li>
+          <li class="main-footer__item">
+            <a href="https://t.me/andrestatix" class="main-footer__link main-footer__link--telegram" aria-label="Я в Telegram"></a>
+          </li>
+          <li class="main-footer__item">
+            <a href="https://vk.com/andrestatix" class="main-footer__link main-footer__link--vk" aria-label="Я в ВК"></a>
+          </li>
+          <li class="main-footer__item">
+            <a href="https://youtube.com/@andrestatix" class="main-footer__link main-footer__link--youtube" aria-label="Я на YouTube"></a>
+          </li>
+          <li class="main-footer__item">
+            <a href="https://tiktok.com/@andrestatix" class="main-footer__link main-footer__link--tiktok" aria-label="Я в TikTok"></a>
+          </li>
+        </ul>
+        <p class="main-footer__copyright">Все права защищены 2025 ©</p>
+        <span class="main-footer__dev">dev: <a href="https://github.com/Whireless" title="Разработчик">whireless</a></span>
+      </article>
     </div>
   </footer>
   <script src="/src/js/index.js" type="module"></script>

@@ -1,3 +1,3 @@
-import '../sass/style.scss';
-import "./menu.js";
-import "./animation.js";
+import './splide.js';
+import './menu.js';
+import '../scss/style.scss';

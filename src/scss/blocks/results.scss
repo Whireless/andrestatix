@@ -11,6 +11,11 @@
   @media (min-width: $tablet) {
     width: 640px;
   }
+
+  @media (min-width: $tabletPlus) {
+    width: auto;
+    margin-top: 40px;
+  }
 }
 
 .results__title {
@@ -22,6 +27,13 @@
   }
 }
 
+.results__slides {
+  @media (min-width: $tabletPlus) {
+    display: flex;
+    width: 885px;
+  }
+}
+
 .results__info {
   display: flex;
   flex-direction: column;
@@ -30,6 +42,12 @@
 
   @media (min-width: $tablet) {
     width: 640px;
+  }
+
+  @media (min-width: $tabletPlus) {
+    &--after {
+      grid-column: 2;
+    }
   }
 }
 
@@ -52,6 +70,10 @@
 
   @media (min-width: $tablet) {
     row-gap: 30px;
+  }
+
+  @media (min-width: $tabletPlus) {
+    row-gap: 45px;
   }
 }
 

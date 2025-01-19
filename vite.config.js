@@ -11,6 +11,14 @@ export default defineConfig({
   build: {
     outDir: './build',
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/scss/variables";`,
+        api: 'modern-compiler',
+      },
+    },
+  },
   plugins: [
     ViteImageOptimizer({
       jpg: {

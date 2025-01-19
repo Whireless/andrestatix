@@ -5,4 +5,8 @@
   @media (min-width: $tablet) {
     padding: 50px 40px;
   }
+
+  @media (min-width: $tabletPlus) {
+    padding: 55px 60px;
+  }
 }

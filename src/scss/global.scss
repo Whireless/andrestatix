@@ -24,6 +24,11 @@ body {
     font-size: 17px;
     line-height: 25px;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 21px;
+    line-height: 30px;
+  }
 }
 
 .visually-hidden {
@@ -64,5 +69,13 @@ body {
 
   @media (min-width: $tablet) {
     padding: 10px 0;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 12px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 15px 0;
   }
 }

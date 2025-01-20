@@ -17,6 +17,10 @@
     padding: 25px 60px;
   }
 
+  @media (min-width: $desktop) {
+    padding: 30px 250px;
+  }
+
   .main-nav__button-elem {
     &:nth-of-type(1) {
       animation: ease 0.5s topClose forwards;
@@ -101,6 +105,10 @@
     column-gap: 60px;
     transform: translateX(0);
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 80px;
   }
 }
 

@@ -57,6 +57,18 @@
 
   @media (min-width: $laptop) {
     width: 1160px;
+
+    &::after {
+      right: 25px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 1420px;
+
+    &::after {
+      top: 30px;
+    }
   }
 }
 
@@ -72,6 +84,10 @@
   @media (min-width: $laptop) {
     padding: 22px 25px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 25px 30px;
+  }
 }
 
 .faq__answer {
@@ -83,6 +99,10 @@
   @media (min-width: $laptop) {
     padding: 22px 25px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 25px 30px;
+  }
 }
 
 .faq__go-train {
@@ -91,5 +111,9 @@
   @media (min-width: $tablet) {
     width: 290px;
     padding: 20px 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 350px;
   }
 }

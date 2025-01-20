@@ -1,5 +1,13 @@
 .faq {
   scroll-margin-top: 3em;
+  background-image: url("../img/desktop/faq-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 60%;
+
+  @media (min-width: $desktop) {
+    background-position: 0 65%;
+  }
 }
 
 .faq__title {
@@ -22,6 +30,11 @@
   @media (min-width: $laptop) {
     row-gap: 30px;
     margin-top: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    row-gap: 40px;
+    margin-top: 65px;
   }
 }
 
@@ -56,7 +69,7 @@
   }
 
   @media (min-width: $laptop) {
-    width: 1160px;
+    width: 1120px;
 
     &::after {
       right: 25px;

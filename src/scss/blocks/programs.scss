@@ -42,15 +42,20 @@
     width: auto;
     margin-top: 50px;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 65px;
+  }
 }
 
 .programs__list {
   @media (min-width: $laptop) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    // justify-content: space-around;
+    justify-content: space-between;
     row-gap: 45px;
-    width: 1160px;
+    width: 1120px;
   }
 
   @media (min-width: $desktop) {
@@ -63,6 +68,7 @@
   position: relative;
   background-color: $brown;
   border-radius: $radius;
+  border: 1px solid red;
 
   @media (min-width: $laptop) {
     width: 330px;
@@ -75,15 +81,15 @@
 
 .programs__img {
   @media (min-width: $tablet) {
-    width: 380px;
+    width: 378px;
   }
 
   @media (min-width: $laptop) {
-    width: 330px;
+    width: 328px;
   }
 
   @media (min-width: $desktop) {
-    width: 400px;
+    width: 398px;
   }
 }
 

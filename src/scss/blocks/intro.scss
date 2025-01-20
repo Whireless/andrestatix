@@ -29,6 +29,11 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    background-position: 0 50%;
+    margin-top: 99px;
+  }
 }
 
 .intro__block {
@@ -38,16 +43,16 @@
 
   @media (min-width: $laptop) {
     display: grid;
-    grid-template-columns: 435px 520px;
+    grid-template-columns: 435px 615px;
     grid-template-rows: 165px 45px 50px;
     row-gap: 60px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: 530px 600px;
-    grid-template-rows: 165px 55px 55px;
-    row-gap: 70px;
+    grid-template-columns: 530px 670px;
+    grid-template-rows: 170px 55px 55px;
+    row-gap: 75px;
   }
 }
 
@@ -146,10 +151,6 @@
   justify-content: center;
   width: 100%;
   padding: 15px 0px;
-
-  &--buy {
-    border: 1px solid transparent;
-  }
 
   &--about {
     color: $white;

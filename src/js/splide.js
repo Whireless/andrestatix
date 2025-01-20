@@ -9,7 +9,7 @@ const resultsSlider = new Splide('.results__slider', {
   gap: '25px',
   mediaQuery: 'min',
   breakpoints: {
-    1080: {
+    1280: {
       perPage: 2,
       pagination: false,
       arrows: false,
@@ -31,7 +31,7 @@ const programsSlider = new Splide('.programs__slider', {
   gap: '25px',
   mediaQuery: 'min',
   breakpoints: {
-    1080: {
+    1280: {
       destroy: true,
   //     perPage: 4,
       pagination: false,

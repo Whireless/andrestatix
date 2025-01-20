@@ -6,19 +6,15 @@
   justify-content: space-between;
   align-items: center;
   background-color: $dark;
-  padding: 15px 20px;
+  padding: 15px 15px;
   z-index: 9;
 
   @media (min-width: $tablet) {
-    padding: 20px 40px;
-  }
-
-  @media (min-width: $tabletPlus) {
-    padding: 20px 60px;
+    padding: 20px 35px;
   }
 
   @media (min-width: $laptop) {
-    padding: 25px 120px;
+    padding: 25px 60px;
   }
 
   .main-nav__button-elem {
@@ -76,7 +72,7 @@
     padding: 9px 11px;
   }
 
-  @media (min-width: $tabletPlus) {
+  @media (min-width: $laptop) {
     order: 2;
   }
 }
@@ -90,25 +86,21 @@
   flex-direction: column;
   row-gap: 40px;
   background-color: $dark;
-  padding: 35px 20px;
+  padding: 35px 15px;
   transform: translateX(-150%);
   transition: $basic;
 
   @media (min-width: $tablet) {
     row-gap: 45px;
-    padding: 40px 40px;
-  }
-
-  @media (min-width: $tabletPlus) {
-    position: static;
-    flex-direction: row;
-    column-gap: 50px;
-    transform: translateX(0);
-    padding: 0;
+    padding: 40px 35px;
   }
 
   @media (min-width: $laptop) {
+    position: static;
+    flex-direction: row;
     column-gap: 60px;
+    transform: translateX(0);
+    padding: 0;
   }
 }
 
@@ -123,7 +115,7 @@
     color: $yellow;
   }
 
-  @media (min-width: $tabletPlus) {
+  @media (min-width: $laptop) {
     text-transform: none;
   }
 }
@@ -138,7 +130,7 @@
   cursor: pointer;
   border: none;
 
-  @media (min-width: $tabletPlus) {
+  @media (min-width: $laptop) {
     display: none;
   }
 }

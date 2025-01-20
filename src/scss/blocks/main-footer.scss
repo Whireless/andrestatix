@@ -1,5 +1,5 @@
 .main-footer__info {
-  @media (min-width: $tabletPlus) {
+  @media (min-width: $laptop) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,7 +15,7 @@
     line-height: 60px;
   }
 
-  @media (min-width: $tabletPlus) {
+  @media (min-width: $laptop) {
     font-size: 28px;
     line-height: 40px;
   }
@@ -33,13 +33,14 @@
     margin-top: 25px;
   }
 
-  @media (min-width: $tabletPlus) {
-    column-gap: 20px;
-    margin-top: 0;
-  }
+  // @media (min-width: $tabletPlus) {
+  //   column-gap: 20px;
+  //   margin-top: 0;
+  // }
 
   @media (min-width: $laptop) {
     column-gap: 25px;
+    margin-top: 0;
   }
 }
 
@@ -78,7 +79,7 @@
   text-align: center;
   margin-top: 25px;
 
-  @media (min-width: $tabletPlus) {
+  @media (min-width: $laptop) {
     margin-top: 0;
   }
 }
@@ -91,7 +92,7 @@
   width: max-content;
   margin: 0 auto;
 
-  @media (min-width: $tabletPlus) {
+  @media (min-width: $laptop) {
     margin: 0;
   }
 }

@@ -33,14 +33,8 @@ const programsSlider = new Splide('.programs__slider', {
   breakpoints: {
     1280: {
       destroy: true,
-  //     perPage: 4,
       pagination: false,
       arrows: false,
-  //     drag: false,
     },
   },
 }).mount();
-
-// if (window.matchMedia("(min-width: 1080px)").matches) {
-//   document.querySelector('.programs__slider').classList.remove('is-initialized');
-// }

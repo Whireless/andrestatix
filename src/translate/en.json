@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "list": [
+      "About me",
+      "Programs",
+      "FAQ",
+      "Contacts"
+    ]
+  },
+  "intro": {
+    "title": {
+      "start": "Become a master of ",
+      "one": "Streetlifting",
+      "middle": "and",
+      "two": "Calisthenics!"
+    },
+    "description": "Through training programs, we will improve your results on the horizontal bar and parallel bars"
+  },
+  "about": {
+    "title": "About me",
+    "descriptions": [
+      "I am a simple guy who loves Streetlifting and Calisthenics with all his heart! And I also love to teach this to those who are ready to give their all to this business. My experience in training is a little more than 10 years, during this time I have been through fire and water, ups and downs, sometimes I quickly progressed, and sometimes I even quit training for a long time. But only now I understand that this whole path was worth it: where I was then and where I am now are completely 2 different people, both in the mental and physically.",
+      "I wanted to become the strongest in this area! I wanted more from myself! And if I knew then how to eat properly, train, recover and progress, then I would have reached my current level 2 times faster and would be 2 times stronger now!"
+    ]
+  },
+  "results": {
+    "title": "My results",
+    "suptitles": ["10 years ago", "Now"],
+    "before": {
+      "titles": ["Pull-ups", "Bar", "Push-ups"],
+      "descriptions": ["Pull-ups with your own weight 8-10 times", "Push-ups on the bar 0 times", "Push-ups from the floor 15-20 times"]
+    },
+    "after": {
+      "titles": ["Pull-ups", "Bar", "Power exit"],
+      "descriptions": ["Pull-ups with additional weight +100 kg per time", "Bar with additional weight +100 kg per time", "Power exit on the horizontal bar and rings with +45 kg"]
+    }
+  },
+  "programs": {
+    "title": "Training programs",
+    "subtitle": "Program goal:",
+    "street": [
+      {
+        "title": "Zero level",
+        "description": "Designed for those who want to train, but do not know where to start training",
+        "targets": [
+          "Push-ups: 25 reps with +15 kg",
+          "Horizontal bar: 15 pull-ups and one rep with +30 kg",
+          "Parallel bars: one rep with +50 kg"
+        ],
+        "price": "15 $"
+      },
+      {
+        "title": "Beginner level",
+        "description": "Designed for athletes learned good technique of pull-ups and dips on the bars",
+        "targets": [
+          "Horizontal bar: one rep with 70 kg",
+          "Diagonal bars: one rep with 100 kg"
+        ],
+        "price": "20 $"
+      },
+      {
+        "title": "Intermediate level",
+        "description": "Designed for those who are not successful enough after implementing the initial level.",
+        "targets": [
+          "Horizontal bar: one rep with 100 kg",
+          "Diagonal bars: one rep with 150 kg"
+        ],
+        "price": "25 $"
+      },
+      {
+        "title": "Advanced level",
+        "description": "Designed for incredible madmen capable of the most brutal confrontation!",
+        "targets": [
+          "Horizontal bar: one rep with 120 kg",
+          "Parallel Bars: one rep with 200 kg"
+        ],
+        "price": "30 $"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "list": [
+      {
+        "q": "What age category is each of the programs suitable for?",
+        "a": "All programs are suitable for any age category except for the Intermediate and Advanced levels of Streetlifting and Advanced level of Power Pull-Ups. They are only suitable for athletes over 18 years old."
+      },
+      {
+        "q": "What results can be achieved in six months or a year of training?",
+        "a": "It depends on what level you are at now, and also depends specifically on the individual characteristics of each person. This is greatly influenced by genetics, the athlete's lifestyle, nutrition and sleep."
+      },
+      {
+        "q": "Are these programs suitable for gaining muscle mass?",
+        "a": "The goal of these programs is specifically Streetlifting and Power Exits. That is, increasing strength indicators. To some extent, all this also affects the gain of muscle mass, especially in the initial stages of training."
+      },
+      {
+        "q": "What is included in these programs? What will I get if I buy one of them?",
+        "a": "You will receive a PDF file that describes everything you need to know how to train at any of the levels, and specifically this is the training program itself, that is, a progress diagram, a plan, call it what you want. Also, in addition, the programs will include links to videos with an analysis of exercise technique and general recommendations for training."
+      },
+      {
+        "q": "Where to train? What equipment do you need for training?",
+        "a": "You can train wherever it is convenient for you. You cango to the gym, but it is unlikely that there will be good equipment for streetlifting. Therefore, it will be best to create your own training corner. For this you will need a horizontal bar, parallel bars, a belt with a cable or chain and additional weight from pancakes from 50 to 150 kg of total weight. It is best to use thin powerlifting disks."
+      },
+      {
+        "q": "Do you give any guarantees that I or my friends will get results by training according to your programs?",
+        "a": "The only guarantee that really exists is that we will all die sooner or later. The rest does not matter. Just kidding. I guarantee you that by training according to my program you will get exactly the result you want! The most important thing is that not only the program works, but you too! You should follow all the advice that I wrote, then you will soon notice progress. Good luck!"
+      },
+      {
+        "q": "Did you develop these programs yourself?",
+        "a": "Yes, the training programs were developed by me personally, and are my intellectual property. If you have any requests for distributing the programs or collaborating, write to me by email or Telegram."
+      },
+      {
+        "q": "When I buy the course, will I get anything else?",
+        "a": "Yes, in addition to the program itself, you get access to a closed Telegram channel where you can communicate with like-minded people and with me."
+      },
+      {
+        "q": "What should I do if I want a refund?",
+        "a": "There is no refund. Why? The thing is that you know what you are paying for, and in the event of a refund, I have no way to take away your access to the program you have already received, which you receive FOREVER. However, if any payment issues arise, write to me by email or in Telegram."
+      }
+    ]
+  },
+  "footer": {
+    "title": "My socials",
+    "copyright": "All rights reserved 2025 ©"
+  },
+  "buttons": [
+    "Buy the program",
+    "More details",
+    "Go to the program"
+  ]
+}

@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import simpleHtmlPlugin from 'vite-plugin-simple-html';
 
 export default defineConfig({
   base: '/andrestatix_v2', // На Github
@@ -30,6 +31,9 @@ export default defineConfig({
       png: {
         quality: 70,
       },
+    }),
+    simpleHtmlPlugin({
+      minify: true,
     }),
   ],
   resolve: {

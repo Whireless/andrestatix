@@ -1,36 +1,44 @@
 import ru from '/src/translate/ru.json' with { type: 'json' };
 import en from '/src/translate/en.json' with { type: 'json' };
 
-const page = document.querySelector('html');
+import { page, popup } from './pay.js';
+
 const select = page.querySelector('.main-nav__langs');
 const storage = window.localStorage;
 
-select.addEventListener('change', () => {
+// Смена языка по изменению select
 
-  // Смена языка по изменению select
+select.addEventListener('change', () => setPageLang(select.value, true));
 
-  if (select.value === 'en') {
-    setLanguage(en);
-    storage.setItem('lang', 'en');
-    page.setAttribute('lang', 'en');
-  } else {
-    setLanguage(ru);
-    storage.setItem('lang', 'ru');
-    page.setAttribute('lang', 'ru');
-  }
-});
+// Переключение языка при загрузке страницы
+
+window.addEventListener('load', () => setPageLang(storage.getItem('lang')));
 
 // Подстановка новых языковых данных в элемент
 
 const setText = (elem, text, isArr, arr) => {
-  if (text) {
-    elem.textContent = text;
-  }
+  if (text) elem.textContent = text;
 
-  if (isArr) {
-    elem.forEach((item, i) => {
-      item.textContent = arr[i];
-    });
+  if (isArr) elem.forEach((item, i) => item.textContent = arr[i]);
+};
+
+// Установка глобального атрибута языка странице и изменение input в попапе оплаты
+
+const setPageLang = (lang, change) => {
+  if (lang === 'en') {
+    setLanguage(en);
+    page.setAttribute('lang', 'en');
+    select.querySelector('.main-nav__lang--en').setAttribute('selected', '');
+    popup.querySelector('.pay__input--email').style.display = 'none';
+    popup.querySelector('.pay__label--checkbox').style.display = 'flex';
+    if (change) storage.setItem('lang', 'en');
+  } else {
+    setLanguage(ru);
+    page.setAttribute('lang', 'ru');
+    select.querySelector('.main-nav__lang--ru').setAttribute('selected', '');
+    popup.querySelector('.pay__label--checkbox').style.display = 'none';
+    popup.querySelector('.pay__input--email').style.display = 'block';
+    if (change) storage.setItem('lang', 'ru');
   }
 };
 
@@ -67,6 +75,11 @@ const setLanguage = (lang) => {
   const footerTitle = page.querySelector('.main-footer__title');
   const footerCopy = page.querySelector('.main-footer__copyright');
 
+  const streetLabel = popup.querySelector('.pay__label');
+  const streetLevel = popup.querySelector('.pay__span--level');
+  const streetPrice = popup.querySelector('.pay__span--price');
+  const streetBuy = popup.querySelector('.pay__submit');
+
   // Перевод
 
   setText(navList, null, true, lang.nav.list);
@@ -100,6 +113,9 @@ const setLanguage = (lang) => {
     setText(program.querySelectorAll('.programs__target'), null, true, lang.programs.street[i].targets);
     setText(program.querySelector('.programs__price'), lang.programs.street[i].price);
     setText(program.querySelector('.programs__button-buy'), lang.buttons[0]);
+
+    program.querySelector('.programs__button-buy').dataset.level = lang.programs.street[i].data.level;
+    program.querySelector('.programs__button-buy').dataset.price = lang.programs.street[i].data.price;
   });
 
   // Перевод FAQ
@@ -115,19 +131,11 @@ const setLanguage = (lang) => {
 
   setText(footerTitle, lang.footer.title);
   setText(footerCopy, lang.footer.copyright);
+
+  // Перевод попапа
+
+  setText(streetLabel, lang.popupStreet.label);
+  setText(streetLevel, lang.popupStreet.level);
+  setText(streetPrice, lang.popupStreet.price);
+  setText(streetBuy, lang.popupStreet.go);
 };
-
-// Переключение языка при загрузке страницы
-
-window.addEventListener('load', () => {
-  const lang = storage.getItem('lang');
-  if (lang === 'en') {
-    setLanguage(en);
-    select.querySelector('.main-nav__lang--en').setAttribute('selected', '');
-    page.setAttribute('lang', 'en');
-  } else {
-    setLanguage(ru);
-    select.querySelector('.main-nav__lang--ru').setAttribute('selected', '');
-    page.setAttribute('lang', 'ru');
-  }
-});

@@ -43,14 +43,14 @@
 
   @media (min-width: $laptop) {
     display: grid;
-    grid-template-columns: 435px 615px;
+    grid-template-columns: 435px 650px;
     grid-template-rows: 165px 45px 50px;
     row-gap: 60px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: 530px 670px;
+    grid-template-columns: 530px 750px;
     grid-template-rows: 170px 55px 55px;
     row-gap: 75px;
   }

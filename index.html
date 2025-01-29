@@ -17,7 +17,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="#" aria-label="Мой логотип"></a>
-      <select class="main-nav__langs" name="" id="">
+      <select class="main-nav__langs" name="langs">
         <option class="main-nav__lang main-nav__lang--ru" value="ru">RU</option>
         <option class="main-nav__lang main-nav__lang--en" value="en">EN</option>
       </select>
@@ -51,7 +51,7 @@
     <section id="about" class="about">
       <div class="container">
         <article class="about__block">
-          <img class="about__img" src="img/desktop/about-img.png" width="445" height="540" alt="">
+          <img class="about__img" src="img/desktop/about-img.png" width="445" height="540" alt="Я, рядом с мотивационной речью :)">
           <article class="about__info">
             <h2 class="about__title">Обо мне</h2>
             <p class="about__description about__description--one">
@@ -122,7 +122,7 @@
           <div class="programs__track splide__track">
             <ul class="programs__list programs__list--streetlifting splide__list">
               <li class="programs__item splide__slide">
-                <img class="programs__img" src="img/cover.png" width="328" height="auto" alt="">
+                <img class="programs__img" src="img/cover.png" width="328" height="auto" alt="Обложка программы">
                 <h3 class="programs__subtitle">Нулевой уровень</h3>
                 <article class="programs__info">
                   <p class="programs__description">Предназначен для тех, кто хочет тренироваться, но не знает с чего лучше начать занятия</p>
@@ -134,12 +134,12 @@
                   </ul>
                   <article class="programs__buy">
                     <span class="programs__price">1500 ₽</span>
-                    <a class="programs__button-buy gold-button" href="#">Купить программу</a>
+                    <a class="programs__button-buy gold-button" data-price="1500" data-level="Нулевой">Купить программу</a>
                   </article>
                 </article>
               </li>
               <li class="programs__item splide__slide">
-                <img class="programs__img" src="img/cover.png" width="328" height="auto" alt="">
+                <img class="programs__img" src="img/cover.png" width="328" height="auto" alt="Обложка программы">
                 <h3 class="programs__subtitle">Начальный уровень</h3>
                 <article class="programs__info">
                   <p class="programs__description">Предназначен для атлетов научившихся хорошей технике подтягиваний и отжиманий на брусьях</p>
@@ -150,12 +150,12 @@
                   </ul>
                   <article class="programs__buy">
                     <span class="programs__price">2000 ₽</span>
-                    <a class="programs__button-buy gold-button" href="#">Купить программу</a>
+                    <a class="programs__button-buy gold-button" data-price="2000" data-level="Начальный">Купить программу</a>
                   </article>
                 </article>
               </li>
               <li class="programs__item splide__slide">
-                <img class="programs__img" src="img/cover.png" width="328" height="auto" alt="">
+                <img class="programs__img" src="img/cover.png" width="328" height="auto" alt="Обложка программы">
                 <h3 class="programs__subtitle">Средний уровень</h3>
                 <article class="programs__info">
                   <p class="programs__description">Предназначен для тех, кому недостаточно успехов после реализации начального уровня.</p>
@@ -166,12 +166,12 @@
                   </ul>
                   <article class="programs__buy">
                     <span class="programs__price">2500 ₽</span>
-                    <a class="programs__button-buy gold-button" href="#">Купить программу</a>
+                    <a class="programs__button-buy gold-button" data-price="2500" data-level="Средний">Купить программу</a>
                   </article>
                 </article>
               </li>
               <li class="programs__item splide__slide">
-                <img class="programs__img" src="img/cover.png" width="328" height="auto" alt="">
+                <img class="programs__img" src="img/cover.png" width="328" height="auto" alt="Обложка программы">
                 <h3 class="programs__subtitle">Продвинутый уровень</h3>
                 <article class="programs__info">
                   <p class="programs__description"> Предназначен для невероятных безумцев способных на жесточайшее противостояние!</p>
@@ -182,25 +182,10 @@
                   </ul>
                   <article class="programs__buy">
                     <span class="programs__price">3000 ₽</span>
-                    <a class="programs__button-buy gold-button" href="#">Купить программу</a>
+                    <a class="programs__button-buy gold-button" data-price="3000" data-level="Продвинутый">Купить программу</a>
                   </article>
                 </article>
               </li>
-              <!-- <li class="programs__item splide__slide">
-                <img src="img/cover.png" width="330" alt="" class="programs__img">
-                <h3 class="programs__subtitle">Начальный уровень</h3>
-                <article class="programs__info">
-                  <p class="programs__description">Предназначен для уже имеющих минимальную базу в подтягиваниях и на брусьях с доп. весом</p>
-                  <h4 class="programs__target-program">Цель программы:</h4>
-                  <ul class="programs__targets">
-                    <li class="programs__target">Вы обучитесь технике упражнения, и увеличите количество повторений за подход.</li>
-                  </ul>
-                  <article class="programs__buy">
-                    <span class="programs__price">2000 ₽</span>
-                    <a class="programs__button-buy gold-button" href="#">Купить программу</a>
-                  </article>
-                </article>
-              </li> -->
             </ul>
             <ul class="slider__pagination splide__pagination"></ul>
             <div class="slider__arrows splide__arrows">
@@ -295,11 +280,41 @@
             <a href="https://tiktok.com/@andrestatix" class="main-footer__link main-footer__link--tiktok" aria-label="Я в TikTok"></a>
           </li>
         </ul>
-        <p class="main-footer__copyright">Все права защищены 2025 ©</p>
+        <div class="main-footer__other">
+          <span class="main-footer__copyright">Все права защищены 2025 ©</span>
+          <p class="main-footer__personal-info">
+            <span>Пакин Андрей Алексеевич</span>
+            <span>ИНН 694905595517</span>
+            <a class="main-footer__mail" href="mailto:andresthenics@gmail.com">andresthenics@gmail.com</a>
+          </p>
+        </div>
         <span class="main-footer__dev">dev: <a href="https://github.com/Whireless" title="Разработчик">whireless</a></span>
       </article>
     </div>
   </footer>
+  <div class="pay">
+    <button class="pay__close" aria-label="Закрыть попап оплаты"></button>
+    <form class="pay__form">
+      <label class="pay__label pay__label--email" for="email">Укажите почту, куда прийдет программа:</label>
+      <input class="pay__input pay__input--email" id="email" placeholder="example@mail.com" type="email" name="email" required>
+      <label class="pay__label pay__label--checkbox"> I agree
+        <input class="pay__input pay__input--checkbox" type="checkbox" required>
+      </label>
+      <ul class="pay__list">
+        <li class="pay__item pay__item--level">
+          <span class="pay__span pay__span--level">Уровень: </span>
+          <span class="pay__level-value"></span>
+        </li>
+        <li class="pay__item pay__item--price">
+          <span class="pay__span pay__span--price">Цена: </span>
+          <span class="pay__price-value"></span>
+        </li>
+      </ul>
+      <input class="pay__level" type="hidden" name="program" value="">
+      <input class="pay__price" type="hidden" name="price" value="">
+      <button class="pay__submit gold-button" type="submit">К оплате</button>
+    </form>
+  </div>
   <script src="/src/js/index.js" type="module"></script>
 </body>
 </html>

@@ -47,7 +47,11 @@
           "Horizontal bar: 15 pull-ups and one rep with +30 kg",
           "Parallel bars: one rep with +50 kg"
         ],
-        "price": "15 $"
+        "price": "15 $",
+        "data": {
+          "level": "Zero",
+          "price": "15"
+        }
       },
       {
         "title": "Beginner level",
@@ -56,7 +60,11 @@
           "Horizontal bar: one rep with 70 kg",
           "Diagonal bars: one rep with 100 kg"
         ],
-        "price": "20 $"
+        "price": "20 $",
+        "data": {
+          "level": "Beginner",
+          "price": "20"
+        }
       },
       {
         "title": "Intermediate level",
@@ -65,7 +73,11 @@
           "Horizontal bar: one rep with 100 kg",
           "Diagonal bars: one rep with 150 kg"
         ],
-        "price": "25 $"
+        "price": "25 $",
+        "data": {
+          "level": "Intermediate",
+          "price": "25"
+        }
       },
       {
         "title": "Advanced level",
@@ -74,7 +86,11 @@
           "Horizontal bar: one rep with 120 kg",
           "Parallel Bars: one rep with 200 kg"
         ],
-        "price": "30 $"
+        "price": "30 $",
+        "data": {
+          "level": "Advanced",
+          "price": "30"
+        }
       }
     ]
   },
@@ -127,5 +143,11 @@
     "Buy the program",
     "More details",
     "Go to the program"
-  ]
+  ],
+  "popupStreet": {
+    "label": "On the next PayPal page, you MUST enter your email address where you want to send the program",
+    "level": "Level:",
+    "price": "Price:",
+    "go": "Buy"
+  }
 }

@@ -52,7 +52,6 @@
   @media (min-width: $laptop) {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-around;
     justify-content: space-between;
     row-gap: 45px;
     width: 1120px;
@@ -68,7 +67,7 @@
   position: relative;
   background-color: $brown;
   border-radius: $radius;
-  border: 1px solid red;
+  border: 1px solid $yellow;
 
   @media (min-width: $laptop) {
     width: 330px;
@@ -202,6 +201,7 @@
 
 .programs__button-buy {
   width: 300px;
+  cursor: pointer;
 
   @media (min-width: $laptop) {
     width: 260px;

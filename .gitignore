@@ -1,5 +1,7 @@
 node_modules
 build
+server
 .editorconfig
 src/programs
 .DS_Store
+.idea

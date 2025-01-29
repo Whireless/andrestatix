@@ -17,9 +17,6 @@ const resultsSlider = new Splide('.results__slider', {
       cloneStatus: false,
       gap: '45px',
     },
-    1360: {
-      gap: '60px',
-    }
   }
 }).mount();
 

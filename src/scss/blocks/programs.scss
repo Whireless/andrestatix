@@ -128,7 +128,7 @@
   color: $grey;
   display: flex;
   flex-direction: column;
-  height: 380px;
+  height: 530px;
   padding: 30px;
 
   @media (min-width: $tablet) {
@@ -136,12 +136,12 @@
   }
 
   @media (min-width: $laptop) {
-    height: 430px;
+    height: 575px;
     padding: 30px 23px;
   }
 
   @media (min-width: $desktop) {
-    height: 500px;
+    height: 650px;
     padding: 35px 25px;
   }
 }
@@ -150,12 +150,12 @@
   text-align: justify;
 }
 
-.programs__target-program {
+.programs__suptitle {
   color: $white;
   margin-top: 20px;
 }
 
-.programs__targets {
+.programs__program-list {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -166,7 +166,7 @@
   }
 }
 
-.programs__target {
+.programs__program-item {
   position: relative;
   padding-left: 16px;
 

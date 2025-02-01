@@ -29,7 +29,7 @@
 .pay__close {
   width: 40px;
   height: 40px;
-  background-color: $black;
+  background-color: $bg;
   background-image: url("../img/icons/cross.svg");
   background-repeat: no-repeat;
   background-size: 60%;
@@ -60,7 +60,7 @@
   align-items: center;
   row-gap: 20px;
   width: 288px;
-  background-color: $black;
+  background-color: $bg;
   padding: 20px;
   border: 1px solid $yellow;
   border-radius: $radius;
@@ -115,6 +115,11 @@
       width: 350px;
       padding: 20px 25px;
     }
+  }
+
+  &--checkbox {
+    width: 20px;
+    height: 20px;
   }
 }
 

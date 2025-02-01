@@ -37,7 +37,10 @@
   },
   "programs": {
     "title": "Training programs",
-    "subtitle": "Program goal:",
+    "suptitles": [
+      "Program goal:",
+      "Bonuses to the program:"
+    ],
     "street": [
       {
         "title": "Zero level",

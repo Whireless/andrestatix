@@ -26,6 +26,7 @@ buyButtons.forEach(button => {
 close.addEventListener('click', () => {
   popup.classList.remove('pay--active');
   page.removeAttribute('style');
+  form.querySelector('.pay__input--email').value = '';
 });
 
 // Получение почты и отправка программы

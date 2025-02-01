@@ -30,14 +30,18 @@ const setPageLang = (lang, change) => {
     page.setAttribute('lang', 'en');
     select.querySelector('.main-nav__lang--en').setAttribute('selected', '');
     popup.querySelector('.pay__input--email').style.display = 'none';
+    popup.querySelector('.pay__input--email').required = false;
     popup.querySelector('.pay__label--checkbox').style.display = 'flex';
+    popup.querySelector('.pay__input--checkbox').required = true;
     if (change) storage.setItem('lang', 'en');
   } else {
     setLanguage(ru);
     page.setAttribute('lang', 'ru');
     select.querySelector('.main-nav__lang--ru').setAttribute('selected', '');
     popup.querySelector('.pay__label--checkbox').style.display = 'none';
+    popup.querySelector('.pay__input--checkbox').required = false;
     popup.querySelector('.pay__input--email').style.display = 'block';
+    popup.querySelector('.pay__input--email').required = true;
     if (change) storage.setItem('lang', 'ru');
   }
 };
@@ -109,8 +113,9 @@ const setLanguage = (lang) => {
   streetPrograms.forEach((program, i) => {
     setText(program.querySelector('.programs__subtitle'), lang.programs.street[i].title);
     setText(program.querySelector('.programs__description'), lang.programs.street[i].description);
-    setText(program.querySelector('.programs__target-program'), lang.programs.subtitle);
-    setText(program.querySelectorAll('.programs__target'), null, true, lang.programs.street[i].targets);
+    setText(program.querySelector('.programs__suptitle--target'), lang.programs.suptitles[0]);
+    setText(program.querySelector('.programs__suptitle--bonus'), lang.programs.suptitles[1]);
+    setText(program.querySelectorAll('.programs__program-list--target .programs__program-item'), null, true, lang.programs.street[i].targets);
     setText(program.querySelector('.programs__price'), lang.programs.street[i].price);
     setText(program.querySelector('.programs__button-buy'), lang.buttons[0]);
 

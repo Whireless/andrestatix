@@ -10,7 +10,7 @@
       position: absolute;
       top: 25px;
       right: 0;
-      background-image: url("../img/tablet/rightCrap.png");
+      background-image: url("/img/tablet/rightCrap.png");
       background-repeat: no-repeat;
       background-size: cover;
       width: 300px;
@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $laptop) {
-    background-image: url("../img/desktop/craps.png");
+    background-image: url("/img/desktop/craps.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 89px;
@@ -89,7 +89,7 @@
     position: absolute;
     top: -30px;
     left: 120px;
-    background-image: url("../img/icons/crown.svg");
+    background-image: url("/img/icons/crown.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 25px;

@@ -42,7 +42,7 @@ const sendData = async () => {
 
   if (page.getAttribute('lang') === 'ru') {
     try {
-      const response = await axios.post('https://andrestatix.com:8443/server', new URLSearchParams(new FormData(form)));
+      const response = await axios.post('https://andreypakin.ru:8443/server', new URLSearchParams(new FormData(form)));
       window.location = response.data;
       form.querySelector('.pay__input--email').value = '';
     } catch (error) {console.log(error)}

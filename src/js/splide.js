@@ -1,5 +1,5 @@
 import Splide from '@splidejs/splide';
-// import '@splidejs/splide/css/core';
+import '@splidejs/splide/css/core';
 
 const resultsSlider = new Splide('.results__slider', {
   classes: {

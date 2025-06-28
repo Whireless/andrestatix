@@ -1,6 +1,6 @@
 .faq {
   scroll-margin-top: 3em;
-  background-image: url("../img/desktop/faq-bg.png");
+  background-image: url("/img/desktop/faq-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 60%;
@@ -51,7 +51,7 @@
     right: 15px;
     width: 20px;
     height: 20px;
-    background-image: url("../img/icons/details.svg");
+    background-image: url("/img/icons/details.svg");
     background-repeat: no-repeat;
     background-size: contain;
     transition: 0.4s;

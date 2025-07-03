@@ -50,6 +50,9 @@
           "Horizontal bar: 15 pull-ups and one rep with +30 kg",
           "Parallel bars: one rep with +50 kg"
         ],
+        "bonuses": [
+          "No"
+        ],
         "price": "15 $",
         "data": {
           "level": "Zero",
@@ -62,6 +65,9 @@
         "targets": [
           "Horizontal bar: one rep with 70 kg",
           "Diagonal bars: one rep with 100 kg"
+        ],
+        "bonuses": [
+          "Training Program of Muscle Ups"
         ],
         "price": "20 $",
         "data": {
@@ -76,6 +82,9 @@
           "Horizontal bar: one rep with 100 kg",
           "Diagonal bars: one rep with 150 kg"
         ],
+        "bonuses": [
+          "Training Program of Muscle Ups"
+        ],
         "price": "25 $",
         "data": {
           "level": "Intermediate",
@@ -88,6 +97,9 @@
         "targets": [
           "Horizontal bar: one rep with 120 kg",
           "Parallel Bars: one rep with 200 kg"
+        ],
+        "bonuses": [
+          "Training Program of Muscle Ups"
         ],
         "price": "30 $",
         "data": {

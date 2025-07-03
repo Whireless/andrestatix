@@ -115,7 +115,9 @@ const setLanguage = (lang) => {
     setText(program.querySelector('.programs__description'), lang.programs.street[i].description);
     setText(program.querySelector('.programs__suptitle--target'), lang.programs.suptitles[0]);
     setText(program.querySelector('.programs__suptitle--bonus'), lang.programs.suptitles[1]);
-    setText(program.querySelectorAll('.programs__program-list--target .programs__program-item'), null, true, lang.programs.street[i].targets);
+    // setText(program.querySelectorAll('.programs__program-list--target .programs__program-item'), null, true, lang.programs.street[i].targets);
+    setText(program.querySelectorAll('.programs__program-item--target'), null, true, lang.programs.street[i].targets);
+    setText(program.querySelectorAll('.programs__program-item--bonus'), null, true, lang.programs.street[i].bonuses);
     setText(program.querySelector('.programs__price'), lang.programs.street[i].price);
     setText(program.querySelector('.programs__button-buy'), lang.buttons[0]);
 
